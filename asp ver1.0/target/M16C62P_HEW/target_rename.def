@@ -1,0 +1,5 @@
+# prc_config.c, prc_support.a30
+prc_initialize
+prc_terminate
+
+INCLUDE "m16c_nc30/prc"

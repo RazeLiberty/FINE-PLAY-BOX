@@ -1,0 +1,8 @@
+E_PACKAGE asp_rsk_m16c_62p_hew
+VERSION %date
+
+INCLUDE ../../MANIFEST
+INCLUDE ../../arch/m16c_nc30/MANIFEST
+INCLUDE ../../arch/nc30/MANIFEST
+INCLUDE ../../pdic/m16c/MANIFEST
+INCLUDE ../../cfg/MANIFEST

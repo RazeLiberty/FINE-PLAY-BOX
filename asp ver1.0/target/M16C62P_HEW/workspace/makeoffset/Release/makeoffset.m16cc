@@ -1,0 +1,9 @@
+-I"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\..\..\..\arch"
+-I"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\..\..\..\kernel"
+-I"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\..\..\..\include"
+-I"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\..\..\..\target\M16C62P_HEW"
+-S
+-finfo
+-dir "C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\makeoffset\Release"
+-Wall
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\arch\m16c_nc30\makeoffset.c"

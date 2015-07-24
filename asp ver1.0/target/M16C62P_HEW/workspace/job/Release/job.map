@@ -1,0 +1,1029 @@
+##########################################
+# (1) LINK INFORMATION                   #
+##########################################
+c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\bin\ln30.exe @C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\sample1.m16cl
+
+# LINK FILE INFORMATION
+start (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\start.r30)
+	Oct 14 09:59:39 2012
+
+banner (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\banner.r30)
+	Oct 14 09:59:38 2012
+
+kernel_cfg (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\kernel_cfg.r30)
+	Oct 14 09:59:39 2012
+
+kernel_cfg_asm (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\kernel_cfg_asm.r30)
+	Oct 14 09:59:39 2012
+
+log_output (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\log_output.r30)
+	Oct 14 09:59:37 2012
+
+logtask (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\logtask.r30)
+	Oct 14 09:59:38 2012
+
+sample1 (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\sample1.r30)
+	Oct 14 09:59:37 2012
+
+serial (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\serial.r30)
+	Oct 14 09:59:38 2012
+
+strerror (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\strerror.r30)
+	Oct 14 09:59:37 2012
+
+syslog (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\syslog.r30)
+	Oct 14 09:59:38 2012
+
+t_perror (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\t_perror.r30)
+	Oct 14 09:59:37 2012
+
+vasyslog (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\vasyslog.r30)
+	Oct 14 09:59:38 2012
+
+_i4divu (c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:38 2010
+
+_i4modu (c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:39 2010
+
+cyclic (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:32 2012
+
+exception (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:32 2012
+
+interrupt (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:32 2012
+
+m16c62p_config (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:31 2012
+
+prc_config (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:31 2012
+
+prc_support (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:36 2012
+
+semaphore (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:33 2012
+
+startup (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:34 2012
+
+sys_manage (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:34 2012
+
+target_config (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:36 2012
+
+target_serial (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:36 2012
+
+target_support (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:36 2012
+
+target_timer (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:36 2012
+
+task (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:34 2012
+
+task_manage (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:34 2012
+
+task_sync (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:35 2012
+
+time_event (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:35 2012
+
+wait (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:35 2012
+
+m16c_ta (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:36 2012
+
+m16c_uart (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Oct 13 22:08:36 2012
+
+_i4div (c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:38 2010
+
+
+##########################################
+# (2) SECTION INFORMATION                #
+##########################################
+# SECTION                        ATR TYPE    START  LENGTH ALIGN MODULENAME
+data_NE                          ABS DATA    000400 000000       start
+                                 REL DATA    000400 000002 2     sample1
+                                 REL DATA    000402 000002 2     startup
+bss_NE                           REL DATA    000404 000000       start
+                                 REL DATA    000404 0009A8 2     kernel_cfg
+                                 REL DATA    000DAC 000002 2     logtask
+                                 REL DATA    000DAE 000600 2     serial
+                                 REL DATA    0013AE 0003CC 2     syslog
+                                 REL DATA    00177A 000004 2     prc_config
+                                 REL DATA    00177E 00004C 2     task
+                                 REL DATA    0017CA 00000C 2     time_event
+                                 REL DATA    0017D6 000036 2     m16c_uart
+data_NO                          REL DATA    00180C 000000       start
+                                 REL DATA    00180C 000002       sample1
+bss_NO                           REL DATA    00180E 000000       start
+                                 REL DATA    00180E 000057       serial
+stack                            ABS DATA    007C00 000400       start
+program                          ABS CODE    0A0000 000000       start
+                                 REL CODE    0A0000 00005B 2     start
+                                 REL CODE    0A005C 000031 2     banner
+                                 REL CODE    0A008E 000099 2     kernel_cfg
+                                 REL CODE    0A0128 000036 2     kernel_cfg_asm
+                                 REL CODE    0A015E 0002FA 2     log_output
+                                 REL CODE    0A0458 0001C0 2     logtask
+                                 REL CODE    0A0618 000066 2     sample1
+                                 REL CODE    0A067E 0008B3 2     serial
+                                 REL CODE    0A0F32 000195 2     strerror
+                                 REL CODE    0A10C8 00015A 2     syslog
+                                 REL CODE    0A1222 000083 2     t_perror
+                                 REL CODE    0A12A6 000148 2     vasyslog
+                                 REL CODE    0A13EE 00004D 2     _i4divu
+                                 REL CODE    0A143C 00004B 2     _i4modu
+                                 REL CODE    0A1488 0003BA 2     cyclic
+                                 REL CODE    0A1842 00010D 2     exception
+                                 REL CODE    0A1950 0002D3 2     interrupt
+                                 REL CODE    0A1C24 000075 2     m16c62p_config
+                                 REL CODE    0A1C9A 0001F9 2     prc_config
+                                 REL CODE    0A1E94 0001A2 2     prc_support
+                                 REL CODE    0A2036 0006FD 2     semaphore
+                                 REL CODE    0A2734 000133 2     startup
+                                 REL CODE    0A2868 0003B3 2     sys_manage
+                                 REL CODE    0A2C1C 00006B 2     target_config
+                                 REL CODE    0A2C88 000327 2     target_serial
+                                 REL CODE    0A2FB0 000042 2     target_support
+                                 REL CODE    0A2FF2 00005D 2     target_timer
+                                 REL CODE    0A3050 0007C9 2     task
+                                 REL CODE    0A381A 0005A2 2     task_manage
+                                 REL CODE    0A3DBC 00065B 2     task_sync
+                                 REL CODE    0A4418 0004A6 2     time_event
+                                 REL CODE    0A48BE 000737 2     wait
+                                 REL CODE    0A4FF6 00020D 2     m16c_ta
+                                 REL CODE    0A5204 0003E2 2     m16c_uart
+                                 REL CODE    0A55E6 000083 2     _i4div
+rom_FE                           REL ROMDATA 0A566A 000000 2     start
+                                 REL ROMDATA 0A566A 00018E 2     banner
+                                 REL ROMDATA 0A57F8 000196 2     kernel_cfg
+                                 REL ROMDATA 0A598E 000024 2     serial
+                                 REL ROMDATA 0A59B2 000080 2     m16c62p_config
+                                 REL ROMDATA 0A5A32 00002A 2     m16c_uart
+rom_FO                           REL ROMDATA 0A5A5C 000000       start
+                                 REL ROMDATA 0A5A5C 00005F       kernel_cfg
+                                 REL ROMDATA 0A5ABB 000061       log_output
+                                 REL ROMDATA 0A5B1C 000044       logtask
+                                 REL ROMDATA 0A5B60 0000A5       strerror
+                                 REL ROMDATA 0A5C05 00002D       t_perror
+                                 REL ROMDATA 0A5C32 000021       cyclic
+                                 REL ROMDATA 0A5C53 00005F       exception
+                                 REL ROMDATA 0A5CB2 00005F       interrupt
+                                 REL ROMDATA 0A5D11 000056       prc_config
+                                 REL ROMDATA 0A5D67 00005F       semaphore
+                                 REL ROMDATA 0A5DC6 00002D       startup
+                                 REL ROMDATA 0A5DF3 00005F       sys_manage
+                                 REL ROMDATA 0A5E52 00001D       target_serial
+                                 REL ROMDATA 0A5E6F 000021       target_timer
+                                 REL ROMDATA 0A5E90 000082       task
+                                 REL ROMDATA 0A5F12 00006F       task_manage
+                                 REL ROMDATA 0A5F81 00005F       task_sync
+                                 REL ROMDATA 0A5FE0 00004E       time_event
+                                 REL ROMDATA 0A602E 000094       wait
+                                 REL ROMDATA 0A60C2 00004B       m16c_ta
+data_NEI                         REL ROMDATA 0A610E 000000 2     start
+                                 REL ROMDATA 0A610E 000002       sample1
+                                 REL ROMDATA 0A6110 000002       startup
+data_NOI                         REL ROMDATA 0A6112 000000       start
+                                 REL ROMDATA 0A6112 000002       sample1
+vvector                          ABS CODE    0FA000 000000       start
+                                 REL CODE    0FA000 000100       kernel_cfg_asm
+fvector                          ABS CODE    0FFFDC 000000       start
+                                 REL CODE    0FFFDC 000024       kernel_cfg_asm
+# Total -------------------------------------------------------------------
+                                     DATA           001865(0006245) Byte(s)
+                                     ROMDATA        000AA9(0002729) Byte(s)
+                                     CODE           00578D(0022413) Byte(s)
+
+##########################################
+# (3) GLOBAL LABEL INFORMATION           #
+##########################################
+$_kernel_call_cy   0a174e  $_kernel_change_   0a33d4  $_kernel_init_wa   0a4e3a
+$_kernel_make_ac   0a337c  $_kernel_make_do   0a333a  $_kernel_make_no   0a3244
+$_kernel_make_ru   0a31ca  $_kernel_make_wa   0a48be  $_kernel_rotate_   0a35ee
+$_kernel_tmevt_d   0a44c0  $_kernel_tmevt_l   0a46c4  $_kernel_tmevt_u   0a443e
+$_kernel_tmevtb_   0a45d2  $_kernel_tmevtb_   0a458e  $_kernel_wait_co   0a498c
+$_kernel_wait_re   0a4bbc  $_kernel_wait_tm   0a4a42  $_kernel_wait_tm   0a4b18
+$_kernel_wobj_ma   0a4ca4  $_kernel_wobj_ma   0a4d74  $act_tsk           0a381a
+$can_act           0a395a  $can_wup           0a403a  $chg_ipm           0a1b36
+$chg_pri           0a3bf8  $dis_int           0a19cc  $dly_tsk           0a436c
+$ena_int           0a1a62  $get_inf           0a3d64  $get_ipm           0a1bce
+$get_pri           0a3ccc  $get_tid           0a2944  $iact_tsk          0a38c2
+$iget_tid          0a29a4  $ini_sem           0a259a  $irel_wai          0a4158
+$irot_rdq          0a28e4  $isig_sem          0a222c  $itron_strerror    0a0f32
+$iwup_tsk          0a3f8a  $logtask_flush     0a0474  $m16c_config_int   0a1c24
+$m16c_ta_getcoun   0a518a  $m16c_ta_setcoun   0a51c4  $m16c_ta_setmode   0a508e
+$m16c_ta_start     0a50ce  $m16c_ta_stop      0a5146  $m16c_uart_cls_p   0a5400
+$m16c_uart_dis_c   0a5510  $m16c_uart_ena_c   0a54c6  $m16c_uart_init    0a52be
+$m16c_uart_opn_p   0a539a  $m16c_uart_pol_p   0a533c  $m16c_uart_rcv_c   0a547a
+$m16c_uart_rx_is   0a55a0  $m16c_uart_snd_c   0a542e  $m16c_uart_tx_is   0a555a
+$pol_sem           0a245a  $ref_cyc           0a16c2  $ref_sem           0a2626
+$rel_wai           0a40d2  $rot_rdq           0a2868  $rsm_tsk           0a42c0
+$serial_cls_por    0a07bc  $serial_ctl_por    0a0c0c  $serial_get_chr    0a0ed0
+$serial_opn_por    0a06f0  $serial_rea_dat    0a0b16  $serial_ref_por    0a0c62
+$serial_wri_dat    0a09a8  $sig_sem           0a209a  $sio_cls_por       0a2e4e
+$sio_dis_cbr       0a2f76  $sio_ena_cbr       0a2f60  $sio_opn_por       0a2c8e
+$sio_rcv_chr       0a2f50  $sio_snd_chr       0a2f3c  $sta_cyc           0a154a
+$stp_cyc           0a1640  $sus_tsk           0a41de  $syslog_lostmsg    0a042c
+$syslog_msk_log    0a11e8  $syslog_rea_log    0a1190  $syslog_ref_log    0a11f4
+$syslog_wri_log    0a10e4  $t_perror          0a1222  $target_fput_log   0a2c68
+$ter_tsk           0a3adc  $tslp_tsk          0a3e3a  $twai_sem          0a24da
+$wai_sem           0a23be  $wup_tsk           0a3ec8  $x_config_int      0a1c9e
+$xsns_dpn          0a1874  $xsns_xpn          0a18ea  DEFAULT_ISTK_TOP   008000
+VVECTOR_TOP        0fa000  __exit_and_dispa   0a1f15  __i4div            0a55e6
+__i4divU           0a13ee  __i4modU           0a143c  __kernel__kernel   0a0128
+__kernel__kernel   0a013a  __kernel_almcb_t   000512  __kernel_alminib   0a5978
+__kernel_break_w   0a1f7f  __kernel_call_ex   0a1fe1  __kernel_call_in   0a00c2
+__kernel_call_te   0a010a  __kernel_call_te   0a3740  __kernel_current   0017ca
+__kernel_cyccb_t   000500  __kernel_cycinib   0a5968  __kernel_disdsp    001784
+__kernel_dispatc   0a1e94  __kernel_dspflg    001786  __kernel_dtqcb_t   0004c0
+__kernel_dtqinib   0a5944  __kernel_excinib   0a5984  __kernel_exit_ke   0a280a
+__kernel_flgcb_t   0004b6  __kernel_flginib   0a593e  __kernel_inhinib   0a57fa
+__kernel_initial   0a1488  __kernel_initial   0a1842  __kernel_initial   0a1950
+__kernel_initial   0a00ae  __kernel_initial   0a2036  __kernel_initial   0a3050
+__kernel_initial   0a4418  __kernel_intc_re   0a59b2  __kernel_inthdr_   0a008e
+__kernel_inthdr_   0a009e  __kernel_intinib   0a5814  __kernel_intnest   00177a
+__kernel_istk      0a58aa  __kernel_istkpt    0a598c  __kernel_istksz    0a58a6
+__kernel_kerflg    000402  __kernel_last_in   0017d4  __kernel_mbxcb_t   0004e6
+__kernel_mbxinib   0a5956  __kernel_mpfcb_t   0004f2  __kernel_mpfinib   0a595c
+__kernel_next_ti   0017ce  __kernel_p_runts   00177e  __kernel_p_sched   001780
+__kernel_pdqcb_t   0004d2  __kernel_pdqinib   0a594c  __kernel_pend_up   0017d2
+__kernel_prc_ini   0a1c9a  __kernel_prc_ter   0a1c9c  __kernel_ready_p   0017c8
+__kernel_ready_q   001788  __kernel_reqflg    001782  __kernel_search_   0a311a
+__kernel_semcb_t   00047a  __kernel_seminib   0a5918  __kernel_signal_   0a471c
+__kernel_start_d   0a1f15  __kernel_start_r   0a1ebc  __kernel_target_   0a2c5e
+__kernel_target_   0a2c1c  __kernel_target_   0a014c  __kernel_tcb_tab   000422
+__kernel_tinib_t   0a58ae  __kernel_tmax_al   0a5976  __kernel_tmax_cy   0a5966
+__kernel_tmax_dt   0a5942  __kernel_tmax_fl   0a593c  __kernel_tmax_mb   0a5954
+__kernel_tmax_mp   0a595a  __kernel_tmax_pd   0a594a  __kernel_tmax_se   0a5916
+__kernel_tmax_ts   0a58ac  __kernel_tmevt_h   000404  __kernel_tnum_ex   0a5982
+__kernel_tnum_in   0a57f8  __kernel_tnum_in   0a5812  __kernel_torder_   0a590e
+__kernel_tsk_sp    00177c  _cnt               000400  _cyclic_handler    0a0668
+_dis_dsp           0a2ae6  _ena_dsp           0a2b26  _entry_task        0a061c
+_ext_ker           0a27a2  _ext_tsk           0a39e2  _hardware_init_h   0a2fb0
+_idle_task         0a0666  _iloc_cpu          0a2a44  _intpri_table      0a5826
+_iunl_cpu          0a2ab0  _kernel_exceptio   0a1fc2  _kernel_interrup   0a1f93
+_led_data          00180d  _loc_cpu           0a2a0e  _logtask_main      0a04dc
+_logtask_termina   0a058a  _m16c_ta_initial   0a4ff6  _m16c_ta_termina   0a5042
+_m16c_uart_initi   0a5278  _m16c_uart_irdy_   0a2f9e  _m16c_uart_irdy_   0a2f8c
+_print_banner      0a005c  _serial_initiali   0a06a2  _sil_dly_nse       0a1ff2
+_sio_initialize    0a2c88  _sio_irdy_rcv      0a0d46  _sio_irdy_snd      0a0cac
+_sio_rx_isr        0a2f30  _sio_tx_isr        0a2f24  _slp_tsk           0a3dbc
+_sns_ctx           0a2b86  _sns_dpn           0a2bd0  _sns_dsp           0a2bc2
+_sns_ker           0a2c08  _sns_loc           0a2ba2  _software_init_h   0a2ff1
+_sta_ker           0a2734  _start             0a0000  _sw_data           00180c
+_syslog            0a12a6  _syslog_initiali   0a10c8  _syslog_print      0a03ce
+_syslog_printf     0a0224  _target_timer_ha   0a304a  _target_timer_in   0a2ff2
+_target_timer_te   0a303e  _timer_task        0a0618  _unl_cpu           0a2a7a
+_unused_interrup   0a1ff1  
+
+##########################################
+# (4) GLOBAL EQU SYMBOL INFORMATION      #
+##########################################
+SIL_DLY_TIM1     000007ee  SIL_DLY_TIM2     00000251  
+
+##########################################
+# (5) GLOBAL EQU BIT-SYMBOL INFORMATION  #
+##########################################
+
+##########################################
+# (6) LOCAL LABEL INFORMATION            #
+##########################################
+@ start ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\start.r30 )
+@ banner ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\banner.r30 )
+@ kernel_cfg ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\kernel_cfg.r30 )
+@ kernel_cfg_asm ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\kernel_cfg_asm.r30 )
+@ log_output ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\log_output.r30 )
+@ logtask ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\logtask.r30 )
+@ sample1 ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\sample1.r30 )
+@ serial ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\serial.r30 )
+@ strerror ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\strerror.r30 )
+@ syslog ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\syslog.r30 )
+@ t_perror ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\t_perror.r30 )
+@ vasyslog ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\vasyslog.r30 )
+@ _i4divu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ _i4modu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ cyclic ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ exception ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ interrupt ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c62p_config ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_config ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_support ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ semaphore ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ startup ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ sys_manage ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_config ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_serial ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_support ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_timer ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_manage ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_sync ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ time_event ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ wait ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_ta ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_uart ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ _i4div ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+
+##########################################
+# (7) LOCAL EQU SYMBOL INFORMATION       #
+##########################################
+@ start ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\start.r30 )
+@ banner ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\banner.r30 )
+@ kernel_cfg ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\kernel_cfg.r30 )
+@ kernel_cfg_asm ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\kernel_cfg_asm.r30 )
+@ log_output ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\log_output.r30 )
+@ logtask ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\logtask.r30 )
+@ sample1 ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\sample1.r30 )
+@ serial ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\serial.r30 )
+@ strerror ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\strerror.r30 )
+@ syslog ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\syslog.r30 )
+@ t_perror ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\t_perror.r30 )
+@ vasyslog ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\vasyslog.r30 )
+@ _i4divu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ _i4modu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ cyclic ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ exception ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ interrupt ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c62p_config ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_config ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_support ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ semaphore ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ startup ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ sys_manage ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_config ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_serial ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_support ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_timer ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_manage ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_sync ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ time_event ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ wait ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_ta ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_uart ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ _i4div ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+
+##########################################
+# (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
+##########################################
+@ start ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\start.r30 )
+@ banner ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\banner.r30 )
+@ kernel_cfg ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\kernel_cfg.r30 )
+@ kernel_cfg_asm ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\kernel_cfg_asm.r30 )
+@ log_output ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\log_output.r30 )
+@ logtask ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\logtask.r30 )
+@ sample1 ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\sample1.r30 )
+@ serial ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\serial.r30 )
+@ strerror ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\strerror.r30 )
+@ syslog ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\syslog.r30 )
+@ t_perror ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\t_perror.r30 )
+@ vasyslog ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\vasyslog.r30 )
+@ _i4divu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ _i4modu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ cyclic ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ exception ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ interrupt ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c62p_config ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_config ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_support ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ semaphore ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ startup ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ sys_manage ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_config ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_serial ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_support ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_timer ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_manage ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_sync ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ time_event ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ wait ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_ta ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_uart ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ _i4div ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+data_NE
+                                  00000400  00000403         4   1
+bss_NE
+                                  00000404  0000180b      1408   1
+data_NO
+                                  0000180c  0000180d         2   1
+bss_NO
+                                  0000180e  00001864        57   1
+stack
+                                  00007c00  00007fff       400   1
+program
+                                  000a0000  000a5668      5669   1
+rom_FE
+                                  000a566a  000a5a5b       3f2   2
+rom_FO
+                                  000a5a5c  000a610c       6b1   1
+data_NEI
+                                  000a610e  000a6111         4   2
+data_NOI
+                                  000a6112  000a6113         2   1
+vvector
+                                  000fa000  000fa0ff       100   1
+fvector
+                                  000fffdc  000fffff        24   1
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=data_NE
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/sample/sample1
+                                  00000400  00000401         2
+  _cnt
+                                  00000400         2   data ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/startup
+                                  00000402  00000403         2
+  __kernel_kerflg
+                                  00000402         2   data ,g         0
+
+SECTION=bss_NE
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/sample1/kernel_cfg
+                                  00000404  00000dab       9a8
+  __kernel_tcb_table
+                                  00000422        58   data ,g         0
+  __kernel_semcb_table
+                                  0000047a        3c   data ,g         0
+  __kernel_flgcb_table
+                                  000004b6         a   data ,g         0
+  __kernel_dtqcb_table
+                                  000004c0        12   data ,g         0
+  __kernel_pdqcb_table
+                                  000004d2        14   data ,g         0
+  __kernel_mbxcb_table
+                                  000004e6         c   data ,g         0
+  __kernel_mpfcb_table
+                                  000004f2         e   data ,g         0
+  __kernel_cyccb_table
+                                  00000500        12   data ,g         0
+  __kernel_almcb_table
+                                  00000512         e   data ,g         0
+  __kernel_tmevt_heap
+                                  00000404        1e   data ,g         0
+  SIL_DLY_TIM1
+                                  000007ee         0   none ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/prc_config
+                                  0000177a  0000177d         4
+  __kernel_intnest
+                                  0000177a         2   data ,g         0
+  __kernel_tsk_sp
+                                  0000177c         2   data ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/task
+                                  0000177e  000017c9        4c
+  __kernel_p_runtsk
+                                  0000177e         2   data ,g         0
+  __kernel_p_schedtsk
+                                  00001780         2   data ,g         0
+  __kernel_reqflg
+                                  00001782         2   data ,g         0
+  __kernel_disdsp
+                                  00001784         2   data ,g         0
+  __kernel_dspflg
+                                  00001786         2   data ,g         0
+  __kernel_ready_queue
+                                  00001788        40   data ,g         0
+  __kernel_ready_primap
+                                  000017c8         2   data ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/time_event
+                                  000017ca  000017d5         c
+  __kernel_current_time
+                                  000017ca         4   data ,g         0
+  __kernel_next_time
+                                  000017ce         4   data ,g         0
+  __kernel_pend_update
+                                  000017d2         2   data ,g         0
+  __kernel_last_index
+                                  000017d4         2   data ,g         0
+
+SECTION=data_NO
+FILE=start
+                                  0000180c  0000180c         0
+  _sw_data
+                                  0000180c         1   data ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/sample/sample1
+                                  0000180c  0000180d         2
+  _led_data
+                                  0000180d         1   data ,g         0
+
+SECTION=program
+FILE=start
+                                  000a0000  000a0000         0
+  _start
+                                  000a0000         0   none ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/syssvc/banner
+                                  000a005c  000a008c        31
+  _print_banner
+                                  000a005c        31   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/sample1/kernel_cfg
+                                  000a008e  000a0126        99
+  __kernel_inthdr_17
+                                  000a008e         f   func ,g         0
+  __kernel_inthdr_18
+                                  000a009e        10   func ,g         0
+  __kernel_initialize_object
+                                  000a00ae        15   func ,g         0
+  __kernel_call_inirtn
+                                  000a00c2        47   func ,g         0
+
+FILE=kernel_cfg_asm
+                                  000a0128  000a015d        36
+  __kernel__kernel_inthdr_17_17_entry
+                                  000a0128         0   none ,g         0
+  __kernel__kernel_inthdr_18_18_entry
+                                  000a013a         0   none ,g         0
+  __kernel_target_timer_handler_21_entry
+                                  000a014c         0   none ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/library/log_output
+                                  000a015e  000a0457       2fa
+  _syslog_printf
+                                  000a0224       181   func ,g         0
+  _syslog_print
+                                  000a03ce        5f   func ,g         0
+  $syslog_lostmsg
+                                  000a042c        2c   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/syssvc/logtask
+                                  000a0458  000a0617       1c0
+  $logtask_flush
+                                  000a0474        68   func ,g         0
+  _logtask_main
+                                  000a04dc        9c   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/sample/sample1
+                                  000a0618  000a067d        66
+  _timer_task
+                                  000a0618         4   func ,g         0
+  _entry_task
+                                  000a061c        4a   func ,g         0
+  _idle_task
+                                  000a0666         2   func ,g         0
+  _cyclic_handler
+                                  000a0668        16   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/syssvc/serial
+                                  000a067e  000a0f30       8b3
+  _serial_initialize
+                                  000a06a2        4e   func ,g         0
+  $serial_opn_por
+                                  000a06f0        cc   func ,g         0
+  $serial_cls_por
+                                  000a07bc        b4   func ,g         0
+  $serial_wri_dat
+                                  000a09a8        aa   func ,g         0
+  $serial_rea_dat
+                                  000a0b16        ec   func ,g         0
+  $serial_ctl_por
+                                  000a0c0c        44   func ,g         0
+  $serial_ref_por
+                                  000a0c62        4a   func ,g         0
+  _sio_irdy_snd
+                                  000a0cac        99   func ,g         0
+  _sio_irdy_rcv
+                                  000a0d46       18a   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/library/strerror
+                                  000a0f32  000a10c6       195
+  $itron_strerror
+                                  000a0f32       195   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/syssvc/syslog
+                                  000a10c8  000a1221       15a
+  _syslog_initialize
+                                  000a10c8        1b   func ,g         0
+  $syslog_wri_log
+                                  000a10e4        ac   func ,g         0
+  $syslog_rea_log
+                                  000a1190        59   func ,g         0
+  $syslog_msk_log
+                                  000a11e8         b   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/library/t_perror
+                                  000a1222  000a12a4        83
+  $t_perror
+                                  000a1222        83   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/syssvc/vasyslog
+                                  000a12a6  000a13ed       148
+  _syslog
+                                  000a12a6       10f   func ,g         0
+
+FILE=_i4divu
+                                  000a13ee  000a143a        4d
+  __i4divU
+                                  000a13ee        4d   func ,g         0
+
+FILE=_i4modu
+                                  000a143c  000a1486        4b
+  __i4modU
+                                  000a143c        4b   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/cyclic
+                                  000a1488  000a1841       3ba
+  __kernel_initialize_cyclic
+                                  000a1488        c1   func ,g         0
+  $sta_cyc
+                                  000a154a        f7   func ,g         0
+  $stp_cyc
+                                  000a1640        82   func ,g         0
+  $ref_cyc
+                                  000a16c2        8b   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/exception
+                                  000a1842  000a194e       10d
+  __kernel_initialize_exception
+                                  000a1842        32   func ,g         0
+  $xsns_dpn
+                                  000a1874        75   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/interrupt
+                                  000a1950  000a1c22       2d3
+  __kernel_initialize_interrupt
+                                  000a1950        7c   func ,g         0
+  $dis_int
+                                  000a19cc        96   func ,g         0
+  $ena_int
+                                  000a1a62        d4   func ,g         0
+  $chg_ipm
+                                  000a1b36        97   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/m16c62p_config
+                                  000a1c24  000a1c98        75
+  $m16c_config_int
+                                  000a1c24        75   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/prc_config
+                                  000a1c9a  000a1e92       1f9
+  __kernel_prc_initialize
+                                  000a1c9a         1   func ,g         0
+  __kernel_prc_terminate
+                                  000a1c9c         2   func ,g         0
+
+FILE=prc_support
+                                  000a1e94  000a2035       1a2
+  __exit_and_dispatch
+                                  000a1f15         0   none ,g         0
+  __kernel_break_wait
+                                  000a1f7f         0   none ,g         0
+  __kernel_call_exit_kernel
+                                  000a1fe1         0   none ,g         0
+  __kernel_dispatch
+                                  000a1e94         0   none ,g         0
+  __kernel_start_dispatch
+                                  000a1f15         0   none ,g         0
+  __kernel_start_r
+                                  000a1ebc         0   none ,g         0
+  _kernel_exception
+                                  000a1fc2         0   none ,g         0
+  _kernel_interrupt
+                                  000a1f93         0   none ,g         0
+  _sil_dly_nse
+                                  000a1ff2         0   none ,g         0
+  _unused_interrupt
+                                  000a1ff1         0   none ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/semaphore
+                                  000a2036  000a2732       6fd
+  __kernel_initialize_semaphore
+                                  000a2036        64   func ,g         0
+  $sig_sem
+                                  000a209a       192   func ,g         0
+  $isig_sem
+                                  000a222c       192   func ,g         0
+  $wai_sem
+                                  000a23be        9b   func ,g         0
+  $pol_sem
+                                  000a245a        80   func ,g         0
+  $twai_sem
+                                  000a24da        c1   func ,g         0
+  $ini_sem
+                                  000a259a        8c   func ,g         0
+  $ref_sem
+                                  000a2626       10d   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/startup
+                                  000a2734  000a2866       133
+  _sta_ker
+                                  000a2734        6d   func ,g         0
+  _ext_ker
+                                  000a27a2        69   func ,g         0
+  __kernel_exit_kernel
+                                  000a280a        5d   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/sys_manage
+                                  000a2868  000a2c1a       3b3
+  $rot_rdq
+                                  000a2868        7c   func ,g         0
+  $irot_rdq
+                                  000a28e4        60   func ,g         0
+  $get_tid
+                                  000a2944        5f   func ,g         0
+  $iget_tid
+                                  000a29a4        6a   func ,g         0
+  _loc_cpu
+                                  000a2a0e        36   func ,g         0
+  _iloc_cpu
+                                  000a2a44        36   func ,g         0
+  _unl_cpu
+                                  000a2a7a        36   func ,g         0
+  _iunl_cpu
+                                  000a2ab0        36   func ,g         0
+  _dis_dsp
+                                  000a2ae6        40   func ,g         0
+  _ena_dsp
+                                  000a2b26        60   func ,g         0
+  _sns_ctx
+                                  000a2b86        1d   func ,g         0
+  _sns_loc
+                                  000a2ba2        1f   func ,g         0
+  _sns_dsp
+                                  000a2bc2         e   func ,g         0
+  _sns_dpn
+                                  000a2bd0        38   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/target_config
+                                  000a2c1c  000a2c86        6b
+  __kernel_target_initialize
+                                  000a2c1c        41   func ,g         0
+  __kernel_target_exit
+                                  000a2c5e         a   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/target_serial
+                                  000a2c88  000a2fae       327
+  _sio_initialize
+                                  000a2c88         5   func ,g         0
+  $sio_opn_por
+                                  000a2c8e       1c0   func ,g         0
+  $sio_cls_por
+                                  000a2e4e        d6   func ,g         0
+  _sio_tx_isr
+                                  000a2f24         d   func ,g         0
+  _sio_rx_isr
+                                  000a2f30         c   func ,g         0
+  $sio_snd_chr
+                                  000a2f3c        14   func ,g         0
+  $sio_rcv_chr
+                                  000a2f50         f   func ,g         0
+  $sio_ena_cbr
+                                  000a2f60        16   func ,g         0
+  $sio_dis_cbr
+                                  000a2f76        16   func ,g         0
+  _m16c_uart_irdy_snd
+                                  000a2f8c        12   func ,g         0
+
+FILE=target_support
+                                  000a2fb0  000a2ff1        42
+  _hardware_init_hook
+                                  000a2fb0         0   none ,g         0
+  _software_init_hook
+                                  000a2ff1         0   none ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/target_timer
+                                  000a2ff2  000a304e        5d
+  _target_timer_initialize
+                                  000a2ff2        4b   func ,g         0
+  _target_timer_terminate
+                                  000a303e         c   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/task
+                                  000a3050  000a3818       7c9
+  __kernel_initialize_task
+                                  000a3050        c9   func ,g         0
+  __kernel_search_schedtsk
+                                  000a311a        b0   func ,g         0
+  $_kernel_make_runnable
+                                  000a31ca        7b   func ,g         0
+  $_kernel_make_non_runnable
+                                  000a3244        f5   func ,g         0
+  $_kernel_make_dormant
+                                  000a333a        43   func ,g         0
+  $_kernel_make_active
+                                  000a337c        57   func ,g         0
+  $_kernel_change_priority
+                                  000a33d4       21a   func ,g         0
+  $_kernel_rotate_ready_queue
+                                  000a35ee       152   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/task_manage
+                                  000a381a  000a3dbb       5a2
+  $act_tsk
+                                  000a381a        a8   func ,g         0
+  $iact_tsk
+                                  000a38c2        98   func ,g         0
+  $can_act
+                                  000a395a        88   func ,g         0
+  _ext_tsk
+                                  000a39e2        fa   func ,g         0
+  $ter_tsk
+                                  000a3adc       11c   func ,g         0
+  $chg_pri
+                                  000a3bf8        d3   func ,g         0
+  $get_pri
+                                  000a3ccc        98   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/task_sync
+                                  000a3dbc  000a4416       65b
+  _slp_tsk
+                                  000a3dbc        7e   func ,g         0
+  $tslp_tsk
+                                  000a3e3a        8e   func ,g         0
+  $wup_tsk
+                                  000a3ec8        c1   func ,g         0
+  $iwup_tsk
+                                  000a3f8a        b1   func ,g         0
+  $can_wup
+                                  000a403a        97   func ,g         0
+  $rel_wai
+                                  000a40d2        87   func ,g         0
+  $irel_wai
+                                  000a4158        86   func ,g         0
+  $sus_tsk
+                                  000a41de        e1   func ,g         0
+  $rsm_tsk
+                                  000a42c0        ad   func ,g         0
+  $dly_tsk
+                                  000a436c        ab   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/time_event
+                                  000a4418  000a48bd       4a6
+  __kernel_initialize_tmevt
+                                  000a4418        25   func ,g         0
+  $_kernel_tmevt_up
+                                  000a443e        83   func ,g         0
+  $_kernel_tmevt_down
+                                  000a44c0        ce   func ,g         0
+  $_kernel_tmevtb_insert
+                                  000a458e        43   func ,g         0
+  $_kernel_tmevtb_delete
+                                  000a45d2        f2   func ,g         0
+  $_kernel_tmevt_lefttim
+                                  000a46c4        59   func ,g         0
+  __kernel_signal_time
+                                  000a471c       1a2   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/kernel/wait
+                                  000a48be  000a4ff4       737
+  $_kernel_make_wait_tmout
+                                  000a48be        ce   func ,g         0
+  $_kernel_wait_complete
+                                  000a498c        b6   func ,g         0
+  $_kernel_wait_tmout
+                                  000a4a42        d5   func ,g         0
+  $_kernel_wait_tmout_ok
+                                  000a4b18        a4   func ,g         0
+  $_kernel_wait_release
+                                  000a4bbc        e9   func ,g         0
+  $_kernel_wobj_make_wait
+                                  000a4ca4        d0   func ,g         0
+  $_kernel_wobj_make_wait_tmout
+                                  000a4d74        c5   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/pdic/m16c/m16c_ta
+                                  000a4ff6  000a5202       20d
+  _m16c_ta_initialize
+                                  000a4ff6        4b   func ,g         0
+  _m16c_ta_terminate
+                                  000a5042        4c   func ,g         0
+  $m16c_ta_setmode
+                                  000a508e        40   func ,g         0
+  $m16c_ta_start
+                                  000a50ce        79   func ,g         0
+  $m16c_ta_stop
+                                  000a5146        43   func ,g         0
+  $m16c_ta_getcount
+                                  000a518a        3a   func ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/pdic/m16c/m16c_uart
+                                  000a5204  000a55e5       3e2
+  _m16c_uart_initialize
+                                  000a5278        45   func ,g         0
+  $m16c_uart_init
+                                  000a52be        7f   func ,g         0
+  $m16c_uart_pol_putc
+                                  000a533c        5e   func ,g         0
+  $m16c_uart_opn_por
+                                  000a539a        65   func ,g         0
+  $m16c_uart_cls_por
+                                  000a5400        2f   func ,g         0
+  $m16c_uart_snd_chr
+                                  000a542e        4b   func ,g         0
+  $m16c_uart_rcv_chr
+                                  000a547a        4d   func ,g         0
+  $m16c_uart_ena_cbr
+                                  000a54c6        4a   func ,g         0
+  $m16c_uart_dis_cbr
+                                  000a5510        4a   func ,g         0
+  $m16c_uart_tx_isr
+                                  000a555a        46   func ,g         0
+  $m16c_uart_rx_isr
+                                  000a55a0        46   func ,g         0
+
+FILE=_i4div
+                                  000a55e6  000a5668        83
+  __i4div
+                                  000a55e6        83   func ,g         0
+
+SECTION=rom_FE
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/sample1/kernel_cfg
+                                  000a57f8  000a598d       196
+  __kernel_tmax_tskid
+                                  000a58ac         2   data ,g         0
+  __kernel_tinib_table
+                                  000a58ae        60   data ,g         0
+  __kernel_torder_table
+                                  000a590e         8   data ,g         0
+  __kernel_tmax_semid
+                                  000a5916         2   data ,g         0
+  __kernel_seminib_table
+                                  000a5918        24   data ,g         0
+  __kernel_tmax_flgid
+                                  000a593c         2   data ,g         0
+  __kernel_flginib_table
+                                  000a593e         4   data ,g         0
+  __kernel_tmax_dtqid
+                                  000a5942         2   data ,g         0
+  __kernel_dtqinib_table
+                                  000a5944         6   data ,g         0
+  __kernel_tmax_pdqid
+                                  000a594a         2   data ,g         0
+  __kernel_pdqinib_table
+                                  000a594c         8   data ,g         0
+  __kernel_tmax_mbxid
+                                  000a5954         2   data ,g         0
+  __kernel_mbxinib_table
+                                  000a5956         4   data ,g         0
+  __kernel_tmax_mpfid
+                                  000a595a         2   data ,g         0
+  __kernel_mpfinib_table
+                                  000a595c         a   data ,g         0
+  __kernel_tmax_cycid
+                                  000a5966         2   data ,g         0
+  __kernel_cycinib_table
+                                  000a5968         e   data ,g         0
+  __kernel_tmax_almid
+                                  000a5976         2   data ,g         0
+  __kernel_alminib_table
+                                  000a5978         a   data ,g         0
+  __kernel_tnum_inhno
+                                  000a57f8         2   data ,g         0
+  __kernel_inhinib_table
+                                  000a57fa        18   data ,g         0
+  __kernel_tnum_intno
+                                  000a5812         2   data ,g         0
+  __kernel_intinib_table
+                                  000a5814        12   data ,g         0
+  __kernel_tnum_excno
+                                  000a5982         2   data ,g         0
+  __kernel_excinib_table
+                                  000a5984         8   data ,g         0
+  __kernel_istksz
+                                  000a58a6         4   data ,g         0
+  __kernel_istk
+                                  000a58aa         2   data ,g         0
+  __kernel_istkpt
+                                  000a598c         2   data ,g         0
+  _intpri_table
+                                  000a5826        80   data ,g         0
+
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/m16c62p_config
+                                  000a59b2  000a5a31        80
+  __kernel_intc_reg
+                                  000a59b2        80   data ,g         0
+
+SECTION=vvector
+FILE=start
+                                  000fa000  000fa000         0
+  VVECTOR_TOP
+                                  000fa000         0   none ,g         0
+

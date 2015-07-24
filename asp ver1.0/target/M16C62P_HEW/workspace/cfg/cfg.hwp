@@ -1,0 +1,211 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"2.8" 
+[PROJECT_DETAILS]
+"cfg" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg\cfg.hwp" "M16C" "Renesas M16C Standard" "Application" "M16C/60" "M16C/62P" 
+[INFORMATION]
+"プロジェクト情報がありません" 
+[TOOL_CHAIN]
+"Renesas M16C Standard Toolchain" "5.45.01" 
+[CONFIGURATIONS]
+"Release" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg\Release" 
+[BUILD_PHASES]
+"Generate cfg1_out.c" 0 
+"Generate kernel_cfg.c(.h)" 0 
+"Renesas M16C Assembler" 1 
+"Renesas M16C C Compiler" 1 
+"Renesas M16C Configurator" 1 
+"Renesas M16C ConfiguratorR8C" 1 
+"Renesas M16C Librarian" 1 
+"Renesas M16C Linker" 1 
+"Renesas M16C Stype Converter" 1 
+[TOOL_ENVIRONMENT]
+[EXTENSIONS]
+"Absolute file" "X30" 
+"Absolute list file" "ALS" 
+"Assembler error tag file" "ATG" 
+"Assembly include file" "INC" 
+"Assembly list file" "LST" 
+"Assembly source file" "A30" 
+"Branch Information file" "JIN" 
+"C header file" "H" 
+"C source file" "C" 
+"Configuration file" "CFG" 
+"Cross reference file" "XRF" 
+"Hex file" "HEX" 
+"ID file" "ID" 
+"Library file" "LIB" 
+"Library list file" "LLS" 
+"Linkage error tag file" "LTG" 
+"Linkage map file" "MAP" 
+"Preprocessed C source file" "I" 
+"Relocatable file" "R30" 
+"S-Record file" "MOT" 
+"Sni file" "SNI" 
+"Systemcall file" "MRC" 
+[FILE_GROUPS]
+"Absolute file" "BIN" "NONE" "" 
+"Absolute list file" "TEXT" "EDITOR" "" 
+"Assembler error tag file" "TEXT" "EDITOR" "" 
+"Assembly include file" "TEXT" "EDITOR" "" 
+"Assembly list file" "TEXT" "EDITOR" "" 
+"Assembly source file" "TEXT" "EDITOR" "" 
+"Branch Information file" "TEXT" "EDITOR" "" 
+"C header file" "TEXT" "EDITOR" "" 
+"C source file" "TEXT" "EDITOR" "" 
+"Configuration file" "TEXT" "EDITOR" "" 
+"Cross reference file" "TEXT" "EDITOR" "" 
+"Hex file" "TEXT" "EDITOR" "" 
+"ID file" "TEXT" "EDITOR" "" 
+"Library file" "BIN" "NONE" "" 
+"Library list file" "TEXT" "EDITOR" "" 
+"Linkage error tag file" "TEXT" "EDITOR" "" 
+"Linkage map file" "TEXT" "EDITOR" "" 
+"Preprocessed C source file" "TEXT" "EDITOR" "" 
+"Relocatable file" "BIN" "NONE" "" 
+"S-Record file" "TEXT" "EDITOR" "" 
+"Sni file" "TEXT" "EDITOR" "" 
+"Systemcall file" "TEXT" "EDITOR" "" 
+[ASSOCIATED_APPLICATIONS]
+[TOOLCHAIN_PHASE]
+"Renesas M16C Assembler" 
+"Renesas M16C C Compiler" 
+"Renesas M16C Configurator" 
+"Renesas M16C ConfiguratorR8C" 
+"Renesas M16C Librarian" 
+"Renesas M16C Linker" 
+"Renesas M16C Stype Converter" 
+[UTILITY_PHASE]
+[CUSTOM_PHASES]
+"Generate cfg1_out.c" "cfg_pass1.bat" "$(PROJDIR)" 0 0 1 
+"Generate kernel_cfg.c(.h)" "$(PROJDIR)\cfg_pass2.bat" "$(PROJDIR)" 0 0 1 
+[CUSTOM_PHASE_INPUT_GROUP]
+[CUSTOM_PHASE_OUTPUT_SYNTAX]
+[ENVIRONMENT_Generate cfg1_out.c]
+[ENVIRONMENT_Generate kernel_cfg.c(.h)]
+[BUILD_ORDER]
+"Generate cfg1_out.c" 1 
+"Renesas M16C C Compiler" 1 
+"Renesas M16C Assembler" 1 
+"Renesas M16C Linker" 1 
+"Renesas M16C Stype Converter" 1 
+"Generate kernel_cfg.c(.h)" 1 
+"Renesas M16C Librarian" 0 
+"Renesas M16C Configurator" 0 
+"Renesas M16C ConfiguratorR8C" 0 
+[BUILD_PHASE_DETAILS]
+"Renesas M16C Assembler" "Assembly source file" 1 
+"Renesas M16C C Compiler" "C source file" 1 
+"Renesas M16C Configurator" "Configuration file" 0 
+"Renesas M16C ConfiguratorR8C" "Configuration file" 0 
+"Renesas M16C Librarian" "Relocatable file" 0 
+"Renesas M16C Linker" "Relocatable file" 0 
+"Renesas M16C Stype Converter" "Absolute file" 0 
+[BUILD_FILE_ORDER_Assembly source file]
+"Renesas M16C Assembler" 1 
+[BUILD_FILE_ORDER_C source file]
+"Renesas M16C C Compiler" 1 
+[SCRAP]
+"Project Generator Setup File" "" 
+[MAPPINGS]
+"Absolute file" "Renesas M16C Stype Converter" "Renesas M16C Linker" 
+"Assembly source file" "Renesas M16C Assembler" "Renesas M16C C Compiler" 
+"Relocatable file" "Renesas M16C Librarian" "Renesas M16C Assembler" 
+"Relocatable file" "Renesas M16C Librarian" "Renesas M16C C Compiler" 
+"Relocatable file" "Renesas M16C Linker" "Renesas M16C Assembler" 
+"Relocatable file" "Renesas M16C Linker" "Renesas M16C C Compiler" 
+[PROJECT_FILES]
+"C:\WorkSpace\asp\Apli\job.cfg" "User" "Configuration file" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg\cfg1_out.c" "User" "C source file" 2 
+[FOLDER]
+"C source file" "C source file" 
+"Configuration file" "Configuration file" 
+[GENERAL_DATA_PROJECT]
+"FDT_AutoConnect" "0" 
+"FDT_BaseDevice" "" 
+"FDT_BaudRate" "" 
+"FDT_BlockLockConnect" "1" 
+"FDT_BlockLockDisconnect" "1" 
+"FDT_BootMode" "TRUE" 
+"FDT_CKM" "0" 
+"FDT_CKP" "0" 
+"FDT_ClockMode" "-1" 
+"FDT_ClockSync" "00000000" 
+"FDT_Comments" "" 
+"FDT_ConnectionResetSuppression" "FFFFFFFF" 
+"FDT_Device" "" 
+"FDT_DoReadbackVerification" "No" 
+"FDT_DoSecurityProtection" "Prompt" 
+"FDT_DoSecurityProtectionLevel" "00" 
+"FDT_Frequency" "0.0000" 
+"FDT_Interface" "" 
+"FDT_InternalClock" "FALSE" 
+"FDT_KernelPath" "" 
+"FDT_KernelResident" "FALSE" 
+"FDT_McuId" "0" 
+"FDT_MessageLevel" "1" 
+"FDT_PinOutputs" "00000000" 
+"FDT_PinSettings" "00000000" 
+"FDT_Port" "" 
+"FDT_Protection" "1" 
+"FDT_Protocol" "" 
+"FDT_ReinterrogateGenericDevice" "No" 
+"FDT_ResetOnDisconnect" "No" 
+"FDT_ResetPinOutputs" "00000000" 
+"FDT_ResetPinSettings" "00000000" 
+"FDT_UPMPinSettings" "00000000" 
+"FDT_UseDefaultBaudRate" "FALSE" 
+"FDT_UseInternalKernel" "TRUE" 
+"FDT_UserPinOutputs" "00000000" 
+"FDT_UserPinSettings" "00000000" 
+"USE_CUSTOM_LINKAGE_ORDER" "0" 
+[ON_DEMAND_COMPONENTS_LOADED]
+[SYNC_SESSION_NAMES]
+[SESSIONS]
+"DefaultSession" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg\DefaultSession.hsf" 0 
+[GENERAL_DATA_SESSION_DefaultSession]
+[OPTIONS_Release_Generate cfg1_out.c]
+"Single Shot" "08627c31230adc10" 1 
+[OPTIONS_Release_Generate kernel_cfg.c(.h)]
+"Single Shot" "08627c31230adc10" 6 
+[OPTIONS_Release_Renesas M16C Assembler]
+"Assembly source file" "08627c31230adc10" 3 
+[OPTIONS_Release_Renesas M16C C Compiler]
+"C source file" "0451db8a8f9adc10" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg\cfg1_out.c" "0451db8a8f9adc10" 2 
+[OPTIONS_Release_Renesas M16C Configurator]
+"Single Shot" "08627c31230adc10" 8 
+[OPTIONS_Release_Renesas M16C ConfiguratorR8C]
+"Single Shot" "08627c31230adc10" 8 
+[OPTIONS_Release_Renesas M16C Librarian]
+"Single Shot" "08627c31230adc10" 7 
+[OPTIONS_Release_Renesas M16C Linker]
+"Single Shot" "08627c31230adc10" 4 
+[OPTIONS_Release_Renesas M16C Stype Converter]
+"Single Shot" "08627c31230adc10" 5 
+[OPTIONS_Release]
+"" 0 
+"$(WORKSPDIR)\..\..\.." 1 
+"$(WORKSPDIR)\..\..\.. Release" 6 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 8 
+"[V|VERSION|1] [B|STARTUPLINK|1] [B|DEBUG|1] [B|MAP-S|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).x30^"] [S|INPUTLIBRARY|^"L=nc30lib^"] " 4 
+"[V|VERSION|1] [S|FORMAT|STYPE] [B|DATALENGTH|1] [S|OUTPUT|^"$(CONFIGDIR)\cfg1_out.srec^"]
+" 5 
+"[V|VERSION|1] [S|INCLUDE|^"$(WORKSPDIR)\..\..\..\arch^"|^"$(WORKSPDIR)\..\..\..\kernel^"|^"$(WORKSPDIR)\..\..\..\include^"|^"$(WORKSPDIR)\..\..\..\target\M16C62P_HEW^"|^"$(WORKSPDIR)\..\..\..\pdic^"|^"$(WORKSPDIR)\..\..\..^"|^"$(WORKSPDIR)\..\..\..\Apli^"] [S|OUTPUT|OBJECTCODE] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] [B|WALL|1]
+" 2 
+"[V|VERSION|1] [S|LIST|L|M] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] " 3 
+"[V|VERSION|1] [S|MODE|CREATE|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] " 7 
+[DEPENDENCIES_Release_Generate cfg1_out.c]
+[DEPENDENCIES_Release_Generate kernel_cfg.c(.h)]
+[OUTPUT_FILES_Release_Generate cfg1_out.c]
+[OUTPUT_FILES_Release_Generate kernel_cfg.c(.h)]
+[EXCLUDED_FILES_Release]
+[LINKAGE_ORDER_Release]
+[GENERAL_DATA_CONFIGURATION_Release]
+[GENERAL_DATA_CONFIGURATION_SESSION_Release_DefaultSession]
+[SESSION_DATA_CONFIGURATION_SESSION_Release_DefaultSession]
+"MEMORY_MAPPING_OPTIONS" "" 
+[EXT_DEBUGGER_INFO]
+0 "" "" "" "" 
+[END]

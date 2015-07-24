@@ -1,0 +1,12 @@
+-I"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\..\..\..\arch"
+-I"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\..\..\..\kernel"
+-I"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\..\..\..\include"
+-I"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\..\..\..\target\M16C62P_HEW"
+-I"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\..\..\..\pdic"
+-I"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\..\..\.."
+-I"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\..\..\..\Apli"
+-c
+-finfo
+-dir "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg\Release"
+-Wall
+"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg\cfg1_out.c"

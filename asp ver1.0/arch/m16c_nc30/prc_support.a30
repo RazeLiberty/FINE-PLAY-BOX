@@ -1,0 +1,487 @@
+;*
+;*   TOPPERS/ASP Kernel
+;*       Toyohashi Open Platform for Embedded Real-Time Systems/
+;*       Advanced Standard Profile Kernel
+;*  
+;*   Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+;*                               Toyohashi Univ. of Technology, JAPAN
+;*   Copyright (C) 2005,2006 by Embedded and Real-Time Systems Laboratory
+;*               Graduate School of Information Science, Nagoya Univ., JAPAN
+;*   Copyright (C) 2008 by Witz Corporation, JAPAN
+;*
+;*  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+;*  によって公表されている GNU General Public License の Version 2 に記
+;*  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+;*  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+;*  利用と呼ぶ）することを無償で許諾する．
+;*  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+;*      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+;*      スコード中に含まれていること．
+;*  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+;*      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+;*      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+;*      の無保証規定を掲載すること．
+;*  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+;*      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+;*      と．
+;*    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+;*        作権表示，この利用条件および下記の無保証規定を掲載すること．
+;*    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+;*        報告すること．
+;*  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+;*      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+;*
+;*  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+;*  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+;*  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+;*  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+;* 
+
+
+;
+;	プロセッサ依存モジュール アセンブリ言語部（M16C用）
+;
+
+;
+;  offset.inc はTCBの先頭からメンバまでのオフセット定義ファイル
+;
+	.include	offset.inc
+	
+	.glb	__kernel_istkpt
+	
+	.glb	__kernel_p_runtsk
+	.glb	__kernel_p_schedtsk
+	.glb	__kernel_reqflg
+	.glb	__kernel_dspflg
+
+	.glb	__kernel_dispatch
+	.glb	__exit_and_dispatch
+	.glb	__kernel_start_r
+	.glb	__kernel_call_texrtn
+	.glb	_kernel_interrupt
+	.glb	_kernel_exception
+	.glb	__kernel_intnest
+	.glb	__kernel_call_exit_kernel
+	.glb	__kernel_start_dispatch
+	.glb	__kernel_exit_kernel
+
+	.glb	$_kernel_log_inh_enter
+	.glb	$_kernel_log_inh_leave
+	.glb	$_kernel_log_exc_enter
+	.glb	$_kernel_log_exc_leave
+	.glb	$_kernel_log_dsp_leave
+	.glb	$_kernel_log_dsp_enter
+	.glb	_ext_tsk
+	
+;
+;	教育ツール用のシンボル外部公開
+;
+	.glb	__kernel_break_wait
+
+	.section	program, code, align
+;
+;	タスクディスパッチャ
+;
+;   dispatch は，タスクコンテキスト状態・割込み禁止状態で呼び出さなけ
+;   ればならない．exit_and_dispatch も，タスクコンテキスト状態・割込
+;   み禁止状態で呼び出すのが原則であるが，カーネル起動時に対応するため，
+;   割込みモードで呼び出した場合にも対応している．
+;	呼び出し条件: IPL=0, FLGレジスタIビット=0 (CPUロック状態),
+;			intnest = 0(タスクコンテキスト), タスクスタック
+;
+__kernel_dispatch:
+	pushm	sb,fb										; スタックへレジスタ保存
+	mov.w	__kernel_p_runtsk, a0
+	stc		isp, TCB_sp[a0]				; スタックポインタをTCBに保存
+	mov.w	#(dispatch_r & 0FFFFH), TCB_pc[a0]			; 実行再開番地をTCBに保存(下位16ビット)
+	mov.b	#((dispatch_r >> 16) & 0FFH), TCB_pc+2[a0]	; 上位4ビット
+	jmp.b	dispatcher
+
+;	呼び出し条件: IPL=0, FLGレジスタIビット=0 (CPUロック状態),
+;			intnest = 0(タスクコンテキスト), タスクスタック
+;
+;	a0 にはp_runtsk のアドレスが格納されている
+;
+dispatch_r:
+	mov.b	TCB_enatex[a0], r0l
+	btst	TCB_enatex_bit, r0			; タスク例外処理許可?
+	jz		dispatch_r_1				; 許可でなければ dispatch_r_1 へ
+	mov.w	TCB_texptn[a0], r0			; 保留例外要因があるか？
+	jz		dispatch_r_1				; なければ dispatch_r_1 へ
+	jsr.a	__kernel_call_texrtn		; タスク例外ハンドラへ
+dispatch_r_1:							; タスク例外を実行しない場合
+	popm	sb,fb						; タスクスタックからレジスタ復帰
+	rts									; dispatch 呼び出し元へ戻る.
+
+
+;
+;	タスク起動時処理
+;
+;	ここでは, CPUロック解除状態にし, タスクを起動する.
+;
+;	呼出条件: FLGレジスタIビット=0 (CPUロック状態), タスクスタック
+;		IPL=0, タスクコンテキスト(intnest=0)
+;
+__kernel_start_r:
+	ldc		#0000H, flg 	; 割込み許可, Iフラグ=1, IPL=0
+	; a0にはp_runtskが入っている
+	mov.w	a0 , r1
+	mov.w	TCB_tinib+2[a0], a1
+	mov.w	TCB_tinib[a0], a0
+	
+	adc.w	#TINIB_exinf , a0
+	adcf.w	a1
+	lde.w	[a1a0] , r2
+	adc.w	#2 , a0
+	adcf.w	a1
+	lde.w	[a1a0] , r0
+	push.b	r0h
+	push.b	r0l
+	mov.w	r2 , r0
+	push.b	r0h
+	push.b	r0l
+	
+	mov.w	#(_ext_tsk & 0FFFFH), r0
+	mov.w	#((_ext_tsk >> 16) & 0FFH), r2
+	add.b		#-3 , sp
+	ldc		#0000H, flg 	; 割込み許可, Iフラグ=1, IPL=0
+	mov.b	r0l , 0[sp]
+	mov.b	r0h , 1[sp]
+	mov.w	r2 , r0
+	mov.b	r0l , 2[sp]
+
+	mov.w	r1 , a0
+	mov.w	TCB_tinib+2[a0], a1
+	mov.w	TCB_tinib[a0], a0
+	adc.w	#TINIB_task , a0
+	adcf.w	a1
+	lde.w	[a1a0] , r0
+	adc.w	#2 , a0
+	adcf.w	a1
+	lde.w	[a1a0] , r2
+
+	ldc		#0040H, flg 	; 割込み許可, Iフラグ=1, IPL=0
+	jmpi.a	r2r0			; タスク起動
+
+;
+;	dispatch呼び出し条件:
+;		・すべてのタスクのコンテキストは保存されている.
+;		・FLGレジスタIビット=0 (CPUロック状態)
+;		・コンテキストはカーネル起動時を除きタスクコンテキスト(intnest=0)
+;		起動時は非タスクコンテキスト(intnest=1)で, その場合にも対応.
+;	dispatcher 呼出時のスタック:
+;		__kernel_dispatch からきた場合: タスクスタック
+;		exit_and_dispatch からきた場合: 
+;			exit_task からきた場合はタスクスタック
+;			カーネル起動時は割込みスタック
+;		ret_int からきた場合: 割込みスタック
+;		dispatcher_2 での割込み待ちからきた場合: 割込みスタック
+;
+__kernel_start_dispatch:
+__exit_and_dispatch:
+	fclr	i						; 割込み禁止
+	mov.b	#0, __kernel_intnest	; ネストカウンタクリア
+dispatcher:
+	mov.w	__kernel_p_schedtsk, a0
+.if	LOG_DSP_ENTER == 1
+	mov.w	a0, r1					; 引数(p_schedtsk)をr1に
+	push.w	a0						; a0退避
+	jsr		$_kernel_log_dsp_enter
+	pop.w	a0
+.endif
+	mov.w	a0, __kernel_p_runtsk	; p_schedtsk を p_runtsk に
+	jz		dispatcher_1			; schedtsk がなければ割込み待ち
+	ldc		TCB_sp[a0], isp			; タスクスタックポインタを復帰
+.if	LOG_DSP_LEAVE == 1
+	mov.w	a0, r1					; 引数(p_schedtsk)をr1に
+	push.w	a0						; a0退避
+	jsr		$_kernel_log_dsp_leave
+	pop.w	a0
+.endif
+	mov.w	TCB_pc+2[a0], r2		; 実行再開番地へジャンプ
+	mov.w	TCB_pc[a0], r0
+	jmpi.a	r2r0
+;
+;	schdedtskがNULLの場合はアイドルループに入る
+;
+dispatcher_1:
+	mov.w	#(__kernel_istkpt & 0FFFFH), a0			; 割込み用のスタックへ切替え
+	mov.w	#((__kernel_istkpt >> 16) & 0FFFFH), a1	; 上位4バイト
+	lde.w	[a1a0], r0
+	ldc		r0,isp					; 割り込みスタックポインタセット
+	inc.b	__kernel_intnest		; 非タスクコンテキスト
+dispatcher_2:
+	fset	i						; 割込み待ち
+	.IF USE_KD3083 != 1				; KD3083を使用するときはwait命令を使わない
+	wait
+	.ENDIF
+	nop
+	nop
+	nop
+	nop
+;
+;	ここで非タスクコンテキスト,割込みスタックに切り換えたのは,
+;	ここで発生する割込み処理にどのスタックを使うかという問題の解決と,
+;	割込みハンドラ内でのディスパッチ防止という2つの意味がある．
+;
+	fclr	i					; 割込み禁止
+	mov.w	__kernel_reqflg, r0	; reqflg が false なら
+	jz		dispatcher_2		; dispatcher_2 へ
+	mov.w	#0, __kernel_reqflg	; reqflgがtrueならfalseにする
+	dec.b	__kernel_intnest	; タスクコンテキストに戻す
+	jmp.b	dispatcher			; dispatcher へ戻る
+
+
+;
+;  割込みハンドラ/CPU例外ハンドラ出口処理
+;
+;	呼出し条件:
+;	・FLGレジスタのIビット=0, IPL=0, タスクコンテキスト(intnest=0)
+;	・使用スタックはタスクスタック, reqflg = true
+;
+ret_int:
+	ldipl	#0							; タスクのIPL値をセット(IPL=0)
+
+	mov.w	#0, __kernel_reqflg			; reqflg <--- false
+	mov.w	__kernel_p_runtsk, a0		; すぐ ret_int_r にジャンプする場合があるのでここでセット
+	mov.w	__kernel_dspflg, r0			; dspflg が false なら
+	jz		ret_int_r					; ret_int_r へ
+	mov.w	__kernel_p_schedtsk, a1 	; p_schedtskと
+	cmp.w	a0, a1						; runtsk が同じなら
+	jeq		ret_int_r					; ret_int_r へ
+	mov.w	a0, r2						; runtsk = NULL なら
+	jz		dispatcher					; 保存せずdispatherへ
+	stc		isp, TCB_sp[a0]				; タスクスタックを保存
+	mov.w	#(ret_int_r & 0FFFFH), TCB_pc[a0]			; 実行再開番地を保存(下位16ビット)
+	mov.b	#((ret_int_r >> 16) & 0FFH), TCB_pc+2[a0]	; 実行再開番地を保存(上位4ビット))
+	jmp.b	dispatcher
+
+__kernel_break_wait:
+ret_int_r:
+	mov.b	TCB_enatex[a0],r0l		; enatex が false ならリターン
+	btst	TCB_enatex_bit,r0
+	jz		ret_int_r_1
+	mov.w	TCB_texptn[a0],r0		; texptn が 0 ならばリターン
+	jz		ret_int_r_1
+	jsr.a	__kernel_call_texrtn	; タスク例外処理ルーチンの呼出し
+ret_int_r_1:
+	popm	r0,r1,r2,r3,a0,a1,sb,fb	; スタックからレジスタを復帰
+	reit							; タスクへ戻る
+
+
+;
+;	割込み/CPU例外の出入口処理(アセンブリ言語記述部分)
+;
+;	呼出し条件:
+;	・FLGレジスタのIビット=0, IPLは受付けた割込みのIPL.
+;	・スタックは多重割り込みなら割込みスタック, そうでなければ
+;	  タスクスタック
+;	・r1, r3 には割込み/CPU例外ハンドラのアドレスが格納されている.
+;	・r0 には割込み/CPU例外ハンドラ番号が格納されている.
+;
+;	CPU例外出入り口処理ではCPU例外ハンドラに渡すVP型の変数 p_excinf
+;	としてISPの値を常に渡す処理を行っている．
+;	ポインタ変数はデフォルトでfarポインタなのでVP型は4バイトサイズの
+;	ポインタとなり, 引数をスタックで渡すことになる.
+;
+;	レジスタがスタック上にどのように保存されているかを以下に示す.
+;	この図では上が低位, 下が高位のアドレスで, スタックは下から
+;	上方向に向かって積み上げられるものとする.
+;
+;	--------------------------------------
+;	|              R0(2byte)             | <--- p_excinf
+;	|                                    |
+;	--------------------------------------
+;	|              R1(2byte)             |
+;	|                                    |
+;	--------------------------------------
+;	|              R2(2byte)             |
+;	|                                    |
+;	--------------------------------------
+;	|              R3(2byte)             |
+;	|                                    |
+;	--------------------------------------
+;	|              A0(2byte)             |
+;	|                                    |
+;	--------------------------------------
+;	|              A1(2byte)             |
+;	|                                    |
+;	--------------------------------------
+;	|              SB(2byte)             |
+;	|                                    |
+;	--------------------------------------
+;	|              FB(2byte)             |
+;	|                                    |
+;	--------------------------------------
+;	|           PCの下位2バイト          |
+;	|                                    |
+;	--------------------------------------
+;	|          FLGの下位1バイト          |
+;	--------------------------------------
+;	|  FLGの上位4ビット/PCの上位4ビット  |
+;	--------------------------------------
+;	ハンドラからリターンした後は, 多重割込みでなく, かつ reqflg が
+;	true になった時に，ret_int へ分岐する．
+;
+;	多重割込みかどうかは割込みネストカウンタの値で判定する.
+;	intnest != 0 ならば多重割込みであると判定する.
+;
+;	reqflg はCPUロック状態でチェックする. そうでないと，
+;	reqflg チェック後に起動された割込みハンドラ内で
+;	ディスパッチが要求された場合に，ディスパッチされない.
+;
+_kernel_interrupt:
+	cmp.b		#0, __kernel_intnest	; 多重割り込みかどうか
+	jnz			int_from_int			; 0でなければ多重割込み
+	; 初段の割込み
+	stc			isp, r2					; スタックポインタを取り出し
+	mov.w		#(__kernel_istkpt & 0FFFFH), a0		; a1a0にspを退避
+	mov.w		#((__kernel_istkpt >> 16) & 0FFFFH), a1
+	lde.w		[a1a0],a0				; spの中身をa0にセット
+	ldc			a0,isp					; 割り込みスタックポインタセット
+
+;	呼出し前の使用レジスタ
+;		r1, r3 : 割込み/例外ハンドラ
+;		r2     : タスクスタックポインタ
+;		r0     : 割込み/例外番号
+;		a0     : 割込みスタック先頭番地
+int_from_int:							; 多重割込み
+	push.w		r2						; タスクスタックを退避
+	inc.b		__kernel_intnest		; ネスト回数をインクリメント
+	fset		i						; 割込み禁止解除
+.if	LOG_INH_ENTER == 1
+	mov.w		r1, a1					; r1を退避
+	mov.w		r0, a0					; r0を退避
+	mov.w		r0, r1					; 割込み番号をr1に(引数レジスタ渡し)
+	pushm		a0, a1, r3
+	jsr			$_kernel_log_inh_enter	; ログトレース関数の呼出し
+	popm		a0, a1, r3
+	mov.w		a1, r1					; r1を復帰
+.endif
+	jsri.a		r3r1					; Cルーチン呼び出し
+.if	LOG_INH_LEAVE == 1
+	mov.w		a0, r1					; 割込み番号をr1に(引数レジスタ渡し)
+	jsr			$_kernel_log_inh_leave	; ログトレース関数の呼出し
+.endif
+	fclr		i						; 割込み禁止
+
+;	呼出し前の使用レジスタ
+;		スタック: タスクスタックポインタ
+after_interrupt:
+	pop.w		r2						; タスクスタックを復帰
+	dec.b		__kernel_intnest		; ネスト回数をデクリメント
+	jnz			int_return				; 多重割り込みならリターン
+	; 初段の割込み
+	ldc			r2, isp					; タスクのスタックに戻す
+	mov.w		__kernel_reqflg, r0		; ディスパッチ要求がないか?
+	jnz			ret_int					; あれば ret_int へジャンプ
+int_return:
+	popm		r0,r1,r2,r3,a0,a1,sb,fb	; レジスタ復帰
+	reit								; 割込み前の処理に戻る
+
+;	呼出し前の使用レジスタ
+;		r0, r2 : 割込み/例外ハンドラ
+;		r3     : 割込み/例外番号
+_kernel_exception:
+	stc			isp, r1					; スタックポインタを取り出す
+	cmp.b		#0, __kernel_intnest	; 多重割り込みかどうか
+	jnz			exc_from_int			; 多重割込みならexc_from_intへ
+	; 初段の割込み
+	mov.w		#(__kernel_istkpt & 0FFFFH), a0		; a1a0にspを退避
+	mov.w		#((__kernel_istkpt >> 16) & 0FFFFH), a1
+	lde.w		[a1a0], a0				; spの中身をa0にセット
+	ldc			a0,isp					; 割り込みスタックポインタセット
+;	呼出し前の使用レジスタ
+;		r1, r3 : 割込み/例外ハンドラ
+;		r2     : スタックポインタ
+;		r0     : 割込み/例外番号
+exc_from_int:							; 多重割込み
+	inc.b		__kernel_intnest		; ネスト回数をインクリメント
+	push.w		r1						; スタックポインタを割込みスタックへ保存
+	fset		i						; 割込み禁止解除
+.if	LOG_EXC_LEAVE == 1
+	push.w		r0
+.endif
+.if	LOG_EXC_ENTER == 1
+	pushm		a0, r1
+	jsr			$_kernel_log_exc_enter	; ログトレース関数の呼出し
+	popm		a0, r1
+.endif
+	jsri.a		r2r0					; Cルーチン呼び出し
+.if	LOG_EXC_LEAVE == 1
+	pop.w		r1
+	jsr			$_kernel_log_exc_leave	; ログトレース関数の呼出し
+.endif
+	fclr		i						; 割込み禁止
+;	add.w		#04H,sp					; 引数使用分戻す
+	jmp.b		after_interrupt			; 後処理へ
+
+
+__kernel_call_exit_kernel:
+	mov.w	#(__kernel_istkpt & 0FFFFH), a0			; 下位16ビット
+	mov.w	#((__kernel_istkpt >> 16) & 0FFFFH), a1	; 上位4ビット
+	lde.w	[a1a0], r0				; アドレスの中身をR0レジスタに格納
+	ldc		r0,isp					; 割り込みスタックポインタセット
+	jsr		__kernel_exit_kernel
+	jmp.b	__kernel_call_exit_kernel
+
+	; 未使用割込みの処理
+	.glb _unused_interrupt
+_unused_interrupt:
+	reit
+
+;
+;  微少時間待ち
+;
+	.glb	SIL_DLY_TIM1
+	.glb	SIL_DLY_TIM2
+	.glb	_sil_dly_nse
+_sil_dly_nse:
+	mov.w	3H:8[sp] , r0
+	mov.w	5H:8[sp] , r2
+	sub.w	#(SIL_DLY_TIM1 & 0FFFFH), r0	; 下位16ビットの計算
+	jgtu	_sil_dly_nse_1
+	jz		_sil_dly_nse_2
+
+; 下位16ビットが負		→(上位-1)が負ならリターン
+	sub.w	#(((SIL_DLY_TIM1 >> 16) - 1) & 0FFFFH), r2
+	jltu	sil_dly_nse_ret
+	jmp		sil_dly_nse_loop
+; 下位16ビットが0より大	→上位が負ならリターン
+_sil_dly_nse_1:
+	sub.w	#((SIL_DLY_TIM1 >> 16) & 0FFFFH), r2
+	jltu	sil_dly_nse_ret
+	jmp		sil_dly_nse_loop
+; 下位16ビットが0		→上位が0以下ならリターン
+_sil_dly_nse_2:
+	sub.w	#((SIL_DLY_TIM1 >> 16) & 0FFFFH), r2
+	jleu	sil_dly_nse_ret
+
+; dlytim - SIL_DLY_TIM1 > 0より大きい場合
+sil_dly_nse_loop:
+	sub.w	#(SIL_DLY_TIM2 & 0FFFFH), r0	; 下位16ビットの計算
+	jgtu	sil_dly_nse_loop_1
+	jz		sil_dly_nse_loop_2
+
+; 下位16ビットが負		→(上位-1)が負ならリターン
+	sub.w	#(((SIL_DLY_TIM2 >> 16) - 1) & 0FFFFH), r2
+	jltu	sil_dly_nse_ret
+	jmp		sil_dly_nse_loop
+; 下位16ビットが0より大	→上位が負ならリターン
+sil_dly_nse_loop_1:
+	sub.w	#((SIL_DLY_TIM2 >> 16) & 0FFFFH), r2
+	jltu	sil_dly_nse_ret
+	jmp		sil_dly_nse_loop
+; 下位16ビットが0		→上位が0以下ならリターン
+sil_dly_nse_loop_2:
+	sub.w	#((SIL_DLY_TIM2 >> 16) & 0FFFFH), r2
+	jleu	sil_dly_nse_ret
+	jmp		sil_dly_nse_loop
+
+sil_dly_nse_ret:
+	rts
+
+	.end
+
+
+	

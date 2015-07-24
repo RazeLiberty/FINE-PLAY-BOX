@@ -1,0 +1,107 @@
+;*
+;*   TOPPERS/ASP Kernel
+;*       Toyohashi Open Platform for Embedded Real-Time Systems/
+;*       Advanced Standard Profile Kernel
+;*  
+;*   Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+;*                               Toyohashi Univ. of Technology, JAPAN
+;*   Copyright (C) 2005,2006 by Embedded and Real-Time Systems Laboratory
+;*               Graduate School of Information Science, Nagoya Univ., JAPAN
+;*   Copyright (C) 2008 by Witz Corporation, JAPAN
+;* 
+;*  上記著作権者は，Free Software Foundation によって公表されている 
+;*  GNU General Public License の Version 2 に記述されている条件か，以
+;*  下の(1)～(4)の条件を満たす場合に限り，本ソフトウェア（本ソフトウェ
+;*  アを改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+;*  利用と呼ぶ）することを無償で許諾する．
+;*  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+;*      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+;*      スコード中に含まれていること．
+;*  (2) 本ソフトウェアを再利用可能なバイナリコード（リロケータブルオブ
+;*      ジェクトファイルやライブラリなど）の形で利用する場合には，利用
+;*      に伴うドキュメント（利用者マニュアルなど）に，上記の著作権表示，
+;*      この利用条件および下記の無保証規定を掲載すること．
+;*  (3) 本ソフトウェアを再利用不可能なバイナリコードの形または機器に組
+;*      み込んだ形で利用する場合には，次のいずれかの条件を満たすこと．
+;*    (a) 利用に伴うドキュメント（利用者マニュアルなど）に，上記の著作
+;*        権表示，この利用条件および下記の無保証規定を掲載すること．
+;*    (b) 利用の形態を，別に定める方法によって，上記著作権者に報告する
+;*        こと．
+;*  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+;*      害からも，上記著作権者を免責すること．
+;* 
+;*  本ソフトウェアは，無保証で提供されているものである．上記著作権者は，
+;*  本ソフトウェアに関して，その適用可能性も含めて，いかなる保証も行わ
+;*  ない．また，本ソフトウェアの利用により直接的または間接的に生じたい
+;*  かなる損害に関しても，その責任を負わない．
+
+	.section	program, code, align
+
+PRCR  .EQU		000AH			; プロテクトレジスタ
+PRC0  .BTEQU	0,PRCR			; システムクロックレジスタビット
+PRC1  .BTEQU	1,PRCR			; プロセッサモードレジスタビット
+;
+PM0   .EQU		0004H			; プロセッサモードレジスタ０
+PM1   .EQU		0005H			; プロセッサモードレジスタ１
+PM2   .EQU		001EH			; プロセッサモードレジスタ２
+PM2_0 .BTEQU	0,PM2			; 
+;
+CM0   .EQU		0006H			; クロックモードレジスタ０
+CM0_6 .BTEQU	6,CM0			; CM16,17有効
+CM0_7 .BTEQU	7,CM0			; システムクロック
+CM1   .EQU		0007H			; クロックモードレジスタ１
+CM1_1 .BTEQU	1,CM1			; システムクロック
+CM1_6 .BTEQU	6,CM1			; 分周
+CM1_7 .BTEQU	7,CM1			; 
+PLC0  .EQU		001CH			;
+PLC0_7 .BTEQU	7,PLC0			; システムクロック
+CM2   .EQU		000CH			; 発信停止検出レジスタ
+
+C_CM0 .EQU		00001000B		; 
+C_CM1 .EQU		00100010B		; メインクロック分周なし
+C_CM2 .EQU		00000000B		; 発振停止検出機能無効
+C_PLC .EQU		00010010B		; PLL設定
+
+	.glb	_software_init_hook
+	.glb	_hardware_init_hook
+
+_hardware_init_hook:
+; ----- set Processor mode -----
+	bset		PRC1			; プロセッサモードレジスタ書き込みイネーブル
+	mov.b		#00000000b,PM0	; シングルチップモード、BCLK出力しない
+	bclr		PRC1			; プロセッサモードレジスタ書き込みディゼーブル
+; ----- set System clock -----
+	bset		PRC0			; クロックモードレジスタ書き込みディゼーブル
+	bclr		CM0_7			; メインクロック
+	bclr		CM1_6			; 分周なし
+	bclr		CM1_7			;
+	bclr		CM0_6			; CM16,17有効
+	mov.b		#C_PLC,PLC0		; PLL4倍
+	bset		PRC1			; プロセッサモードレジスタ書き込みイネーブル
+	bclr		PM2_0			; ２ウェイト
+	bclr		PRC1			; プロセッサモードレジスタ書き込みディゼーブル
+	bset		PLC0_7			; PLC動作
+;	PLC安定待ち
+	mov.b		#0FFH, r0l
+lockup:
+	dec.b		r0l
+	jnz			lockup
+	bset		CM1_1			; PLLクロック
+	bclr		PRC0			; クロックモードレジスタ書き込みディゼーブル
+	rts
+;
+
+_software_init_hook:
+	rts
+
+
+;
+;  sil_dly_nseで用いる定数値
+;
+	.glb	SIL_DLY_TIM1
+	.glb	SIL_DLY_TIM2
+
+SIL_DLY_TIM1	.EQU	2030
+SIL_DLY_TIM2	.EQU	593
+
+	.end

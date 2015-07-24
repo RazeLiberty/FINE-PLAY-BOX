@@ -1,0 +1,117 @@
+;*by K.H line61-69
+;*   TOPPERS/ASP Kernel
+;*       Toyohashi Open Platform for Embedded Real-Time Systems/
+;*       Advanced Standard Profile Kernel
+;*  
+;*   Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+;*                               Toyohashi Univ. of Technology, JAPAN
+;*   Copyright (C) 2005,2006 by Embedded and Real-Time Systems Laboratory
+;*               Graduate School of Information Science, Nagoya Univ., JAPAN
+;*   Copyright (C) 2008 by Witz Corporation, JAPAN
+;* 
+;*  上記著作権者は，Free Software Foundation によって公表されている 
+;*  GNU General Public License の Version 2 に記述されている条件か，以
+;*  下の(1)～(4)の条件を満たす場合に限り，本ソフトウェア（本ソフトウェ
+;*  アを改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+;*  利用と呼ぶ）することを無償で許諾する．
+;*  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+;*      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+;*      スコード中に含まれていること．
+;*  (2) 本ソフトウェアを再利用可能なバイナリコード（リロケータブルオブ
+;*      ジェクトファイルやライブラリなど）の形で利用する場合には，利用
+;*      に伴うドキュメント（利用者マニュアルなど）に，上記の著作権表示，
+;*      この利用条件および下記の無保証規定を掲載すること．
+;*  (3) 本ソフトウェアを再利用不可能なバイナリコードの形または機器に組
+;*      み込んだ形で利用する場合には，次のいずれかの条件を満たすこと．
+;*    (a) 利用に伴うドキュメント（利用者マニュアルなど）に，上記の著作
+;*        権表示，この利用条件および下記の無保証規定を掲載すること．
+;*    (b) 利用の形態を，別に定める方法によって，上記著作権者に報告する
+;*        こと．
+;*  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+;*      害からも，上記著作権者を免責すること．
+;* 
+;*  本ソフトウェアは，無保証で提供されているものである．上記著作権者は，
+;*  本ソフトウェアに関して，その適用可能性も含めて，いかなる保証も行わ
+;*  ない．また，本ソフトウェアの利用により直接的または間接的に生じたい
+;*  かなる損害に関しても，その責任を負わない．
+;* 
+
+;/*	定数定義（初期化）*/
+;
+
+	.include	sectm16c.inc
+;
+;************************************************
+;*	初期化ルーチン                              *
+;************************************************
+	.section	program, code, align
+	.glb		_start
+	.glb		_sta_ker
+	.glb		_software_init_hook
+	.glb		_hardware_init_hook
+	.glb		__kernel_istkpt
+
+_start:
+	mov.w	#(__kernel_istkpt & 0FFFFH), a0			; 下位16ビット
+	mov.w	#((__kernel_istkpt >> 16) & 0FFFFH), a1	; 上位4ビット
+	lde.w	[a1a0], r0				; アドレスの中身をR0レジスタに格納
+	ldc		r0,isp					; 割り込みスタックポインタセット
+	ldintb	#VVECTOR_TOP			; ベクタテーブルの設定
+
+;------ ハードウェア固有の初期化ルーチンの呼出し(単独実行時必要)
+;	mov.w	#(_hardware_init_hook & 0FFFFH), a0
+;	mov.w	#((_hardware_init_hook >> 16) & 0FFFFH), a1
+;	cmp.w	#0, a0
+;	jnz		hw_init
+;	cmp.w	#0, a1
+;	jz		init_data_NE
+;hw_init:
+;	jsri.a	a1a0
+
+;------ DATA領域の初期化 ------
+init_data_NE:
+	mov.w	#(sizeof data_NE), r3
+	jz		init_data_NO			; サイズ0なら初期化必要なし
+	mov.w	#(topof data_NEI & 0FFFFH), a0
+	mov.b	#((topof data_NEI >> 16) & 000FFH), r1h
+	mov.w	#(topof data_NE), a1
+	smovf.b
+
+init_data_NO:
+	mov.w	#(sizeof data_NO), r3
+	jz		clear_bss				; サイズ0なら初期化必要なし
+	mov.w	#(topof data_NOI & 0FFFFH), a0
+	mov.b	#((topof data_NOI >> 16) & 000FFH), r1h
+	mov.w	#(topof data_NO), a1
+	smovf.b
+
+;------ BSS領域の初期化 ------
+clear_bss:
+	mov.b	#0, r0l
+	mov.w	#(topof bss_NE & 0ffffh), a1
+	mov.w	#(sizeof bss_NE) , r3
+	sstr.b
+
+	mov.w	#(topof bss_NO & 0ffffh), a1
+	mov.w	#(sizeof bss_NO) , r3
+	sstr.b
+
+;*  software_init_hook を呼出し（0 でない場合）
+;*
+;*  ソフトウェア環境（特にライブラリ）に依存して必要な初期化処
+;*  理がある場合は，software_init_hook という関数を用意すれば
+;*  よい．M16Cの場合、コンパイル時EXTERN_SOFT_HOOKをデファインする
+	mov.w	#(_software_init_hook & 0FFFFH), a0
+	mov.w	#((_software_init_hook >> 16) & 0FFFFH), a1
+	cmp.w	#0, a0
+	jnz		sw_init
+	cmp.w	#0, a1
+	jz		kernel_link
+sw_init:
+	jsri.a	a1a0
+;;
+;***** カーネルスタートへ	*****
+kernel_link:
+	jmp		_sta_ker	; --> _sta_ker()
+;
+	.end

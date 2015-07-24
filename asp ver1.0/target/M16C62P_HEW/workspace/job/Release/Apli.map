@@ -1,0 +1,1279 @@
+##########################################
+# (1) LINK INFORMATION                   #
+##########################################
+c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\bin\ln30.exe @C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\Apli.m16cl
+
+# LINK FILE INFORMATION
+start (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\start.r30)
+	Mar  3 17:03:10 2014
+
+banner (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\banner.r30)
+	Mar  3 17:03:09 2014
+
+kernel_cfg (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\kernel_cfg.r30)
+	Mar  3 17:03:10 2014
+
+kernel_cfg_asm (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\kernel_cfg_asm.r30)
+	Mar  3 17:03:10 2014
+
+log_output (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\log_output.r30)
+	Mar  3 17:03:09 2014
+
+logtask (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\logtask.r30)
+	Mar  3 17:03:10 2014
+
+serial (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\serial.r30)
+	Mar  3 17:03:10 2014
+
+strerror (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\strerror.r30)
+	Mar  3 17:03:09 2014
+
+syslog (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\syslog.r30)
+	Mar  3 17:03:10 2014
+
+t_perror (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\t_perror.r30)
+	Mar  3 17:03:09 2014
+
+vasyslog (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\vasyslog.r30)
+	Mar  3 17:03:10 2014
+
+device (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\device.r30)
+	Mar  3 17:03:08 2014
+
+job (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\job.r30)
+	Mar  3 17:03:09 2014
+
+KEY (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\KEY.r30)
+	Mar  3 17:03:07 2014
+
+led (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\led.r30)
+	Mar  3 17:03:08 2014
+
+motorLCD (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\motorLCD.r30)
+	Mar  3 17:03:08 2014
+
+swinput (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\swinput.r30)
+	Mar  3 17:03:08 2014
+
+timer (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\timer.r30)
+	Mar  3 17:03:08 2014
+
+uart (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\uart.r30)
+	Mar  3 17:03:09 2014
+
+_i4divu (c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:38 2010
+
+_i4mod (c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:38 2010
+
+_i4modu (c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:39 2010
+
+dataqueue (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:40 2012
+
+eventflag (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:40 2012
+
+exception (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:40 2012
+
+interrupt (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:40 2012
+
+m16c62p_config (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:39 2012
+
+prc_config (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:39 2012
+
+prc_support (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:44 2012
+
+semaphore (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:41 2012
+
+startup (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:42 2012
+
+sys_manage (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:42 2012
+
+target_config (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:44 2012
+
+target_serial (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:44 2012
+
+target_support (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:45 2012
+
+target_timer (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:44 2012
+
+task (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:42 2012
+
+task_manage (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:42 2012
+
+task_sync (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:43 2012
+
+time_event (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:43 2012
+
+wait (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:44 2012
+
+m16c_ta (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:44 2012
+
+m16c_uart (C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib)
+	Nov 21 17:34:44 2012
+
+_i4div (c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:38 2010
+
+
+##########################################
+# (2) SECTION INFORMATION                #
+##########################################
+# SECTION                        ATR TYPE    START  LENGTH ALIGN MODULENAME
+data_NE                          ABS DATA    000410 000000       start
+                                 REL DATA    000410 00000A 2     KEY
+                                 REL DATA    00041A 000012 2     motorLCD
+                                 REL DATA    00042C 000002 2     startup
+bss_NE                           REL DATA    00042E 000000       start
+                                 REL DATA    00042E 000436 2     kernel_cfg
+                                 REL DATA    000864 000002 2     logtask
+                                 REL DATA    000866 000600 2     serial
+                                 REL DATA    000E66 0003CC 2     syslog
+                                 REL DATA    001232 000004 2     prc_config
+                                 REL DATA    001236 00004C 2     task
+                                 REL DATA    001282 00000C 2     time_event
+                                 REL DATA    00128E 000036 2     m16c_uart
+data_NO                          REL DATA    0012C4 000000       start
+                                 REL DATA    0012C4 000001       motorLCD
+bss_NO                           REL DATA    0012C5 000000       start
+                                 REL DATA    0012C5 000057       serial
+                                 REL DATA    00131C 000006       swinput
+stack                            ABS DATA    007C00 000400       start
+program                          ABS CODE    0A0000 000000       start
+                                 REL CODE    0A0000 00005B 2     start
+                                 REL CODE    0A005C 00005D 2     banner
+                                 REL CODE    0A00BA 000047 2     kernel_cfg
+                                 REL CODE    0A0102 000036 2     kernel_cfg_asm
+                                 REL CODE    0A0138 0003DA 2     log_output
+                                 REL CODE    0A0512 0001EC 2     logtask
+                                 REL CODE    0A06FE 000AF2 2     serial
+                                 REL CODE    0A11F0 0001B5 2     strerror
+                                 REL CODE    0A13A6 000189 2     syslog
+                                 REL CODE    0A1530 000094 2     t_perror
+                                 REL CODE    0A15C4 000199 2     vasyslog
+                                 REL CODE    0A175E 000011 2     device
+                                 REL CODE    0A1770 000107 2     job
+                                 REL CODE    0A1878 0000D1 2     KEY
+                                 REL CODE    0A194A 000065 2     led
+                                 REL CODE    0A19B0 0006B2 2     motorLCD
+                                 REL CODE    0A2062 000074 2     swinput
+                                 REL CODE    0A20D6 000027 2     timer
+                                 REL CODE    0A20FE 000082 2     uart
+                                 REL CODE    0A2180 00004D 2     _i4divu
+                                 REL CODE    0A21CE 000073 2     _i4mod
+                                 REL CODE    0A2242 00004B 2     _i4modu
+                                 REL CODE    0A228E 000F2B 2     dataqueue
+                                 REL CODE    0A31BA 00089B 2     eventflag
+                                 REL CODE    0A3A56 00010D 2     exception
+                                 REL CODE    0A3B64 0002D3 2     interrupt
+                                 REL CODE    0A3E38 000075 2     m16c62p_config
+                                 REL CODE    0A3EAE 0001F9 2     prc_config
+                                 REL CODE    0A40A8 0001A2 2     prc_support
+                                 REL CODE    0A424A 0006FD 2     semaphore
+                                 REL CODE    0A4948 000133 2     startup
+                                 REL CODE    0A4A7C 0003B3 2     sys_manage
+                                 REL CODE    0A4E30 00006B 2     target_config
+                                 REL CODE    0A4E9C 000327 2     target_serial
+                                 REL CODE    0A51C4 000042 2     target_support
+                                 REL CODE    0A5206 00005D 2     target_timer
+                                 REL CODE    0A5264 0007C9 2     task
+                                 REL CODE    0A5A2E 0005A2 2     task_manage
+                                 REL CODE    0A5FD0 00065B 2     task_sync
+                                 REL CODE    0A662C 0004A6 2     time_event
+                                 REL CODE    0A6AD2 000737 2     wait
+                                 REL CODE    0A720A 00020D 2     m16c_ta
+                                 REL CODE    0A7418 0003E2 2     m16c_uart
+                                 REL CODE    0A77FA 000083 2     _i4div
+rom_FE                           REL ROMDATA 0A787E 000000 2     start
+                                 REL ROMDATA 0A787E 00018E 2     banner
+                                 REL ROMDATA 0A7A0C 000162 2     kernel_cfg
+                                 REL ROMDATA 0A7B6E 000024 2     serial
+                                 REL ROMDATA 0A7B92 000080 2     m16c62p_config
+                                 REL ROMDATA 0A7C12 00002A 2     m16c_uart
+rom_FO                           REL ROMDATA 0A7C3C 000000       start
+                                 REL ROMDATA 0A7C3C 00005F       kernel_cfg
+                                 REL ROMDATA 0A7C9B 000061       log_output
+                                 REL ROMDATA 0A7CFC 000044       logtask
+                                 REL ROMDATA 0A7D40 0000A5       strerror
+                                 REL ROMDATA 0A7DE5 00002D       t_perror
+                                 REL ROMDATA 0A7E12 00005F       dataqueue
+                                 REL ROMDATA 0A7E71 00005F       eventflag
+                                 REL ROMDATA 0A7ED0 00005F       exception
+                                 REL ROMDATA 0A7F2F 00005F       interrupt
+                                 REL ROMDATA 0A7F8E 000056       prc_config
+                                 REL ROMDATA 0A7FE4 00005F       semaphore
+                                 REL ROMDATA 0A8043 00002D       startup
+                                 REL ROMDATA 0A8070 00005F       sys_manage
+                                 REL ROMDATA 0A80CF 00001D       target_serial
+                                 REL ROMDATA 0A80EC 000021       target_timer
+                                 REL ROMDATA 0A810D 000082       task
+                                 REL ROMDATA 0A818F 00006F       task_manage
+                                 REL ROMDATA 0A81FE 00005F       task_sync
+                                 REL ROMDATA 0A825D 00004E       time_event
+                                 REL ROMDATA 0A82AB 000094       wait
+                                 REL ROMDATA 0A833F 00004B       m16c_ta
+data_NEI                         REL ROMDATA 0A838A 000000 2     start
+                                 REL ROMDATA 0A838A 00000A       KEY
+                                 REL ROMDATA 0A8394 000012       motorLCD
+                                 REL ROMDATA 0A83A6 000002       startup
+data_NOI                         REL ROMDATA 0A83A8 000000       start
+                                 REL ROMDATA 0A83A8 000001       motorLCD
+vvector                          ABS CODE    0FA000 000000       start
+                                 REL CODE    0FA000 000100       kernel_cfg_asm
+fvector                          ABS CODE    0FFFDC 000000       start
+                                 REL CODE    0FFFDC 000024       kernel_cfg_asm
+# Total -------------------------------------------------------------------
+                                     DATA           001312(0004882) Byte(s)
+                                     ROMDATA        000B2B(0002859) Byte(s)
+                                     CODE           0079A1(0031137) Byte(s)
+
+##########################################
+# (3) GLOBAL LABEL INFORMATION           #
+##########################################
+$DisplayLCD        0a1db8  $DisplayLCD1C      0a1da2  $InitTimer         0a20d6
+$LEDOutput         0a1964  $Motor1            0a1c16  $Motor2            0a1c6e
+$Motor3            0a1cca  $Motor4            0a1d26  $SendUART          0a1830
+$SetCursol         0a1d7e  $_kernel_change_   0a55e8  $_kernel_check_f   0a321e
+$_kernel_dequeue   0a23ec  $_kernel_enqueue   0a2306  $_kernel_force_e   0a2368
+$_kernel_force_s   0a25a0  $_kernel_init_wa   0a704e  $_kernel_make_ac   0a5590
+$_kernel_make_do   0a554e  $_kernel_make_no   0a5458  $_kernel_make_ru   0a53de
+$_kernel_make_wa   0a6ad2  $_kernel_receive   0a26c8  $_kernel_rotate_   0a5802
+$_kernel_send_da   0a2452  $_kernel_tmevt_d   0a66d4  $_kernel_tmevt_l   0a68d8
+$_kernel_tmevt_u   0a6652  $_kernel_tmevtb_   0a67e6  $_kernel_tmevtb_   0a67a2
+$_kernel_wait_co   0a6ba0  $_kernel_wait_re   0a6dd0  $_kernel_wait_tm   0a6c56
+$_kernel_wait_tm   0a6d2c  $_kernel_wobj_ma   0a6eb8  $_kernel_wobj_ma   0a6f88
+$act_tsk           0a5a2e  $can_act           0a5b6e  $can_wup           0a624e
+$chg_ipm           0a3d4a  $chg_pri           0a5e0c  $clr_flg           0a345c
+$dis_int           0a3be0  $dly_tsk           0a6580  $ena_int           0a3c76
+$fsnd_dtq          0a2bc2  $get_inf           0a5f78  $get_ipm           0a3de2
+$get_pri           0a5ee0  $get_tid           0a4b58  $iact_tsk          0a5ad6
+$ifsnd_dtq         0a2c56  $iget_tid          0a4bb8  $ini_dtq           0a2f70
+$ini_flg           0a38bc  $ini_sem           0a47ae  $ipsnd_dtq         0a2a6c
+$irel_wai          0a636c  $irot_rdq          0a4af8  $iset_flg          0a336e
+$isig_sem          0a4440  $itron_strerror    0a11f0  $iwup_tsk          0a619e
+$lcdwrite1comman   0a1efc  $lcdwrite1data     0a1f60  $lcdwriteinit      0a1eb8
+$logtask_flush     0a0530  $m16c_config_int   0a3e38  $m16c_ta_getcoun   0a739e
+$m16c_ta_setcoun   0a73d8  $m16c_ta_setmode   0a72a2  $m16c_ta_start     0a72e2
+$m16c_ta_stop      0a735a  $m16c_uart_cls_p   0a7614  $m16c_uart_dis_c   0a7724
+$m16c_uart_ena_c   0a76da  $m16c_uart_init    0a74d2  $m16c_uart_opn_p   0a75ae
+$m16c_uart_pol_p   0a7550  $m16c_uart_rcv_c   0a768e  $m16c_uart_rx_is   0a77b4
+$m16c_uart_snd_c   0a7642  $m16c_uart_tx_is   0a776e  $pol_flg           0a3624
+$pol_sem           0a466e  $prcv_dtq          0a2de2  $psnd_dtq          0a29e4
+$rcv_dtq           0a2cea  $ref_dtq           0a300c  $ref_flg           0a3948
+$ref_sem           0a483a  $rel_wai           0a62e6  $rot_rdq           0a4a7c
+$rsm_tsk           0a64d4  $send              0a2136  $serial_cls_por    0a087a
+$serial_ctl_por    0a0dac  $serial_get_chr    0a1160  $serial_opn_por    0a0776
+$serial_rea_dat    0a0c56  $serial_ref_por    0a0e0c  $serial_wri_dat    0a0a88
+$set_flg           0a3276  $sig_sem           0a42ae  $sio_cls_por       0a5062
+$sio_dis_cbr       0a518a  $sio_ena_cbr       0a5174  $sio_opn_por       0a4ea2
+$sio_rcv_chr       0a5164  $sio_snd_chr       0a5150  $snd_dtq           0a2938
+$sus_tsk           0a63f2  $syslog_lostmsg    0a04e0  $syslog_msk_log    0a14d8
+$syslog_rea_log    0a1472  $syslog_ref_log    0a14f0  $syslog_wri_log    0a13c4
+$t_perror          0a1530  $target_fput_log   0a4e7c  $ter_tsk           0a5cf0
+$trcv_dtq          0a2e6a  $tslp_tsk          0a604e  $tsnd_dtq          0a2af4
+$twai_flg          0a3748  $twai_sem          0a46ee  $wai_flg           0a34d2
+$wai_sem           0a45d2  $wup_tsk           0a60dc  $x_config_int      0a3eb2
+$xsns_dpn          0a3a88  $xsns_xpn          0a3afe  DEFAULT_ISTK_TOP   008000
+VVECTOR_TOP        0fa000  _CONSout           0a214c  _INT0_handler      0a1acc
+_INT1_handler      0a1b0e  _INT2_handler      0a1b50  _INT3_handler      0a1b92
+_InitDevice        0a175e  _InitKEY           0a1878  _InitLCD           0a1e50
+_InitLED           0a194a  _InitSWInput       0a2062  _InitUART0         0a20fe
+_Init_IO           0a1a26  _Init_TIMER        0a1a70  _KEYInput          0a18aa
+_ReceiveUART       0a1820  _SWInput           0a2080  _SetCGRAM          0a1ddc
+_TA0_handler       0a1bd4  _TB2_handler       0a1bf8  _UART_receive_ha   0a1850
+_UART_send_handl   0a186e  _WaitTimer         0a20f2  __exit_and_dispa   0a4129
+__i4div            0a77fa  __i4divU           0a2180  __i4mod            0a21ce
+__i4modU           0a2242  __kernel_UART_re   0a0114  __kernel_UART_se   0a0102
+__kernel_almcb_t   0004fe  __kernel_alminib   0a7b58  __kernel_break_w   0a4193
+__kernel_call_ex   0a41f5  __kernel_call_in   0a00d4  __kernel_call_te   0a00f2
+__kernel_call_te   0a5954  __kernel_current   001282  __kernel_cyccb_t   0004ec
+__kernel_cycinib   0a7b48  __kernel_disdsp    00123c  __kernel_dispatc   0a40a8
+__kernel_dspflg    00123e  __kernel_dtqcb_t   0004ac  __kernel_dtqinib   0a7b24
+__kernel_excinib   0a7b64  __kernel_exit_ke   0a4a1e  __kernel_flgcb_t   0004a2
+__kernel_flginib   0a7b1e  __kernel_inhinib   0a7a0e  __kernel_initial   0a228e
+__kernel_initial   0a31ba  __kernel_initial   0a3a56  __kernel_initial   0a3b64
+__kernel_initial   0a00ba  __kernel_initial   0a424a  __kernel_initial   0a5264
+__kernel_initial   0a662c  __kernel_intc_re   0a7b92  __kernel_intinib   0a7a28
+__kernel_intnest   001232  __kernel_istk      0a7abe  __kernel_istkpt    0a7b6c
+__kernel_istksz    0a7aba  __kernel_kerflg    00042c  __kernel_last_in   00128c
+__kernel_mbxcb_t   0004d2  __kernel_mbxinib   0a7b36  __kernel_mpfcb_t   0004de
+__kernel_mpfinib   0a7b3c  __kernel_next_ti   001286  __kernel_p_runts   001236
+__kernel_p_sched   001238  __kernel_pdqcb_t   0004be  __kernel_pdqinib   0a7b2c
+__kernel_pend_up   00128a  __kernel_prc_ini   0a3eae  __kernel_prc_ter   0a3eb0
+__kernel_ready_p   001280  __kernel_ready_q   001240  __kernel_reqflg    00123a
+__kernel_search_   0a532e  __kernel_semcb_t   000466  __kernel_seminib   0a7af8
+__kernel_signal_   0a6930  __kernel_start_d   0a4129  __kernel_start_r   0a40d0
+__kernel_target_   0a4e72  __kernel_target_   0a4e30  __kernel_target_   0a0126
+__kernel_tcb_tab   00043a  __kernel_tinib_t   0a7ac2  __kernel_tmax_al   0a7b56
+__kernel_tmax_cy   0a7b46  __kernel_tmax_dt   0a7b22  __kernel_tmax_fl   0a7b1c
+__kernel_tmax_mb   0a7b34  __kernel_tmax_mp   0a7b3a  __kernel_tmax_pd   0a7b2a
+__kernel_tmax_se   0a7af6  __kernel_tmax_ts   0a7ac0  __kernel_tmevt_h   00042e
+__kernel_tnum_ex   0a7b62  __kernel_tnum_in   0a7a0c  __kernel_tnum_in   0a7a26
+__kernel_torder_   0a7af2  __kernel_tsk_sp    001234  _dis_dsp           0a4cfa
+_ena_dsp           0a4d3a  _enc1_count        00041a  _enc2_count        00041e
+_enc3_count        000422  _enc4_count        000426  _ext_ker           0a49b6
+_ext_tsk           0a5bf6  _func1_task        0a179e  _hardware_init_h   0a51c4
+_iloc_cpu          0a4c58  _intpri_table      0a7a3a  _iunl_cpu          0a4cc4
+_kernel_exceptio   0a41d6  _kernel_interrup   0a41a7  _lcdbusycheck      0a1fea
+_loc_cpu           0a4c22  _logtask_main      0a05a4  _logtask_termina   0a0670
+_m16c_ta_initial   0a720a  _m16c_ta_termina   0a7256  _m16c_uart_initi   0a748c
+_m16c_uart_irdy_   0a51b2  _m16c_uart_irdy_   0a51a0  _main              0a1770
+_main2             0a19b0  _print_banner      0a005c  _receive           0a2118
+_serial_initiali   0a0736  _sil_dly_nse       0a4206  _sio_initialize    0a4e9c
+_sio_irdy_rcv      0a0f58  _sio_irdy_snd      0a0e78  _sio_rx_isr        0a5144
+_sio_tx_isr        0a5138  _slp_tsk           0a5fd0  _sns_ctx           0a4d9a
+_sns_dpn           0a4de4  _sns_dsp           0a4dd6  _sns_ker           0a4e1c
+_sns_loc           0a4db6  _software_init_h   0a5205  _sta_ker           0a4948
+_start             0a0000  _syslog            0a15c4  _syslog_initiali   0a13a6
+_syslog_print      0a0478  _syslog_printf     0a01f8  _target_timer_ha   0a525e
+_target_timer_in   0a5206  _target_timer_te   0a5252  _unl_cpu           0a4c8e
+_unused_interrup   0a4205  _wait1             0a1fcc  _wait2             0a1fd6
+_wait3             0a1fe0  
+
+##########################################
+# (4) GLOBAL EQU SYMBOL INFORMATION      #
+##########################################
+SIL_DLY_TIM1     000007ee  SIL_DLY_TIM2     00000251  
+
+##########################################
+# (5) GLOBAL EQU BIT-SYMBOL INFORMATION  #
+##########################################
+
+##########################################
+# (6) LOCAL LABEL INFORMATION            #
+##########################################
+@ start ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\start.r30 )
+@ banner ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\banner.r30 )
+@ kernel_cfg ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\kernel_cfg.r30 )
+@ kernel_cfg_asm ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\kernel_cfg_asm.r30 )
+@ log_output ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\log_output.r30 )
+@ logtask ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\logtask.r30 )
+@ serial ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\serial.r30 )
+@ strerror ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\strerror.r30 )
+@ syslog ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\syslog.r30 )
+@ t_perror ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\t_perror.r30 )
+@ vasyslog ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\vasyslog.r30 )
+@ device ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\device.r30 )
+@ job ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\job.r30 )
+@ KEY ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\KEY.r30 )
+@ led ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\led.r30 )
+@ motorLCD ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\motorLCD.r30 )
+@ swinput ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\swinput.r30 )
+@ timer ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\timer.r30 )
+@ uart ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\uart.r30 )
+@ _i4divu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ _i4mod ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ _i4modu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ dataqueue ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ eventflag ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ exception ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ interrupt ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c62p_config ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_config ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_support ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ semaphore ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ startup ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ sys_manage ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_config ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_serial ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_support ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_timer ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_manage ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_sync ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ time_event ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ wait ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_ta ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_uart ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ _i4div ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+
+##########################################
+# (7) LOCAL EQU SYMBOL INFORMATION       #
+##########################################
+@ start ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\start.r30 )
+@ banner ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\banner.r30 )
+@ kernel_cfg ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\kernel_cfg.r30 )
+@ kernel_cfg_asm ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\kernel_cfg_asm.r30 )
+@ log_output ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\log_output.r30 )
+@ logtask ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\logtask.r30 )
+@ serial ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\serial.r30 )
+@ strerror ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\strerror.r30 )
+@ syslog ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\syslog.r30 )
+@ t_perror ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\t_perror.r30 )
+@ vasyslog ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\vasyslog.r30 )
+@ device ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\device.r30 )
+@ job ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\job.r30 )
+@ KEY ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\KEY.r30 )
+@ led ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\led.r30 )
+@ motorLCD ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\motorLCD.r30 )
+@ swinput ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\swinput.r30 )
+@ timer ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\timer.r30 )
+@ uart ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\uart.r30 )
+@ _i4divu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ _i4mod ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ _i4modu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ dataqueue ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ eventflag ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ exception ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ interrupt ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c62p_config ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_config ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_support ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ semaphore ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ startup ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ sys_manage ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_config ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_serial ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_support ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_timer ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_manage ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_sync ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ time_event ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ wait ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_ta ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_uart ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ _i4div ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+
+##########################################
+# (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
+##########################################
+@ start ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\start.r30 )
+@ banner ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\banner.r30 )
+@ kernel_cfg ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\kernel_cfg.r30 )
+@ kernel_cfg_asm ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\kernel_cfg_asm.r30 )
+@ log_output ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\log_output.r30 )
+@ logtask ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\logtask.r30 )
+@ serial ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\serial.r30 )
+@ strerror ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\strerror.r30 )
+@ syslog ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\syslog.r30 )
+@ t_perror ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\t_perror.r30 )
+@ vasyslog ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\vasyslog.r30 )
+@ device ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\device.r30 )
+@ job ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\job.r30 )
+@ KEY ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\KEY.r30 )
+@ led ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\led.r30 )
+@ motorLCD ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\motorLCD.r30 )
+@ swinput ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\swinput.r30 )
+@ timer ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\timer.r30 )
+@ uart ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\Release\uart.r30 )
+@ _i4divu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ _i4mod ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ _i4modu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ dataqueue ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ eventflag ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ exception ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ interrupt ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c62p_config ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_config ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ prc_support ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ semaphore ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ startup ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ sys_manage ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_config ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_serial ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_support ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ target_timer ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_manage ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ task_sync ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ time_event ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ wait ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_ta ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ m16c_uart ( C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release\kernel.lib )
+@ _i4div ( c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+data_NE
+                                  00000410  0000042d        1e   1
+bss_NE
+                                  0000042e  000012c3       e96   1
+data_NO
+                                  000012c4  000012c4         1   1
+bss_NO
+                                  000012c5  00001321        5d   1
+stack
+                                  00007c00  00007fff       400   1
+program
+                                  000a0000  000a787c      787d   1
+rom_FE
+                                  000a787e  000a7c3b       3be   2
+rom_FO
+                                  000a7c3c  000a8389       74e   1
+data_NEI
+                                  000a838a  000a83a7        1e   2
+data_NOI
+                                  000a83a8  000a83a8         1   1
+vvector
+                                  000fa000  000fa0ff       100   1
+fvector
+                                  000fffdc  000fffff        24   1
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=data_NE
+FILE=C:/WorkSpace/asp/Apli/Driver/motorLCD
+                                  0000041a  0000042b        12
+  _enc1_count
+                                  0000041a         4   data ,g         0
+  _enc2_count
+                                  0000041e         4   data ,g         0
+  _enc3_count
+                                  00000422         4   data ,g         0
+  _enc4_count
+                                  00000426         4   data ,g         0
+
+FILE=startup
+                                  0000042c  0000042d         2
+  __kernel_kerflg
+                                  0000042c         0   none ,g         0
+
+SECTION=bss_NE
+FILE=C:/WorkSpace/asp/target/M16C62P_HEW/workspace/job/kernel_cfg
+                                  0000042e  00000863       436
+  __kernel_tcb_table
+                                  0000043a        2c   data ,g         0
+  __kernel_semcb_table
+                                  00000466        3c   data ,g         0
+  __kernel_flgcb_table
+                                  000004a2         a   data ,g         0
+  __kernel_dtqcb_table
+                                  000004ac        12   data ,g         0
+  __kernel_pdqcb_table
+                                  000004be        14   data ,g         0
+  __kernel_mbxcb_table
+                                  000004d2         c   data ,g         0
+  __kernel_mpfcb_table
+                                  000004de         e   data ,g         0
+  __kernel_cyccb_table
+                                  000004ec        12   data ,g         0
+  __kernel_almcb_table
+                                  000004fe         e   data ,g         0
+  __kernel_tmevt_heap
+                                  0000042e         c   data ,g         0
+  SIL_DLY_TIM1
+                                  000007ee         0   none ,g         0
+
+FILE=prc_config
+                                  00001232  00001235         4
+  __kernel_intnest
+                                  00001232         0   none ,g         0
+  __kernel_tsk_sp
+                                  00001234         0   none ,g         0
+
+FILE=task
+                                  00001236  00001281        4c
+  __kernel_disdsp
+                                  0000123c         0   none ,g         0
+  __kernel_dspflg
+                                  0000123e         0   none ,g         0
+  __kernel_p_runtsk
+                                  00001236         0   none ,g         0
+  __kernel_p_schedtsk
+                                  00001238         0   none ,g         0
+  __kernel_ready_primap
+                                  00001280         0   none ,g         0
+  __kernel_ready_queue
+                                  00001240         0   none ,g         0
+  __kernel_reqflg
+                                  0000123a         0   none ,g         0
+
+FILE=time_event
+                                  00001282  0000128d         c
+  __kernel_current_time
+                                  00001282         0   none ,g         0
+  __kernel_last_index
+                                  0000128c         0   none ,g         0
+  __kernel_next_time
+                                  00001286         0   none ,g         0
+  __kernel_pend_update
+                                  0000128a         0   none ,g         0
+
+SECTION=program
+FILE=start
+                                  000a0000  000a0000         0
+  _start
+                                  000a0000         0   none ,g         0
+
+FILE=C:/WorkSpace/asp/syssvc/banner
+                                  000a005c  000a00b8        5d
+  _print_banner
+                                  000a005c        5d   func ,g         0
+
+FILE=C:/WorkSpace/asp/target/M16C62P_HEW/workspace/job/kernel_cfg
+                                  000a00ba  000a0100        47
+  __kernel_initialize_object
+                                  000a00ba        19   func ,g         0
+  __kernel_call_inirtn
+                                  000a00d4        1e   func ,g         0
+
+FILE=kernel_cfg_asm
+                                  000a0102  000a0137        36
+  __kernel_UART_receive_handler_18_entry
+                                  000a0114         0   none ,g         0
+  __kernel_UART_send_handler_17_entry
+                                  000a0102         0   none ,g         0
+  __kernel_target_timer_handler_21_entry
+                                  000a0126         0   none ,g         0
+
+FILE=C:/WorkSpace/asp/library/log_output
+                                  000a0138  000a0511       3da
+  _syslog_printf
+                                  000a01f8       280   func ,g         0
+  _syslog_print
+                                  000a0478        68   func ,g         0
+
+FILE=C:/WorkSpace/asp/syssvc/logtask
+                                  000a0512  000a06fd       1ec
+  $logtask_flush
+                                  000a0530        74   func ,g         0
+  _logtask_main
+                                  000a05a4        cc   func ,g         0
+
+FILE=C:/WorkSpace/asp/syssvc/serial
+                                  000a06fe  000a11ef       af2
+  _serial_initialize
+                                  000a0736        3f   func ,g         0
+  $serial_opn_por
+                                  000a0776       104   func ,g         0
+  $serial_cls_por
+                                  000a087a        da   func ,g         0
+  $serial_wri_dat
+                                  000a0a88        e9   func ,g         0
+  $serial_rea_dat
+                                  000a0c56       155   func ,g         0
+  $serial_ctl_por
+                                  000a0dac        60   func ,g         0
+  $serial_ref_por
+                                  000a0e0c        6c   func ,g         0
+  _sio_irdy_snd
+                                  000a0e78        e0   func ,g         0
+  _sio_irdy_rcv
+                                  000a0f58       209   func ,g         0
+  $serial_get_chr
+                                  000a1160        90   func ,g         0
+
+FILE=C:/WorkSpace/asp/library/strerror
+                                  000a11f0  000a13a4       1b5
+  $itron_strerror
+                                  000a11f0       1b5   func ,g         0
+
+FILE=C:/WorkSpace/asp/syssvc/syslog
+                                  000a13a6  000a152e       189
+  _syslog_initialize
+                                  000a13a6        1d   func ,g         0
+  $syslog_wri_log
+                                  000a13c4        ae   func ,g         0
+  $syslog_rea_log
+                                  000a1472        66   func ,g         0
+  $syslog_msk_log
+                                  000a14d8        18   func ,g         0
+
+FILE=C:/WorkSpace/asp/library/t_perror
+                                  000a1530  000a15c3        94
+  $t_perror
+                                  000a1530        94   func ,g         0
+
+FILE=C:/WorkSpace/asp/syssvc/vasyslog
+                                  000a15c4  000a175c       199
+  _syslog
+                                  000a15c4       199   func ,g         0
+
+FILE=C:/WorkSpace/asp/Apli/Driver/device
+                                  000a175e  000a176e        11
+  _InitDevice
+                                  000a175e        11   func ,g         0
+
+FILE=C:/WorkSpace/asp/Apli/job
+                                  000a1770  000a1876       107
+  _main
+                                  000a1770        2d   func ,g         0
+  _func1_task
+                                  000a179e        83   func ,g         0
+  _ReceiveUART
+                                  000a1820        10   func ,g         0
+  $SendUART
+                                  000a1830        20   func ,g         0
+  _UART_receive_handler
+                                  000a1850        1d   func ,g         0
+
+FILE=C:/WorkSpace/asp/Apli/Driver/KEY
+                                  000a1878  000a1948        d1
+  _InitKEY
+                                  000a1878        31   func ,g         0
+
+FILE=C:/WorkSpace/asp/Apli/Driver/led
+                                  000a194a  000a19ae        65
+  _InitLED
+                                  000a194a        19   func ,g         0
+
+FILE=C:/WorkSpace/asp/Apli/Driver/motorLCD
+                                  000a19b0  000a2061       6b2
+  _main2
+                                  000a19b0        75   func ,g         0
+  _Init_IO
+                                  000a1a26        4a   func ,g         0
+  _Init_TIMER
+                                  000a1a70        5d   func ,g         0
+  _INT0_handler
+                                  000a1acc        41   func ,g         0
+  _INT1_handler
+                                  000a1b0e        42   func ,g         0
+  _INT2_handler
+                                  000a1b50        42   func ,g         0
+  _INT3_handler
+                                  000a1b92        42   func ,g         0
+  _TA0_handler
+                                  000a1bd4        24   func ,g         0
+  _TB2_handler
+                                  000a1bf8        1e   func ,g         0
+  $Motor1
+                                  000a1c16        59   func ,g         0
+  $Motor2
+                                  000a1c6e        5b   func ,g         0
+  $Motor3
+                                  000a1cca        5c   func ,g         0
+  $Motor4
+                                  000a1d26        59   func ,g         0
+  $SetCursol
+                                  000a1d7e        23   func ,g         0
+  $DisplayLCD1C
+                                  000a1da2        16   func ,g         0
+  $DisplayLCD
+                                  000a1db8        24   func ,g         0
+  _SetCGRAM
+                                  000a1ddc        75   func ,g         0
+  _InitLCD
+                                  000a1e50        67   func ,g         0
+  $lcdwriteinit
+                                  000a1eb8        45   func ,g         0
+  $lcdwrite1command
+                                  000a1efc        64   func ,g         0
+  $lcdwrite1data
+                                  000a1f60        6c   func ,g         0
+  _wait1
+                                  000a1fcc         a   func ,g         0
+  _wait2
+                                  000a1fd6         a   func ,g         0
+  _wait3
+                                  000a1fe0         a   func ,g         0
+  _lcdbusycheck
+                                  000a1fea        78   func ,g         0
+
+FILE=C:/WorkSpace/asp/Apli/Driver/swinput
+                                  000a2062  000a20d5        74
+  _InitSWInput
+                                  000a2062        1e   func ,g         0
+  _SWInput
+                                  000a2080        56   func ,g         0
+
+FILE=C:/WorkSpace/asp/Apli/Driver/timer
+                                  000a20d6  000a20fc        27
+  $InitTimer
+                                  000a20d6        1b   func ,g         0
+
+FILE=C:/WorkSpace/asp/Apli/Driver/uart
+                                  000a20fe  000a217f        82
+  _InitUART0
+                                  000a20fe        19   func ,g         0
+  _receive
+                                  000a2118        1f   func ,g         0
+  $send
+                                  000a2136        16   func ,g         0
+  _CONSout
+                                  000a214c        34   func ,g         0
+
+FILE=_i4divu
+                                  000a2180  000a21cc        4d
+  __i4divU
+                                  000a2180        4d   func ,g         0
+
+FILE=_i4mod
+                                  000a21ce  000a2240        73
+  __i4mod
+                                  000a21ce        73   func ,g         0
+
+FILE=_i4modu
+                                  000a2242  000a228c        4b
+  __i4modU
+                                  000a2242        4b   func ,g         0
+
+FILE=prc_support
+                                  000a40a8  000a4249       1a2
+  __exit_and_dispatch
+                                  000a4129         0   none ,g         0
+  __kernel_break_wait
+                                  000a4193         0   none ,g         0
+  __kernel_call_exit_kernel
+                                  000a41f5         0   none ,g         0
+  __kernel_dispatch
+                                  000a40a8         0   none ,g         0
+  __kernel_start_dispatch
+                                  000a4129         0   none ,g         0
+  __kernel_start_r
+                                  000a40d0         0   none ,g         0
+  _kernel_exception
+                                  000a41d6         0   none ,g         0
+  _kernel_interrupt
+                                  000a41a7         0   none ,g         0
+  _sil_dly_nse
+                                  000a4206         0   none ,g         0
+  _unused_interrupt
+                                  000a4205         0   none ,g         0
+
+FILE=target_support
+                                  000a51c4  000a5205        42
+  _hardware_init_hook
+                                  000a51c4         0   none ,g         0
+  _software_init_hook
+                                  000a5205         0   none ,g         0
+
+FILE=_i4div
+                                  000a77fa  000a787c        83
+  __i4div
+                                  000a77fa        83   func ,g         0
+
+FILE=dataqueue
+                                  000a228e  000a31b8       f2b
+  $_kernel_dequeue_data
+                                  000a23ec         0   none ,g         0
+  $_kernel_enqueue_data
+                                  000a2306         0   none ,g         0
+  $_kernel_force_enqueue_data
+                                  000a2368         0   none ,g         0
+  $_kernel_force_send_data
+                                  000a25a0         0   none ,g         0
+  $_kernel_receive_data
+                                  000a26c8         0   none ,g         0
+  $_kernel_send_data
+                                  000a2452         0   none ,g         0
+  $fsnd_dtq
+                                  000a2bc2         0   none ,g         0
+  $ifsnd_dtq
+                                  000a2c56         0   none ,g         0
+  $ini_dtq
+                                  000a2f70         0   none ,g         0
+  $ipsnd_dtq
+                                  000a2a6c         0   none ,g         0
+  $prcv_dtq
+                                  000a2de2         0   none ,g         0
+  $psnd_dtq
+                                  000a29e4         0   none ,g         0
+  $rcv_dtq
+                                  000a2cea         0   none ,g         0
+  $ref_dtq
+                                  000a300c         0   none ,g         0
+  $snd_dtq
+                                  000a2938         0   none ,g         0
+  $trcv_dtq
+                                  000a2e6a         0   none ,g         0
+  $tsnd_dtq
+                                  000a2af4         0   none ,g         0
+  __kernel_initialize_dataqueue
+                                  000a228e         0   none ,g         0
+
+FILE=eventflag
+                                  000a31ba  000a3a54       89b
+  $_kernel_check_flg_cond
+                                  000a321e         0   none ,g         0
+  $clr_flg
+                                  000a345c         0   none ,g         0
+  $ini_flg
+                                  000a38bc         0   none ,g         0
+  $iset_flg
+                                  000a336e         0   none ,g         0
+  $pol_flg
+                                  000a3624         0   none ,g         0
+  $ref_flg
+                                  000a3948         0   none ,g         0
+  $set_flg
+                                  000a3276         0   none ,g         0
+  $twai_flg
+                                  000a3748         0   none ,g         0
+  $wai_flg
+                                  000a34d2         0   none ,g         0
+  __kernel_initialize_eventflag
+                                  000a31ba         0   none ,g         0
+
+FILE=exception
+                                  000a3a56  000a3b62       10d
+  $xsns_dpn
+                                  000a3a88         0   none ,g         0
+  $xsns_xpn
+                                  000a3afe         0   none ,g         0
+  __kernel_initialize_exception
+                                  000a3a56         0   none ,g         0
+
+FILE=interrupt
+                                  000a3b64  000a3e36       2d3
+  $chg_ipm
+                                  000a3d4a         0   none ,g         0
+  $dis_int
+                                  000a3be0         0   none ,g         0
+  $ena_int
+                                  000a3c76         0   none ,g         0
+  $get_ipm
+                                  000a3de2         0   none ,g         0
+  __kernel_initialize_interrupt
+                                  000a3b64         0   none ,g         0
+
+FILE=m16c62p_config
+                                  000a3e38  000a3eac        75
+  $m16c_config_int
+                                  000a3e38         0   none ,g         0
+
+FILE=prc_config
+                                  000a3eae  000a40a6       1f9
+  $x_config_int
+                                  000a3eb2         0   none ,g         0
+  __kernel_prc_initialize
+                                  000a3eae         0   none ,g         0
+  __kernel_prc_terminate
+                                  000a3eb0         0   none ,g         0
+
+FILE=semaphore
+                                  000a424a  000a4946       6fd
+  $ini_sem
+                                  000a47ae         0   none ,g         0
+  $isig_sem
+                                  000a4440         0   none ,g         0
+  $pol_sem
+                                  000a466e         0   none ,g         0
+  $ref_sem
+                                  000a483a         0   none ,g         0
+  $sig_sem
+                                  000a42ae         0   none ,g         0
+  $twai_sem
+                                  000a46ee         0   none ,g         0
+  $wai_sem
+                                  000a45d2         0   none ,g         0
+  __kernel_initialize_semaphore
+                                  000a424a         0   none ,g         0
+
+FILE=startup
+                                  000a4948  000a4a7a       133
+  __kernel_exit_kernel
+                                  000a4a1e         0   none ,g         0
+  _ext_ker
+                                  000a49b6         0   none ,g         0
+  _sta_ker
+                                  000a4948         0   none ,g         0
+
+FILE=sys_manage
+                                  000a4a7c  000a4e2e       3b3
+  $get_tid
+                                  000a4b58         0   none ,g         0
+  $iget_tid
+                                  000a4bb8         0   none ,g         0
+  $irot_rdq
+                                  000a4af8         0   none ,g         0
+  $rot_rdq
+                                  000a4a7c         0   none ,g         0
+  _dis_dsp
+                                  000a4cfa         0   none ,g         0
+  _ena_dsp
+                                  000a4d3a         0   none ,g         0
+  _iloc_cpu
+                                  000a4c58         0   none ,g         0
+  _iunl_cpu
+                                  000a4cc4         0   none ,g         0
+  _loc_cpu
+                                  000a4c22         0   none ,g         0
+  _sns_ctx
+                                  000a4d9a         0   none ,g         0
+  _sns_dpn
+                                  000a4de4         0   none ,g         0
+  _sns_dsp
+                                  000a4dd6         0   none ,g         0
+  _sns_ker
+                                  000a4e1c         0   none ,g         0
+  _sns_loc
+                                  000a4db6         0   none ,g         0
+  _unl_cpu
+                                  000a4c8e         0   none ,g         0
+
+FILE=target_config
+                                  000a4e30  000a4e9a        6b
+  $target_fput_log
+                                  000a4e7c         0   none ,g         0
+  __kernel_target_exit
+                                  000a4e72         0   none ,g         0
+  __kernel_target_initialize
+                                  000a4e30         0   none ,g         0
+
+FILE=target_serial
+                                  000a4e9c  000a51c2       327
+  $sio_cls_por
+                                  000a5062         0   none ,g         0
+  $sio_dis_cbr
+                                  000a518a         0   none ,g         0
+  $sio_ena_cbr
+                                  000a5174         0   none ,g         0
+  $sio_opn_por
+                                  000a4ea2         0   none ,g         0
+  $sio_rcv_chr
+                                  000a5164         0   none ,g         0
+  $sio_snd_chr
+                                  000a5150         0   none ,g         0
+  _m16c_uart_irdy_rcv
+                                  000a51b2         0   none ,g         0
+  _m16c_uart_irdy_snd
+                                  000a51a0         0   none ,g         0
+  _sio_initialize
+                                  000a4e9c         0   none ,g         0
+  _sio_rx_isr
+                                  000a5144         0   none ,g         0
+  _sio_tx_isr
+                                  000a5138         0   none ,g         0
+
+FILE=target_timer
+                                  000a5206  000a5262        5d
+  _target_timer_handler
+                                  000a525e         0   none ,g         0
+  _target_timer_initialize
+                                  000a5206         0   none ,g         0
+  _target_timer_terminate
+                                  000a5252         0   none ,g         0
+
+FILE=task
+                                  000a5264  000a5a2c       7c9
+  $_kernel_change_priority
+                                  000a55e8         0   none ,g         0
+  $_kernel_make_active
+                                  000a5590         0   none ,g         0
+  $_kernel_make_dormant
+                                  000a554e         0   none ,g         0
+  $_kernel_make_non_runnable
+                                  000a5458         0   none ,g         0
+  $_kernel_make_runnable
+                                  000a53de         0   none ,g         0
+  $_kernel_rotate_ready_queue
+                                  000a5802         0   none ,g         0
+  __kernel_call_texrtn
+                                  000a5954         0   none ,g         0
+  __kernel_initialize_task
+                                  000a5264         0   none ,g         0
+  __kernel_search_schedtsk
+                                  000a532e         0   none ,g         0
+
+FILE=task_manage
+                                  000a5a2e  000a5fcf       5a2
+  $act_tsk
+                                  000a5a2e         0   none ,g         0
+  $can_act
+                                  000a5b6e         0   none ,g         0
+  $chg_pri
+                                  000a5e0c         0   none ,g         0
+  $get_inf
+                                  000a5f78         0   none ,g         0
+  $get_pri
+                                  000a5ee0         0   none ,g         0
+  $iact_tsk
+                                  000a5ad6         0   none ,g         0
+  $ter_tsk
+                                  000a5cf0         0   none ,g         0
+  _ext_tsk
+                                  000a5bf6         0   none ,g         0
+
+FILE=task_sync
+                                  000a5fd0  000a662a       65b
+  $can_wup
+                                  000a624e         0   none ,g         0
+  $dly_tsk
+                                  000a6580         0   none ,g         0
+  $irel_wai
+                                  000a636c         0   none ,g         0
+  $iwup_tsk
+                                  000a619e         0   none ,g         0
+  $rel_wai
+                                  000a62e6         0   none ,g         0
+  $rsm_tsk
+                                  000a64d4         0   none ,g         0
+  $sus_tsk
+                                  000a63f2         0   none ,g         0
+  $tslp_tsk
+                                  000a604e         0   none ,g         0
+  $wup_tsk
+                                  000a60dc         0   none ,g         0
+  _slp_tsk
+                                  000a5fd0         0   none ,g         0
+
+FILE=time_event
+                                  000a662c  000a6ad1       4a6
+  $_kernel_tmevt_down
+                                  000a66d4         0   none ,g         0
+  $_kernel_tmevt_lefttim
+                                  000a68d8         0   none ,g         0
+  $_kernel_tmevt_up
+                                  000a6652         0   none ,g         0
+  $_kernel_tmevtb_delete
+                                  000a67e6         0   none ,g         0
+  $_kernel_tmevtb_insert
+                                  000a67a2         0   none ,g         0
+  __kernel_initialize_tmevt
+                                  000a662c         0   none ,g         0
+  __kernel_signal_time
+                                  000a6930         0   none ,g         0
+
+FILE=wait
+                                  000a6ad2  000a7208       737
+  $_kernel_init_wait_queue
+                                  000a704e         0   none ,g         0
+  $_kernel_make_wait_tmout
+                                  000a6ad2         0   none ,g         0
+  $_kernel_wait_complete
+                                  000a6ba0         0   none ,g         0
+  $_kernel_wait_release
+                                  000a6dd0         0   none ,g         0
+  $_kernel_wait_tmout
+                                  000a6c56         0   none ,g         0
+  $_kernel_wait_tmout_ok
+                                  000a6d2c         0   none ,g         0
+  $_kernel_wobj_make_wait
+                                  000a6eb8         0   none ,g         0
+  $_kernel_wobj_make_wait_tmout
+                                  000a6f88         0   none ,g         0
+
+FILE=m16c_ta
+                                  000a720a  000a7416       20d
+  $m16c_ta_getcount
+                                  000a739e         0   none ,g         0
+  $m16c_ta_setcount
+                                  000a73d8         0   none ,g         0
+  $m16c_ta_setmode
+                                  000a72a2         0   none ,g         0
+  $m16c_ta_start
+                                  000a72e2         0   none ,g         0
+  $m16c_ta_stop
+                                  000a735a         0   none ,g         0
+  _m16c_ta_initialize
+                                  000a720a         0   none ,g         0
+  _m16c_ta_terminate
+                                  000a7256         0   none ,g         0
+
+FILE=m16c_uart
+                                  000a7418  000a77f9       3e2
+  $m16c_uart_cls_por
+                                  000a7614         0   none ,g         0
+  $m16c_uart_dis_cbr
+                                  000a7724         0   none ,g         0
+  $m16c_uart_ena_cbr
+                                  000a76da         0   none ,g         0
+  $m16c_uart_init
+                                  000a74d2         0   none ,g         0
+  $m16c_uart_opn_por
+                                  000a75ae         0   none ,g         0
+  $m16c_uart_pol_putc
+                                  000a7550         0   none ,g         0
+  $m16c_uart_rcv_chr
+                                  000a768e         0   none ,g         0
+  $m16c_uart_rx_isr
+                                  000a77b4         0   none ,g         0
+  $m16c_uart_snd_chr
+                                  000a7642         0   none ,g         0
+  $m16c_uart_tx_isr
+                                  000a776e         0   none ,g         0
+  _m16c_uart_initialize
+                                  000a748c         0   none ,g         0
+
+SECTION=rom_FE
+FILE=C:/WorkSpace/asp/target/M16C62P_HEW/workspace/job/kernel_cfg
+                                  000a7a0c  000a7b6d       162
+  __kernel_tmax_tskid
+                                  000a7ac0         2   data ,g         0
+  __kernel_tinib_table
+                                  000a7ac2        30   data ,g         0
+  __kernel_torder_table
+                                  000a7af2         4   data ,g         0
+  __kernel_tmax_semid
+                                  000a7af6         2   data ,g         0
+  __kernel_seminib_table
+                                  000a7af8        24   data ,g         0
+  __kernel_tmax_flgid
+                                  000a7b1c         2   data ,g         0
+  __kernel_flginib_table
+                                  000a7b1e         4   data ,g         0
+  __kernel_tmax_dtqid
+                                  000a7b22         2   data ,g         0
+  __kernel_dtqinib_table
+                                  000a7b24         6   data ,g         0
+  __kernel_tmax_pdqid
+                                  000a7b2a         2   data ,g         0
+  __kernel_pdqinib_table
+                                  000a7b2c         8   data ,g         0
+  __kernel_tmax_mbxid
+                                  000a7b34         2   data ,g         0
+  __kernel_mbxinib_table
+                                  000a7b36         4   data ,g         0
+  __kernel_tmax_mpfid
+                                  000a7b3a         2   data ,g         0
+  __kernel_mpfinib_table
+                                  000a7b3c         a   data ,g         0
+  __kernel_tmax_cycid
+                                  000a7b46         2   data ,g         0
+  __kernel_cycinib_table
+                                  000a7b48         e   data ,g         0
+  __kernel_tmax_almid
+                                  000a7b56         2   data ,g         0
+  __kernel_alminib_table
+                                  000a7b58         a   data ,g         0
+  __kernel_tnum_inhno
+                                  000a7a0c         2   data ,g         0
+  __kernel_inhinib_table
+                                  000a7a0e        18   data ,g         0
+  __kernel_tnum_intno
+                                  000a7a26         2   data ,g         0
+  __kernel_intinib_table
+                                  000a7a28        12   data ,g         0
+  __kernel_tnum_excno
+                                  000a7b62         2   data ,g         0
+  __kernel_excinib_table
+                                  000a7b64         8   data ,g         0
+  __kernel_istksz
+                                  000a7aba         4   data ,g         0
+  __kernel_istk
+                                  000a7abe         2   data ,g         0
+  __kernel_istkpt
+                                  000a7b6c         2   data ,g         0
+  _intpri_table
+                                  000a7a3a        80   data ,g         0
+
+FILE=m16c62p_config
+                                  000a7b92  000a7c11        80
+  __kernel_intc_reg
+                                  000a7b92         0   none ,g         0
+
+SECTION=vvector
+FILE=start
+                                  000fa000  000fa000         0
+  VVECTOR_TOP
+                                  000fa000         0   none ,g         0
+

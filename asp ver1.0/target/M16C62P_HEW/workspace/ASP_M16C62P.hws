@@ -1,0 +1,44 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"11.0" 
+[WORKSPACE_DETAILS]
+"oaks16-62p" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\ASP_M16C62P.hws" "M16C" "Renesas M16C Standard" 
+[SHARED_WORKSPACE_CONTROL_STATUS]
+"" "" "" 
+"" "" "" 
+[PROJECTS]
+"Apli" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\job\job.hwp" 0 
+"MS" "C:\WorkSpace\asp\Apli\MS" "C:\WorkSpace\asp\Apli\MS\MS.hwp" 0 
+"cfg" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg\cfg.hwp" 0 
+"kernel" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\kernel.hwp" 0 
+"makeoffset" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\makeoffset" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\makeoffset\makeoffset.hwp" 0 
+[INFORMATION]
+"ワークスペース情報がありません" 
+[SCRAP]
+[PROJECT_DEPENDENCY]
+[WORKSPACE_PROPERTIES]
+[HELP_FILES]
+[GENERAL_DATA_PROJECT]
+[USERMENUTOOLS]
+[CUSTOMPLACEHOLDERS]
+[MAKEFILE_BUILD_INFO]
+"$(PROJECTNAME)_$(CONFIGNAME).mak" "" "$(WORKSPDIR)\make" 0 0 0 
+[VD_CONFIGURATION_OPTIONS]
+"ACTIVE_DESKTOP" "0" 
+[VD_CONFIGURATIONS]
+"0" "Default1" "1" 
+"1" "Default2" "1" 
+"2" "Default3" "1" 
+"3" "Default4" "1" 
+[OPTIONS_DEBUG_TAB]
+1 0 1 0 0 
+[VCS]
+"" "" "" 0 
+[VCS_PROJECT]
+[MAKEFILE_ENV_STRINGS]
+[MAKEFILE_ENV_FLAGS]
+1 0 0 
+[MAKEFILE_CLEAN_INFO]
+"" 
+[END]

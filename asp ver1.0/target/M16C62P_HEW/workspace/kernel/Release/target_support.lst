@@ -1,0 +1,126 @@
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Wed Nov 21 17:34:45 2012  PAGE 001
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+     1                                  ;*
+     2                                  ;*   TOPPERS/ASP Kernel
+     3                                  ;*       Toyohashi Open Platform for Embedded Real-Time Systems/
+     4                                  ;*       Advanced Standard Profile Kernel
+     5                                  ;*  
+     6                                  ;*   Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+     7                                  ;*                               Toyohashi Univ. of Technology, JAPAN
+     8                                  ;*   Copyright (C) 2005,2006 by Embedded and Real-Time Systems Laboratory
+     9                                  ;*               Graduate School of Information Science, Nagoya Univ., JAPAN
+    10                                  ;*   Copyright (C) 2008 by Witz Corporation, JAPAN
+    11                                  ;* 
+    12                                  ;*  上記著作権者は，Free Software Foundation によって公表されている 
+    13                                  ;*  GNU General Public License の Version 2 に記述されている条件か，以 
+    14                                  ;*  下の(1)～(4)の条件を満たす場合に限り，本ソフトウェア（本ソフトウェ
+    15                                  ;*  アを改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+    16                                  ;*  利用と呼ぶ）することを無償で許諾する．
+    17                                  ;*  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作 
+    18                                  ;*      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+    19                                  ;*      スコード中に含まれていること．
+    20                                  ;*  (2) 本ソフトウェアを再利用可能なバイナリコード（リロケータブルオブ
+    21                                  ;*      ジェクトファイルやライブラリなど）の形で利用する場合には，利用
+    22                                  ;*      に伴うドキュメント（利用者マニュアルなど）に，上記の著作権表示，
+    23                                  ;*      この利用条件および下記の無保証規定を掲載すること．
+    24                                  ;*  (3) 本ソフトウェアを再利用不可能なバイナリコードの形または機器に組
+    25                                  ;*      み込んだ形で利用する場合には，次のいずれかの条件を満たすこと．
+    26                                  ;*    (a) 利用に伴うドキュメント（利用者マニュアルなど）に，上記の著作 
+    27                                  ;*        権表示，この利用条件および下記の無保証規定を掲載すること．
+    28                                  ;*    (b) 利用の形態を，別に定める方法によって，上記著作権者に報告する 
+    29                                  ;*        こと．
+    30                                  ;*  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損 
+    31                                  ;*      害からも，上記著作権者を免責すること．
+    32                                  ;* 
+    33                                  ;*  本ソフトウェアは，無保証で提供されているものである．上記著作権者は，
+    34                                  ;*  本ソフトウェアに関して，その適用可能性も含めて，いかなる保証も行わ 
+    35                                  ;*  ない．また，本ソフトウェアの利用により直接的または間接的に生じたい 
+    36                                  ;*  かなる損害に関しても，その責任を負わない．
+    37                                  
+    38                                  	.section	program, code, align
+    39                                  
+    40  0000000Ah                       PRCR  .EQU		000AH			; プロテクトレジスタ
+    41  0,0000000Ah                     PRC0  .BTEQU	0,PRCR			; システムクロックレジスタビット
+    42  1,0000000Ah                     PRC1  .BTEQU	1,PRCR			; プロセッサモードレジスタビット
+    43                                  ;
+    44  00000004h                       PM0   .EQU		0004H			; プロセッサモードレジスタ０
+    45  00000005h                       PM1   .EQU		0005H			; プロセッサモードレジスタ１
+    46  0000001Eh                       PM2   .EQU		001EH			; プロセッサモードレジスタ２
+    47  0,0000001Eh                     PM2_0 .BTEQU	0,PM2			; 
+    48                                  ;
+    49  00000006h                       CM0   .EQU		0006H			; クロックモードレジスタ０
+    50  6,00000006h                     CM0_6 .BTEQU	6,CM0			; CM16,17有効 
+    51  7,00000006h                     CM0_7 .BTEQU	7,CM0			; システムクロック
+    52  00000007h                       CM1   .EQU		0007H			; クロックモードレジスタ１
+    53  1,00000007h                     CM1_1 .BTEQU	1,CM1			; システムクロック
+    54  6,00000007h                     CM1_6 .BTEQU	6,CM1			; 分周 
+    55  7,00000007h                     CM1_7 .BTEQU	7,CM1			; 
+    56  0000001Ch                       PLC0  .EQU		001CH			;
+    57  7,0000001Ch                     PLC0_7 .BTEQU	7,PLC0			; システムクロック
+    58  0000000Ch                       CM2   .EQU		000CH			; 発信停止検出レジスタ
+    59                                  
+    60  00000008h                       C_CM0 .EQU		00001000B		; 
+    61  00000022h                       C_CM1 .EQU		00100010B		; メインクロック分周なし 
+    62  00000000h                       C_CM2 .EQU		00000000B		; 発振停止検出機能無効 
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Wed Nov 21 17:34:45 2012  PAGE 002
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+    63  00000012h                       C_PLC .EQU		00010010B		; PLL設定 
+    64                                  
+    65                                  	.glb	_software_init_hook
+    66                                  	.glb	_hardware_init_hook
+    67                                  
+    68  00000                           _hardware_init_hook:
+    69                                  ; ----- set Processor mode -----
+    70  00000  7E9F5100                 	bset		PRC1			; プロセッサモードレジスタ書き込みイネーブル 
+    71  00004  B70400                Z  	mov.b		#00000000b,PM0	; シングルチップモード、BCLK出力しない 
+    72  00007  7E8F5100                 	bclr		PRC1			; プロセッサモードレジスタ書き込みディゼーブル 
+    73                                  ; ----- set System clock -----
+    74  0000B  7E9F5000                 	bset		PRC0			; クロックモードレジスタ書き込みディゼーブル 
+    75  0000F  7E8F3700                 	bclr		CM0_7			; メインクロック
+    76  00013  7E8F3E00                 	bclr		CM1_6			; 分周なし 
+    77  00017  7E8F3F00                 	bclr		CM1_7			;
+    78  0001B  7E8F3600                 	bclr		CM0_6			; CM16,17有効 
+    79  0001F  C7121C00              S  	mov.b		#C_PLC,PLC0		; PLL4倍
+    80  00023  7E9F5100                 	bset		PRC1			; プロセッサモードレジスタ書き込みイネーブル 
+    81  00027  7E8FF000                 	bclr		PM2_0			; ２ウェイト
+    82  0002B  7E8F5100                 	bclr		PRC1			; プロセッサモードレジスタ書き込みディゼーブル 
+    83  0002F  7E9FE700                 	bset		PLC0_7			; PLC動作 
+    84                                  ;	PLC安定待ち 
+    85  00033  C4FF                  S  	mov.b		#0FFH, r0l
+    86  00035                           lockup:
+    87  00035  AC                       	dec.b		r0l
+    88  00036  6EFE                     	jnz			lockup
+    89  00038  7E9F3900                 	bset		CM1_1			; PLLクロック
+    90  0003C  7E8F5000                 	bclr		PRC0			; クロックモードレジスタ書き込みディゼーブル 
+    91  00040  F3                       	rts
+    92                                  ;
+    93                                  
+    94  00041                           _software_init_hook:
+    95  00041  F3                       	rts
+    96                                  
+    97                                  
+    98                                  ;
+    99                                  ;  sil_dly_nseで用いる定数値
+   100                                  ;
+   101                                  	.glb	SIL_DLY_TIM1
+   102                                  	.glb	SIL_DLY_TIM2
+   103                                  
+   104  000007EEh                       SIL_DLY_TIM1	.EQU	2030
+   105  00000251h                       SIL_DLY_TIM2	.EQU	593
+   106                                  
+   107                                  	.end
+
+Information List
+
+TOTAL ERROR(S)    00000
+TOTAL WARNING(S)  00000
+TOTAL LINE(S)     00107   LINES
+
+Section List
+
+Attr        Size          Name
+CODE     0000066(00042H)  program

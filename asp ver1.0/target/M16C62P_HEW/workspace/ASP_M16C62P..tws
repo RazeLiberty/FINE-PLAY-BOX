@@ -1,0 +1,27 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"1.2" 
+[CURRENT_PROJECT]
+"Apli" 
+[GENERAL_DATA]
+[BREAKPOINTS]
+[OPEN_WORKSPACE_FILES]
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\Apli\job.c" 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\arch\m16c_nc30\start.a30" 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\RSK-M16C-62P.h" 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\cfg\cfg1_out.c" 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\job\kernel_cfg.c" 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\job\kernel_cfg.h" 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\job\kernel_cfg_asm.a30" 
+[WORKSPACE_FILE_STATES]
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\Apli\job.c" -4 -28 1011 360 1 1 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\arch\m16c_nc30\start.a30" 27 27 495 220 0 6 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\RSK-M16C-62P.h" 81 81 495 220 0 3 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\cfg\cfg1_out.c" 0 0 853 216 0 0 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\job\kernel_cfg.c" 54 54 495 220 0 2 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\job\kernel_cfg.h" 108 108 495 220 0 4 
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\job\kernel_cfg_asm.a30" 0 0 495 220 0 5 
+[LOADED_PROJECTS]
+"Apli" 
+[END]

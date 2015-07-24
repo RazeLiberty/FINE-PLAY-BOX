@@ -1,0 +1,550 @@
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Sun Oct 28 11:11:04 2012  PAGE 001
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+     1                                  
+     2                                  ;##    C Compiler		 OUTPUT
+     3                                  ;## ccom30 Version 5.32.04.003
+     4                                  ;## Copyright (C) 2001 (2003 - 2010) Renesas Electronics Corporation.
+     5                                  ;## and Renesas Solutions Corporation. All rights reserved.
+     6                                  ;## Compile Start Time Sun Oct 28 11:11:03 2012
+     7                                  
+     8                                  ;## COMMAND_LINE: ccom30  C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\makeoffset\Release\makeoffset.i -o C:\Users\HIROTAoutbrain\Des
+     9                                  
+    10                                  
+    11                                  ;## Normal Optimize		OFF
+    12                                  ;## ROM size Optimize		OFF
+    13                                  ;## Speed Optimize		OFF
+    14                                  ;## Default ROM is		far
+    15                                  ;## Default RAM is		near
+    16                                  
+    17                                  	.GLB	__SB__
+    18                                  	.SB	__SB__
+    19                                  	.FB	0
+    20                                  
+    21                                  
+    22                                  
+    23                                  
+    24                                  
+    25                                  ;## #	FUNCTION TOPPERS_assert_abort
+    26                                  
+    27                                  
+    28                                  
+    29                                  
+    30                                  ;## #	FUNCTION _syslog_0
+    31                                  
+    32                                  ;## #	FUNCTION _syslog_1
+    33                                  
+    34                                  ;## #	FUNCTION _syslog_2
+    35                                  
+    36                                  ;## #	FUNCTION _syslog_3
+    37                                  
+    38                                  ;## #	FUNCTION _syslog_4
+    39                                  
+    40                                  ;## #	FUNCTION _syslog_5
+    41                                  
+    42                                  ;## #	FUNCTION _syslog_6
+    43                                  
+    44                                  
+    45                                  
+    46                                  
+    47                                  ;## #	FUNCTION current_flgreg
+    48                                  
+    49                                  ;## #	FUNCTION current_ipl
+    50                                  
+    51                                  ;## #	FUNCTION set_ipl
+    52                                  
+    53                                  ;## #	FUNCTION disint
+    54                                  
+    55                                  ;## #	FUNCTION enaint
+    56                                  
+    57                                  
+    58                                  
+    59                                  ;## #	FUNCTION sense_context
+    60                                  
+    61                                  ;## #	FUNCTION x_lock_cpu
+    62                                  
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Sun Oct 28 11:11:04 2012  PAGE 002
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+    63                                  ;## #	FUNCTION x_unlock_cpu
+    64                                  
+    65                                  ;## #	FUNCTION x_sense_lock
+    66                                  
+    67                                  ;## #	FUNCTION x_set_ipm
+    68                                  
+    69                                  ;## #	FUNCTION x_get_ipm
+    70                                  
+    71                                  ;## #	FUNCTION x_disable_int
+    72                                  
+    73                                  ;## #	FUNCTION x_enable_int
+    74                                  
+    75                                  ;## #	FUNCTION x_clear_int
+    76                                  
+    77                                  ;## #	FUNCTION x_probe_int
+    78                                  
+    79                                  ;## #	FUNCTION i_begin_int
+    80                                  
+    81                                  ;## #	FUNCTION i_end_int
+    82                                  
+    83                                  ;## #	FUNCTION x_define_inh
+    84                                  
+    85                                  ;## #	FUNCTION x_define_exc
+    86                                  
+    87                                  ;## #	FUNCTION exc_sense_context
+    88                                  
+    89                                  ;## #	FUNCTION exc_get_ipl
+    90                                  
+    91                                  ;## #	FUNCTION exc_sense_i
+    92                                  
+    93                                  ;## #	FUNCTION exc_sense_intmask
+    94                                  
+    95                                  ;## #	FUNCTION exc_sense_unlock
+    96                                  
+    97                                  
+    98                                  
+    99                                  ;## #	FUNCTION queue_initialize
+   100                                  
+   101                                  ;## #	FUNCTION queue_insert_prev
+   102                                  
+   103                                  ;## #	FUNCTION queue_insert_next
+   104                                  
+   105                                  ;## #	FUNCTION queue_delete
+   106                                  
+   107                                  ;## #	FUNCTION queue_delete_next
+   108                                  
+   109                                  ;## #	FUNCTION queue_empty
+   110                                  
+   111                                  
+   112                                  ;## #	FUNCTION tmevtb_enqueue
+   113                                  
+   114                                  ;## #	FUNCTION tmevtb_enqueue_evttim
+   115                                  
+   116                                  ;## #	FUNCTION tmevtb_dequeue
+   117                                  
+   118                                  
+   119                                  	.glb	$act_tsk
+   120                                  	.glb	$iact_tsk
+   121                                  	.glb	$can_act
+   122                                  	.glb	_ext_tsk
+   123                                  	.glb	$ter_tsk
+   124                                  	.glb	$chg_pri
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Sun Oct 28 11:11:04 2012  PAGE 003
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   125                                  	.glb	$get_pri
+   126                                  	.glb	$get_inf
+   127                                  	.glb	$ref_tsk
+   128                                  	.glb	_slp_tsk
+   129                                  	.glb	$tslp_tsk
+   130                                  	.glb	$wup_tsk
+   131                                  	.glb	$iwup_tsk
+   132                                  	.glb	$can_wup
+   133                                  	.glb	$rel_wai
+   134                                  	.glb	$irel_wai
+   135                                  	.glb	$sus_tsk
+   136                                  	.glb	$rsm_tsk
+   137                                  	.glb	$dly_tsk
+   138                                  	.glb	$ras_tex
+   139                                  	.glb	$iras_tex
+   140                                  	.glb	_dis_tex
+   141                                  	.glb	_ena_tex
+   142                                  	.glb	_sns_tex
+   143                                  	.glb	$ref_tex
+   144                                  	.glb	$sig_sem
+   145                                  	.glb	$isig_sem
+   146                                  	.glb	$wai_sem
+   147                                  	.glb	$pol_sem
+   148                                  	.glb	$twai_sem
+   149                                  	.glb	$ini_sem
+   150                                  	.glb	$ref_sem
+   151                                  	.glb	$set_flg
+   152                                  	.glb	$iset_flg
+   153                                  	.glb	$clr_flg
+   154                                  	.glb	$wai_flg
+   155                                  	.glb	$pol_flg
+   156                                  	.glb	$twai_flg
+   157                                  	.glb	$ini_flg
+   158                                  	.glb	$ref_flg
+   159                                  	.glb	$snd_dtq
+   160                                  	.glb	$psnd_dtq
+   161                                  	.glb	$ipsnd_dtq
+   162                                  	.glb	$tsnd_dtq
+   163                                  	.glb	$fsnd_dtq
+   164                                  	.glb	$ifsnd_dtq
+   165                                  	.glb	$rcv_dtq
+   166                                  	.glb	$prcv_dtq
+   167                                  	.glb	$trcv_dtq
+   168                                  	.glb	$ini_dtq
+   169                                  	.glb	$ref_dtq
+   170                                  	.glb	$snd_pdq
+   171                                  	.glb	$psnd_pdq
+   172                                  	.glb	$ipsnd_pdq
+   173                                  	.glb	$tsnd_pdq
+   174                                  	.glb	$rcv_pdq
+   175                                  	.glb	$prcv_pdq
+   176                                  	.glb	$trcv_pdq
+   177                                  	.glb	$ini_pdq
+   178                                  	.glb	$ref_pdq
+   179                                  	.glb	$snd_mbx
+   180                                  	.glb	$rcv_mbx
+   181                                  	.glb	$prcv_mbx
+   182                                  	.glb	$trcv_mbx
+   183                                  	.glb	$ini_mbx
+   184                                  	.glb	$ref_mbx
+   185                                  	.glb	$get_mpf
+   186                                  	.glb	$pget_mpf
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Sun Oct 28 11:11:04 2012  PAGE 004
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   187                                  	.glb	$tget_mpf
+   188                                  	.glb	$rel_mpf
+   189                                  	.glb	$ini_mpf
+   190                                  	.glb	$ref_mpf
+   191                                  	.glb	$get_tim
+   192                                  	.glb	$get_utm
+   193                                  	.glb	$sta_cyc
+   194                                  	.glb	$stp_cyc
+   195                                  	.glb	$ref_cyc
+   196                                  	.glb	$sta_alm
+   197                                  	.glb	$ista_alm
+   198                                  	.glb	$stp_alm
+   199                                  	.glb	$istp_alm
+   200                                  	.glb	$ref_alm
+   201                                  	.glb	$rot_rdq
+   202                                  	.glb	$irot_rdq
+   203                                  	.glb	$get_tid
+   204                                  	.glb	$iget_tid
+   205                                  	.glb	_loc_cpu
+   206                                  	.glb	_iloc_cpu
+   207                                  	.glb	_unl_cpu
+   208                                  	.glb	_iunl_cpu
+   209                                  	.glb	_dis_dsp
+   210                                  	.glb	_ena_dsp
+   211                                  	.glb	_sns_ctx
+   212                                  	.glb	_sns_loc
+   213                                  	.glb	_sns_dsp
+   214                                  	.glb	_sns_dpn
+   215                                  	.glb	_sns_ker
+   216                                  	.glb	_ext_ker
+   217                                  	.glb	$dis_int
+   218                                  	.glb	$ena_int
+   219                                  	.glb	$chg_ipm
+   220                                  	.glb	$get_ipm
+   221                                  	.glb	$xsns_dpn
+   222                                  	.glb	$xsns_xpn
+   223                                  	.glb	$syslog_wri_log
+   224                                  	.glb	_syslog
+   225                                  	.glb	$m16c_config_int
+   226                                  	.glb	__kernel_intc_reg
+   227                                  	.glb	__kernel_target_initialize
+   228                                  	.glb	__kernel_target_exit
+   229                                  	.glb	$target_fput_log
+   230                                  	.glb	__kernel_tnum_inhno
+   231                                  	.glb	__kernel_inhinib_table
+   232                                  	.glb	__kernel_tnum_intno
+   233                                  	.glb	__kernel_intinib_table
+   234                                  	.glb	__kernel_initialize_interrupt
+   235                                  	.glb	__kernel_intnest
+   236                                  	.glb	_intpri_table
+   237                                  	.glb	$x_config_int
+   238                                  	.glb	__kernel_dispatch
+   239                                  	.glb	__kernel_start_dispatch
+   240                                  	.glb	__exit_and_dispatch
+   241                                  	.glb	__kernel_call_exit_kernel
+   242                                  	.glb	__kernel_start_r
+   243                                  	.glb	__kernel_tsk_sp
+   244                                  	.glb	__kernel_prc_initialize
+   245                                  	.glb	__kernel_prc_terminate
+   246                                  	.glb	__kernel_initialize_object
+   247                                  	.glb	__kernel_call_inirtn
+   248                                  	.glb	__kernel_call_terrtn
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Sun Oct 28 11:11:04 2012  PAGE 005
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   249                                  	.glb	__kernel_istksz
+   250                                  	.glb	__kernel_istk
+   251                                  	.glb	__kernel_kerflg
+   252                                  	.glb	_sta_ker
+   253                                  	.glb	__kernel_exit_kernel
+   254                                  	.glb	__kernel_tmevt_heap
+   255                                  	.glb	__kernel_current_time
+   256                                  	.glb	__kernel_next_time
+   257                                  	.glb	__kernel_pend_update
+   258                                  	.glb	__kernel_last_index
+   259                                  	.glb	__kernel_initialize_tmevt
+   260                                  	.glb	$_kernel_tmevt_up
+   261                                  	.glb	$_kernel_tmevt_down
+   262                                  	.glb	$_kernel_tmevtb_insert
+   263                                  	.glb	$_kernel_tmevtb_delete
+   264                                  	.glb	$_kernel_tmevt_lefttim
+   265                                  	.glb	__kernel_signal_time
+   266                                  	.glb	__kernel_p_runtsk
+   267                                  	.glb	__kernel_p_schedtsk
+   268                                  	.glb	__kernel_reqflg
+   269                                  	.glb	__kernel_disdsp
+   270                                  	.glb	__kernel_dspflg
+   271                                  	.glb	__kernel_ready_queue
+   272                                  	.glb	__kernel_ready_primap
+   273                                  	.glb	__kernel_tmax_tskid
+   274                                  	.glb	__kernel_tinib_table
+   275                                  	.glb	__kernel_torder_table
+   276                                  	.glb	__kernel_tcb_table
+   277                                  	.glb	__kernel_initialize_task
+   278                                  	.glb	__kernel_search_schedtsk
+   279                                  	.glb	$_kernel_make_runnable
+   280                                  	.glb	$_kernel_make_non_runnable
+   281                                  	.glb	$_kernel_make_dormant
+   282                                  	.glb	$_kernel_make_active
+   283                                  	.glb	$_kernel_change_priority
+   284                                  	.glb	$_kernel_rotate_ready_queue
+   285                                  	.glb	__kernel_call_texrtn
+   286                                  	.glb	__kernel_calltex
+   287                                  
+   288                                  	.SECTION	rom_FE,ROMDATA,align
+   289  00000                           _____BEGIN_OFF_TCB_tstat:
+   290  00000  0000                     	.word	0000H
+   291  00002  0000                     	.word	0000H
+   292  00004  0000                     	.word	0000H
+   293  00006  0000                     	.word	0000H
+   294  00008  0000                     	.word	0000H
+   295  0000A  0000                     	.word	0000H
+   296  0000C  0000                     	.word	0000H
+   297  0000E  0000                     	.word	0000H
+   298  00010  0000                     	.word	0000H
+   299  00012  0000                     	.word	0000H
+   300  00014  01                       	.byte	01H
+   301  00015  00                       	.byte	00H
+   302  00016                           _____BEGIN_OFF_TCB_tinib:
+   303  00016  0000                     	.word	0000H
+   304  00018  0000                     	.word	0000H
+   305  0001A  0100                     	.word	0001H
+   306  0001C  0000                     	.word	0000H
+   307  0001E  0000                     	.word	0000H
+   308  00020  0000                     	.word	0000H
+   309  00022  0000                     	.word	0000H
+   310  00024  0000                     	.word	0000H
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Sun Oct 28 11:11:04 2012  PAGE 006
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   311  00026  0000                     	.word	0000H
+   312  00028  0000                     	.word	0000H
+   313  0002A  00                       	.byte	00H
+   314  0002B  00                       	.byte	00H
+   315  0002C                           _____BEGIN_OFF_TCB_pc:
+   316  0002C  0000                     	.word	0000H
+   317  0002E  0000                     	.word	0000H
+   318  00030  0000                     	.word	0000H
+   319  00032  0000                     	.word	0000H
+   320  00034  0000                     	.word	0000H
+   321  00036  0000                     	.word	0000H
+   322  00038  0000                     	.word	0000H
+   323  0003A  0000                     	.word	0000H
+   324  0003C  0100                     	.word	0001H
+   325  0003E  0000                     	.word	0000H
+   326  00040  00                       	.byte	00H
+   327  00041  00                       	.byte	00H
+   328  00042                           _____BEGIN_OFF_TCB_sp:
+   329  00042  0000                     	.word	0000H
+   330  00044  0000                     	.word	0000H
+   331  00046  0000                     	.word	0000H
+   332  00048  0000                     	.word	0000H
+   333  0004A  0000                     	.word	0000H
+   334  0004C  0000                     	.word	0000H
+   335  0004E  0000                     	.word	0000H
+   336  00050  0100                     	.word	0001H
+   337  00052  0000                     	.word	0000H
+   338  00054  0000                     	.word	0000H
+   339  00056  00                       	.byte	00H
+   340  00057  00                       	.byte	00H
+   341  00058                           _____BEGIN_BIT_TCB_enatex:
+   342  00058  0000                     	.word	0000H
+   343  0005A  0000                     	.word	0000H
+   344  0005C  0000                     	.word	0000H
+   345  0005E  0000                     	.word	0000H
+   346  00060  0000                     	.word	0000H
+   347  00062  0000                     	.word	0000H
+   348  00064  0000                     	.word	0000H
+   349  00066  0000                     	.word	0000H
+   350  00068  0000                     	.word	0000H
+   351  0006A  0000                     	.word	0000H
+   352  0006C  00                       	.byte	00H
+   353  0006D  04                       	.byte	04H
+   354  0006E                           _____BEGIN_OFF_TCB_texptn:
+   355  0006E  0000                     	.word	0000H
+   356  00070  0000                     	.word	0000H
+   357  00072  0000                     	.word	0000H
+   358  00074  0000                     	.word	0000H
+   359  00076  0000                     	.word	0000H
+   360  00078  0100                     	.word	0001H
+   361  0007A  0000                     	.word	0000H
+   362  0007C  0000                     	.word	0000H
+   363  0007E  0000                     	.word	0000H
+   364  00080  0000                     	.word	0000H
+   365  00082  00                       	.byte	00H
+   366  00083  00                       	.byte	00H
+   367  00084                           _____BEGIN_OFF_TINIB_exinf:
+   368  00084  0000                     	.word	0000H
+   369  00086  0100                     	.word	0001H
+   370  00088  0000                     	.word	0000H
+   371  0008A  0000                     	.word	0000H
+   372  0008C  0000                     	.word	0000H
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Sun Oct 28 11:11:04 2012  PAGE 007
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   373  0008E  0000                     	.word	0000H
+   374  00090  0000                     	.word	0000H
+   375  00092  0000                     	.word	0000H
+   376  00094  0000                     	.word	0000H
+   377  00096  0000                     	.word	0000H
+   378  00098  0000                     	.word	0000H
+   379  0009A  0000                     	.word	0000H
+   380  0009C                           _____BEGIN_OFF_TINIB_task:
+   381  0009C  0000                     	.word	0000H
+   382  0009E  0000                     	.word	0000H
+   383  000A0  0000                     	.word	0000H
+   384  000A2  0100                     	.word	0001H
+   385  000A4  0000                     	.word	0000H
+   386  000A6  0000                     	.word	0000H
+   387  000A8  0000                     	.word	0000H
+   388  000AA  0000                     	.word	0000H
+   389  000AC  0000                     	.word	0000H
+   390  000AE  0000                     	.word	0000H
+   391  000B0  0000                     	.word	0000H
+   392  000B2  0000                     	.word	0000H
+   393                                  
+   394                                  	.SECTION	rom_FO,ROMDATA
+   395  00000                           ___T4:
+   396  00000  74                       	.byte	74H	;  't'
+   397  00001  69                       	.byte	69H	;  'i'
+   398  00002  6D                       	.byte	6dH	;  'm'
+   399  00003  65                       	.byte	65H	;  'e'
+   400  00004  5F                       	.byte	5fH	;  '_'
+   401  00005  65                       	.byte	65H	;  'e'
+   402  00006  76                       	.byte	76H	;  'v'
+   403  00007  65                       	.byte	65H	;  'e'
+   404  00008  6E                       	.byte	6eH	;  'n'
+   405  00009  74                       	.byte	74H	;  't'
+   406  0000A  2E                       	.byte	2eH	;  '.'
+   407  0000B  68                       	.byte	68H	;  'h'
+   408  0000C  00                       	.byte	00H
+   409  0000D                           ___T3:
+   410  0000D  74                       	.byte	74H	;  't'
+   411  0000E  69                       	.byte	69H	;  'i'
+   412  0000F  6D                       	.byte	6dH	;  'm'
+   413  00010  65                       	.byte	65H	;  'e'
+   414  00011  20                       	.byte	20H	;  ' '
+   415  00012  3C                       	.byte	3cH	;  '<'
+   416  00013  3D                       	.byte	3dH	;  '='
+   417  00014  20                       	.byte	20H	;  ' '
+   418  00015  54                       	.byte	54H	;  'T'
+   419  00016  4D                       	.byte	4dH	;  'M'
+   420  00017  41                       	.byte	41H	;  'A'
+   421  00018  58                       	.byte	58H	;  'X'
+   422  00019  5F                       	.byte	5fH	;  '_'
+   423  0001A  52                       	.byte	52H	;  'R'
+   424  0001B  45                       	.byte	45H	;  'E'
+   425  0001C  4C                       	.byte	4cH	;  'L'
+   426  0001D  54                       	.byte	54H	;  'T'
+   427  0001E  49                       	.byte	49H	;  'I'
+   428  0001F  4D                       	.byte	4dH	;  'M'
+   429  00020  00                       	.byte	00H
+   430  00021                           ___T2:
+   431  00021  70                       	.byte	70H	;  'p'
+   432  00022  5F                       	.byte	5fH	;  '_'
+   433  00023  71                       	.byte	71H	;  'q'
+   434  00024  75                       	.byte	75H	;  'u'
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Sun Oct 28 11:11:04 2012  PAGE 008
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   435  00025  65                       	.byte	65H	;  'e'
+   436  00026  75                       	.byte	75H	;  'u'
+   437  00027  65                       	.byte	65H	;  'e'
+   438  00028  2D                       	.byte	2dH	;  '-'
+   439  00029  3E                       	.byte	3eH	;  '>'
+   440  0002A  70                       	.byte	70H	;  'p'
+   441  0002B  5F                       	.byte	5fH	;  '_'
+   442  0002C  70                       	.byte	70H	;  'p'
+   443  0002D  72                       	.byte	72H	;  'r'
+   444  0002E  65                       	.byte	65H	;  'e'
+   445  0002F  76                       	.byte	76H	;  'v'
+   446  00030  20                       	.byte	20H	;  ' '
+   447  00031  3D                       	.byte	3dH	;  '='
+   448  00032  3D                       	.byte	3dH	;  '='
+   449  00033  20                       	.byte	20H	;  ' '
+   450  00034  70                       	.byte	70H	;  'p'
+   451  00035  5F                       	.byte	5fH	;  '_'
+   452  00036  71                       	.byte	71H	;  'q'
+   453  00037  75                       	.byte	75H	;  'u'
+   454  00038  65                       	.byte	65H	;  'e'
+   455  00039  75                       	.byte	75H	;  'u'
+   456  0003A  65                       	.byte	65H	;  'e'
+   457  0003B  00                       	.byte	00H
+   458  0003C                           ___T1:
+   459  0003C  71                       	.byte	71H	;  'q'
+   460  0003D  75                       	.byte	75H	;  'u'
+   461  0003E  65                       	.byte	65H	;  'e'
+   462  0003F  75                       	.byte	75H	;  'u'
+   463  00040  65                       	.byte	65H	;  'e'
+   464  00041  2E                       	.byte	2eH	;  '.'
+   465  00042  68                       	.byte	68H	;  'h'
+   466  00043  00                       	.byte	00H
+   467  00044                           ___T0:
+   468  00044  70                       	.byte	70H	;  'p'
+   469  00045  5F                       	.byte	5fH	;  '_'
+   470  00046  71                       	.byte	71H	;  'q'
+   471  00047  75                       	.byte	75H	;  'u'
+   472  00048  65                       	.byte	65H	;  'e'
+   473  00049  75                       	.byte	75H	;  'u'
+   474  0004A  65                       	.byte	65H	;  'e'
+   475  0004B  2D                       	.byte	2dH	;  '-'
+   476  0004C  3E                       	.byte	3eH	;  '>'
+   477  0004D  70                       	.byte	70H	;  'p'
+   478  0004E  5F                       	.byte	5fH	;  '_'
+   479  0004F  6E                       	.byte	6eH	;  'n'
+   480  00050  65                       	.byte	65H	;  'e'
+   481  00051  78                       	.byte	78H	;  'x'
+   482  00052  74                       	.byte	74H	;  't'
+   483  00053  20                       	.byte	20H	;  ' '
+   484  00054  21                       	.byte	21H	;  '!'
+   485  00055  3D                       	.byte	3dH	;  '='
+   486  00056  20                       	.byte	20H	;  ' '
+   487  00057  70                       	.byte	70H	;  'p'
+   488  00058  5F                       	.byte	5fH	;  '_'
+   489  00059  71                       	.byte	71H	;  'q'
+   490  0005A  75                       	.byte	75H	;  'u'
+   491  0005B  65                       	.byte	65H	;  'e'
+   492  0005C  75                       	.byte	75H	;  'u'
+   493  0005D  65                       	.byte	65H	;  'e'
+   494  0005E  00                       	.byte	00H
+   495                                  ;#################################
+   496                                  ;###  STATIC DATA INFORMATION  ###
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Sun Oct 28 11:11:04 2012  PAGE 009
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   497                                  ;#################################
+   498                                  ;#################################
+   499                                  ;#################################
+   500                                  ;#################################
+   501                                  
+   502                                  	.END
+
+Information List
+
+TOTAL ERROR(S)    00000
+TOTAL WARNING(S)  00000
+TOTAL LINE(S)     00502   LINES
+
+Section List
+
+Attr        Size          Name
+ROMDATA  0000180(000B4H)  rom_FE
+ROMDATA  0000095(0005FH)  rom_FO

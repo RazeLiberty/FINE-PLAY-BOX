@@ -1,0 +1,5 @@
+-L "nc30lib"
+-G
+-MS
+-O "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg\Release\cfg.x30"
+"C:\WorkSpace\asp\target\M16C62P_HEW\workspace\cfg\Release\cfg1_out.r30"

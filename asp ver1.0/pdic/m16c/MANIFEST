@@ -1,0 +1,7 @@
+PACKAGE pdic_m16c
+
+MANIFEST
+m16c_uart.h
+m16c_uart.c
+m16c_ta.h
+m16c_ta.c

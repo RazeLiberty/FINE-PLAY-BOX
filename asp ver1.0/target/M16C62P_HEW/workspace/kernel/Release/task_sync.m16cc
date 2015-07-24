@@ -1,0 +1,9 @@
+-I"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\..\..\..\arch"
+-I"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\..\..\..\kernel"
+-I"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\..\..\..\include"
+-I"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\..\..\..\target\M16C62P_HEW"
+-I"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\..\..\..\pdic"
+-c
+-dir "C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release"
+-Wall
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\kernel\task_sync.c"

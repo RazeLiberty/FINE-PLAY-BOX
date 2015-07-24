@@ -1,0 +1,263 @@
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Mon Mar 03 17:03:10 2014  PAGE 001
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+     1                                  ;*by K.H line61-69
+     2                                  ;*   TOPPERS/ASP Kernel
+     3                                  ;*       Toyohashi Open Platform for Embedded Real-Time Systems/
+     4                                  ;*       Advanced Standard Profile Kernel
+     5                                  ;*  
+     6                                  ;*   Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+     7                                  ;*                               Toyohashi Univ. of Technology, JAPAN
+     8                                  ;*   Copyright (C) 2005,2006 by Embedded and Real-Time Systems Laboratory
+     9                                  ;*               Graduate School of Information Science, Nagoya Univ., JAPAN
+    10                                  ;*   Copyright (C) 2008 by Witz Corporation, JAPAN
+    11                                  ;* 
+    12                                  ;*  上記著作権者は，Free Software Foundation によって公表されている 
+    13                                  ;*  GNU General Public License の Version 2 に記述されている条件か，以 
+    14                                  ;*  下の(1)～(4)の条件を満たす場合に限り，本ソフトウェア（本ソフトウェ
+    15                                  ;*  アを改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+    16                                  ;*  利用と呼ぶ）することを無償で許諾する．
+    17                                  ;*  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作 
+    18                                  ;*      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+    19                                  ;*      スコード中に含まれていること．
+    20                                  ;*  (2) 本ソフトウェアを再利用可能なバイナリコード（リロケータブルオブ
+    21                                  ;*      ジェクトファイルやライブラリなど）の形で利用する場合には，利用
+    22                                  ;*      に伴うドキュメント（利用者マニュアルなど）に，上記の著作権表示，
+    23                                  ;*      この利用条件および下記の無保証規定を掲載すること．
+    24                                  ;*  (3) 本ソフトウェアを再利用不可能なバイナリコードの形または機器に組
+    25                                  ;*      み込んだ形で利用する場合には，次のいずれかの条件を満たすこと．
+    26                                  ;*    (a) 利用に伴うドキュメント（利用者マニュアルなど）に，上記の著作 
+    27                                  ;*        権表示，この利用条件および下記の無保証規定を掲載すること．
+    28                                  ;*    (b) 利用の形態を，別に定める方法によって，上記著作権者に報告する 
+    29                                  ;*        こと．
+    30                                  ;*  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損 
+    31                                  ;*      害からも，上記著作権者を免責すること．
+    32                                  ;* 
+    33                                  ;*  本ソフトウェアは，無保証で提供されているものである．上記著作権者は，
+    34                                  ;*  本ソフトウェアに関して，その適用可能性も含めて，いかなる保証も行わ 
+    35                                  ;*  ない．また，本ソフトウェアの利用により直接的または間接的に生じたい 
+    36                                  ;*  かなる損害に関しても，その責任を負わない．
+    37                                  ;* 
+    38                                  
+    39                                  ;/*	定数定義（初期化）*/
+    40                                  ;
+    41                                  
+    42                                  	.include	sectm16c.inc
+    43                           1      ;*by K.H line95
+    44                           1      ;*   TOPPERS/ASP Kernel
+    45                           1      ;*       Toyohashi Open Platform for Embedded Real-Time Systems/
+    46                           1      ;*       Advanced Standard Profile Kernel
+    47                           1      ;*  
+    48                           1      ;*   Copyright (C) 2008 by Witz Corporation, JAPAN
+    49                           1      ;* 
+    50                           1      ;*  上記著作権者は，Free Software Foundation によって公表されている 
+    51                           1      ;*  GNU General Public License の Version 2 に記述されている条件か，以 
+    52                           1      ;*  下の(1)～(4)の条件を満たす場合に限り，本ソフトウェア（本ソフトウェ
+    53                           1      ;*  アを改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+    54                           1      ;*  利用と呼ぶ）することを無償で許諾する．
+    55                           1      ;*  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作 
+    56                           1      ;*      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+    57                           1      ;*      スコード中に含まれていること．
+    58                           1      ;*  (2) 本ソフトウェアを再利用可能なバイナリコード（リロケータブルオブ
+    59                           1      ;*      ジェクトファイルやライブラリなど）の形で利用する場合には，利用
+    60                           1      ;*      に伴うドキュメント（利用者マニュアルなど）に，上記の著作権表示，
+    61                           1      ;*      この利用条件および下記の無保証規定を掲載すること．
+    62                           1      ;*  (3) 本ソフトウェアを再利用不可能なバイナリコードの形または機器に組
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Mon Mar 03 17:03:10 2014  PAGE 002
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+    63                           1      ;*      み込んだ形で利用する場合には，次のいずれかの条件を満たすこと．
+    64                           1      ;*    (a) 利用に伴うドキュメント（利用者マニュアルなど）に，上記の著作 
+    65                           1      ;*        権表示，この利用条件および下記の無保証規定を掲載すること．
+    66                           1      ;*    (b) 利用の形態を，別に定める方法によって，上記著作権者に報告する 
+    67                           1      ;*        こと．
+    68                           1      ;*  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損 
+    69                           1      ;*      害からも，上記著作権者を免責すること．
+    70                           1      ;* 
+    71                           1      ;*  本ソフトウェアは，無保証で提供されているものである．上記著作権者は，
+    72                           1      ;*  本ソフトウェアに関して，その適用可能性も含めて，いかなる保証も行わ 
+    73                           1      ;*  ない．また，本ソフトウェアの利用により直接的または間接的に生じたい 
+    74                           1      ;*  かなる損害に関しても，その責任を負わない．
+    75                           1      
+    76                           1      ;
+    77                           1      ;  ターゲットシステム依存セクション定義ファイル(RSK-M16C-62P用)
+    78                           1      ;
+    79                           1      
+    80                           1      ;
+    81                           1      ;  セクションの定義
+    82                           1      ;
+    83                           1      
+    84                           1      	;
+    85                           1      	; 初期値有りデータ領域のセクション 
+    86                           1      	;
+    87                           1      	.section	data_NE,DATA
+    88  00410                    1      	.org	0410H
+    89                           1      
+    90                           1      	;
+    91                           1      	; 初期値無し偶数データ領域のセクション 
+    92                           1      	;
+    93                           1      	.section	bss_NE,DATA
+    94                           1      
+    95                           1      	;
+    96                           1      	; 初期値有り奇数データ領域のセクション 
+    97                           1      	;
+    98                           1      	.section	data_NO,DATA
+    99                           1      
+   100                           1      	;
+   101                           1      	; 初期値無し奇数データ領域のセクション 
+   102                           1      	;
+   103                           1      	.section	bss_NO,DATA
+   104                           1      
+   105                           1      	;
+   106                           1      	; カーネルスタック領域のセクション 
+   107                           1      	;
+   108                           1      	.section	stack,DATA
+   109  07C00                    1      	.org	07C00H
+   110  07C00(000400H)           1      	.blkb	0400H
+   111                           1      	.glb DEFAULT_ISTK_TOP
+   112  08000                    1      DEFAULT_ISTK_TOP:
+   113                           1      
+   114                           1      	;
+   115                           1      	; CODE領域のセクション 
+   116                           1      	;
+   117                           1      	.section	program,CODE
+   118  A0000                    1      	.org	0A0000H					; 080000H -> 0A0000Hに変更
+   119                           1      
+   120                           1      	;
+   121                           1      	; ROデータ領域のセクション 
+   122                           1      	;
+   123                           1      	.section	rom_FE,ROMDATA,ALIGN
+   124                           1      	.section	rom_FO,ROMDATA
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Mon Mar 03 17:03:10 2014  PAGE 003
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   125                           1      
+   126                           1      	;
+   127                           1      	; DATA領域の初期値
+   128                           1      	;
+   129                           1      	.section	data_NEI,ROMDATA,ALIGN
+   130                           1      	.section	data_NOI,ROMDATA
+   131                           1      
+   132                           1      	;
+   133                           1      	; 可変ベクタテーブル領域のセクション 
+   134                           1      	;
+   135                           1      	.section	vvector,CODE
+   136                           1      ;	.org	0FFEDCH
+   137  FA000                    1      	.org	0fa000h		; for monitor on board  by K.H
+   138                           1      
+   139                           1      	.glb VVECTOR_TOP
+   140  FA000                    1      VVECTOR_TOP:
+   141                           1      
+   142                           1      	;
+   143                           1      	; 固定ベクタテーブル領域のセクション 
+   144                           1      	;
+   145                           1      	.section	fvector,CODE
+   146  FFFDC                    1      	.org	0FFFDCH
+   147                           1      
+   148                           1      
+   149                                  ;
+   150                                  ;************************************************
+   151                                  ;*	初期化ルーチン                              *
+   152                                  ;************************************************
+   153                                  	.section	program, code, align
+   154                                  	.glb		_start
+   155                                  	.glb		_sta_ker
+   156                                  	.glb		_software_init_hook
+   157                                  	.glb		_hardware_init_hook
+   158                                  	.glb		__kernel_istkpt
+   159                                  
+   160  00000                           _start:
+   161  00000  A20000r               S  	mov.w	#(__kernel_istkpt & 0FFFFH), a0			; 下位16ビット
+   162  00003  AA0000r               S  	mov.w	#((__kernel_istkpt >> 16) & 0FFFFH), a1	; 上位4ビット
+   163  00006  75A0                     	lde.w	[a1a0], r0				; アドレスの中身をR0レジスタに格納
+   164  00008  7AC0                     	ldc		r0,isp					; 割り込みスタックポインタセット
+   165  0000A  EB200F00                 	ldintb	#VVECTOR_TOP			; ベクタテーブルの設定 
+               EB1000A0 
+   166                                  
+   167                                  ;------ ハードウェア固有の初期化ルーチンの呼出し(単独実行時必要)
+   168                                  ;	mov.w	#(_hardware_init_hook & 0FFFFH), a0
+   169                                  ;	mov.w	#((_hardware_init_hook >> 16) & 0FFFFH), a1
+   170                                  ;	cmp.w	#0, a0
+   171                                  ;	jnz		hw_init
+   172                                  ;	cmp.w	#0, a1
+   173                                  ;	jz		init_data_NE
+   174                                  ;hw_init:
+   175                                  ;	jsri.a	a1a0
+   176                                  
+   177                                  ;------ DATA領域の初期化 ------
+   178  00012                           init_data_NE:
+   179  00012  75C30000r                	mov.w	#(sizeof data_NE), r3
+   180  00016  6A0C                     	jz		init_data_NO			; サイズ0なら初期化必要なし 
+   181  00018  A20000r               S  	mov.w	#(topof data_NEI & 0FFFFH), a0
+   182  0001B  74C300r                  	mov.b	#((topof data_NEI >> 16) & 000FFH), r1h
+   183  0001E  AA0000r               S  	mov.w	#(topof data_NE), a1
+   184  00021  7CE8                     	smovf.b
+   185                                  
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Mon Mar 03 17:03:10 2014  PAGE 004
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   186  00023                           init_data_NO:
+   187  00023  75C30000r                	mov.w	#(sizeof data_NO), r3
+   188  00027  6A0C                     	jz		clear_bss				; サイズ0なら初期化必要なし 
+   189  00029  A20000r               S  	mov.w	#(topof data_NOI & 0FFFFH), a0
+   190  0002C  74C300r                  	mov.b	#((topof data_NOI >> 16) & 000FFH), r1h
+   191  0002F  AA0000r               S  	mov.w	#(topof data_NO), a1
+   192  00032  7CE8                     	smovf.b
+   193                                  
+   194                                  ;------ BSS領域の初期化 ------
+   195  00034                           clear_bss:
+   196  00034  B4                    Z  	mov.b	#0, r0l
+   197  00035  AA0000r               S  	mov.w	#(topof bss_NE & 0ffffh), a1
+   198  00038  75C30000r                	mov.w	#(sizeof bss_NE) , r3
+   199  0003C  7CEA                     	sstr.b
+   200                                  
+   201  0003E  AA0000r               S  	mov.w	#(topof bss_NO & 0ffffh), a1
+   202  00041  75C30000r                	mov.w	#(sizeof bss_NO) , r3
+   203  00045  7CEA                     	sstr.b
+   204                                  
+   205                                  ;*  software_init_hook を呼出し（0 でない場合）
+   206                                  ;*
+   207                                  ;*  ソフトウェア環境（特にライブラリ）に依存して必要な初期化処 
+   208                                  ;*  理がある場合は，software_init_hook という関数を用意すれば 
+   209                                  ;*  よい．M16Cの場合、コンパイル時EXTERN_SOFT_HOOKをデファインする 
+   210  00047  A20000r               S  	mov.w	#(_software_init_hook & 0FFFFH), a0
+   211  0004A  AA0000r               S  	mov.w	#((_software_init_hook >> 16) & 0FFFFH), a1
+   212  0004D  D104                  Q  	cmp.w	#0, a0
+   213  0004F  6E05                     	jnz		sw_init
+   214  00051  D105                  Q  	cmp.w	#0, a1
+   215  00053  6A03                     	jz		kernel_link
+   216  00055                           sw_init:
+   217  00055  7D14                     	jsri.a	a1a0
+   218                                  ;;
+   219                                  ;***** カーネルスタートへ	*****
+   220  00057                           kernel_link:
+   221  00057  FC000000r             A  	jmp		_sta_ker	; --> _sta_ker()
+   222                                  ;
+   223                                  	.end
+
+Information List
+
+TOTAL ERROR(S)    00000
+TOTAL WARNING(S)  00000
+TOTAL LINE(S)     00223   LINES
+
+Section List
+
+Attr        Size          Name
+DATA     0000000(00000H)  data_NE
+DATA     0000000(00000H)  bss_NE
+DATA     0000000(00000H)  data_NO
+DATA     0000000(00000H)  bss_NO
+DATA     0001024(00400H)  stack
+CODE     0000000(00000H)  program
+ROMDATA  0000000(00000H)  rom_FE
+ROMDATA  0000000(00000H)  rom_FO
+ROMDATA  0000000(00000H)  data_NEI
+ROMDATA  0000000(00000H)  data_NOI
+CODE     0000000(00000H)  vvector
+CODE     0000000(00000H)  fvector
+CODE     0000091(0005BH)  program

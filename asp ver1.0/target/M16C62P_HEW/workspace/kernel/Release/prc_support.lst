@@ -1,0 +1,514 @@
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Wed Nov 21 17:34:44 2012  PAGE 001
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+     1                                  ;*
+     2                                  ;*   TOPPERS/ASP Kernel
+     3                                  ;*       Toyohashi Open Platform for Embedded Real-Time Systems/
+     4                                  ;*       Advanced Standard Profile Kernel
+     5                                  ;*  
+     6                                  ;*   Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+     7                                  ;*                               Toyohashi Univ. of Technology, JAPAN
+     8                                  ;*   Copyright (C) 2005,2006 by Embedded and Real-Time Systems Laboratory
+     9                                  ;*               Graduate School of Information Science, Nagoya Univ., JAPAN
+    10                                  ;*   Copyright (C) 2008 by Witz Corporation, JAPAN
+    11                                  ;*
+    12                                  ;*  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+    13                                  ;*  によって公表されている GNU General Public License の Version 2 に記
+    14                                  ;*  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+    15                                  ;*  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+    16                                  ;*  利用と呼ぶ）することを無償で許諾する．
+    17                                  ;*  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作 
+    18                                  ;*      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+    19                                  ;*      スコード中に含まれていること．
+    20                                  ;*  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+    21                                  ;*      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+    22                                  ;*      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+    23                                  ;*      の無保証規定を掲載すること．
+    24                                  ;*  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+    25                                  ;*      用できない形で再配布する場合には，次のいずれかの条件を満たすこ 
+    26                                  ;*      と．
+    27                                  ;*    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著 
+    28                                  ;*        作権表示，この利用条件および下記の無保証規定を掲載すること．
+    29                                  ;*    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに 
+    30                                  ;*        報告すること．
+    31                                  ;*  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損 
+    32                                  ;*      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+    33                                  ;*
+    34                                  ;*  本ソフトウェアは，無保証で提供されているものである．上記著作権者お 
+    35                                  ;*  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も 
+    36                                  ;*  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直 
+    37                                  ;*  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+    38                                  ;* 
+    39                                  
+    40                                  
+    41                                  ;
+    42                                  ;	プロセッサ依存モジュール アセンブリ言語部（M16C用）
+    43                                  ;
+    44                                  
+    45                                  ;
+    46                                  ;  offset.inc はTCBの先頭からメンバまでのオフセット定義ファイル 
+    47                                  ;
+    48                                  	.include	offset.inc
+    49  00000014h                1      TCB_tstat	.equ	20
+    50  00000004h                1      TCB_tinib	.equ	4
+    51  00000010h                1      TCB_pc	.equ	16
+    52  0000000Eh                1      TCB_sp	.equ	14
+    53  00000015h                1      TCB_enatex	.equ	21
+    54  00000002h                1      TCB_enatex_bit	.equ	2
+    55  00000004h                1      TCB_enatex_mask	.equ	4H
+    56  0000000Ah                1      TCB_texptn	.equ	10
+    57  00000002h                1      TINIB_exinf	.equ	2
+    58  00000006h                1      TINIB_task	.equ	6
+    59                                  	
+    60                                  	.glb	__kernel_istkpt
+    61                                  	
+    62                                  	.glb	__kernel_p_runtsk
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Wed Nov 21 17:34:44 2012  PAGE 002
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+    63                                  	.glb	__kernel_p_schedtsk
+    64                                  	.glb	__kernel_reqflg
+    65                                  	.glb	__kernel_dspflg
+    66                                  
+    67                                  	.glb	__kernel_dispatch
+    68                                  	.glb	__exit_and_dispatch
+    69                                  	.glb	__kernel_start_r
+    70                                  	.glb	__kernel_call_texrtn
+    71                                  	.glb	_kernel_interrupt
+    72                                  	.glb	_kernel_exception
+    73                                  	.glb	__kernel_intnest
+    74                                  	.glb	__kernel_call_exit_kernel
+    75                                  	.glb	__kernel_start_dispatch
+    76                                  	.glb	__kernel_exit_kernel
+    77                                  
+    78                                  	.glb	$_kernel_log_inh_enter
+    79                                  	.glb	$_kernel_log_inh_leave
+    80                                  	.glb	$_kernel_log_exc_enter
+    81                                  	.glb	$_kernel_log_exc_leave
+    82                                  	.glb	$_kernel_log_dsp_leave
+    83                                  	.glb	$_kernel_log_dsp_enter
+    84                                  	.glb	_ext_tsk
+    85                                  	
+    86                                  ;
+    87                                  ;	教育ツール用のシンボル外部公開
+    88                                  ;
+    89                                  	.glb	__kernel_break_wait
+    90                                  
+    91                                  	.section	program, code, align
+    92                                  ;
+    93                                  ;	タスクディスパッチャ 
+    94                                  ;
+    95                                  ;   dispatch は，タスクコンテキスト状態・割込み禁止状態で呼び出さなけ 
+    96                                  ;   ればならない．exit_and_dispatch も，タスクコンテキスト状態・割込 
+    97                                  ;   み禁止状態で呼び出すのが原則であるが，カーネル起動時に対応するため，
+    98                                  ;   割込みモードで呼び出した場合にも対応している．
+    99                                  ;	呼び出し条件: IPL=0, FLGレジスタIビット=0 (CPUロック状態),
+   100                                  ;			intnest = 0(タスクコンテキスト), タスクスタック
+   101                                  ;
+   102  00000                           __kernel_dispatch:
+   103  00000  EC03                     	pushm	sb,fb										; スタックへレジスタ保存 
+   104  00002  73F40000r                	mov.w	__kernel_p_runtsk, a0
+   105  00006  7BC80E                   	stc		isp, TCB_sp[a0]				; スタックポインタをTCBに保存 
+   106  00009  75C8100000r              	mov.w	#(dispatch_r & 0FFFFH), TCB_pc[a0]			; 実行再開番地をTCBに保存(下位16ビット)
+   107  0000E  74C81200r                	mov.b	#((dispatch_r >> 16) & 0FFH), TCB_pc+2[a0]	; 上位4ビット
+   108  00012  FE73                  B  	jmp.b	dispatcher
+   109                                  
+   110                                  ;	呼び出し条件: IPL=0, FLGレジスタIビット=0 (CPUロック状態),
+   111                                  ;			intnest = 0(タスクコンテキスト), タスクスタック
+   112                                  ;
+   113                                  ;	a0 にはp_runtsk のアドレスが格納されている 
+   114                                  ;
+   115  00014                           dispatch_r:
+   116  00014  728015                   	mov.b	TCB_enatex[a0], r0l
+   117  00017  7EB002                   	btst	TCB_enatex_bit, r0			; タスク例外処理許可?
+   118  0001A  6A0A                     	jz		dispatch_r_1				; 許可でなければ dispatch_r_1 へ 
+   119  0001C  73800A                   	mov.w	TCB_texptn[a0], r0			; 保留例外要因があるか？
+   120  0001F  6A05                     	jz		dispatch_r_1				; なければ dispatch_r_1 へ 
+   121  00021  FD000000r             A  	jsr.a	__kernel_call_texrtn		; タスク例外ハンドラへ 
+   122  00025                           dispatch_r_1:							; タスク例外を実行しない場合 
+   123  00025  EDC0                     	popm	sb,fb						; タスクスタックからレジスタ復帰
+   124  00027  F3                       	rts									; dispatch 呼び出し元へ戻る.
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Wed Nov 21 17:34:44 2012  PAGE 003
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   125                                  
+   126                                  
+   127                                  ;
+   128                                  ;	タスク起動時処理 
+   129                                  ;
+   130                                  ;	ここでは, CPUロック解除状態にし, タスクを起動する.
+   131                                  ;
+   132                                  ;	呼出条件: FLGレジスタIビット=0 (CPUロック状態), タスクスタック
+   133                                  ;		IPL=0, タスクコンテキスト(intnest=0)
+   134                                  ;
+   135  00028                           __kernel_start_r:
+   136  00028  EB300000                 	ldc		#0000H, flg 	; 割込み許可, Iフラグ=1, IPL=0
+   137                                  	; a0にはp_runtskが入っている 
+   138  0002C  7341                     	mov.w	a0 , r1
+   139  0002E  738506                   	mov.w	TCB_tinib+2[a0], a1
+   140  00031  738404                   	mov.w	TCB_tinib[a0], a0
+   141                                  	
+   142  00034  77640200                 	adc.w	#TINIB_exinf , a0
+   143  00038  77E5                     	adcf.w	a1
+   144  0003A  75A2                     	lde.w	[a1a0] , r2
+   145  0003C  77640200                 	adc.w	#2 , a0
+   146  00040  77E5                     	adcf.w	a1
+   147  00042  75A0                     	lde.w	[a1a0] , r0
+   148  00044  8A                    S  	push.b	r0h
+   149  00045  82                    S  	push.b	r0l
+   150  00046  7320                     	mov.w	r2 , r0
+   151  00048  8A                    S  	push.b	r0h
+   152  00049  82                    S  	push.b	r0l
+   153                                  	
+   154  0004A  75C00000r                	mov.w	#(_ext_tsk & 0FFFFH), r0
+   155  0004E  75C20000r                	mov.w	#((_ext_tsk >> 16) & 0FFH), r2
+   156  00052  7DBD                  Q  	add.b		#-3 , sp
+   157  00054  EB300000                 	ldc		#0000H, flg 	; 割込み許可, Iフラグ=1, IPL=0
+   158  00058  743000                   	mov.b	r0l , 0[sp]
+   159  0005B  743101                   	mov.b	r0h , 1[sp]
+   160  0005E  7320                     	mov.w	r2 , r0
+   161  00060  743002                   	mov.b	r0l , 2[sp]
+   162                                  
+   163  00063  7314                     	mov.w	r1 , a0
+   164  00065  738506                   	mov.w	TCB_tinib+2[a0], a1
+   165  00068  738404                   	mov.w	TCB_tinib[a0], a0
+   166  0006B  77640600                 	adc.w	#TINIB_task , a0
+   167  0006F  77E5                     	adcf.w	a1
+   168  00071  75A0                     	lde.w	[a1a0] , r0
+   169  00073  77640200                 	adc.w	#2 , a0
+   170  00077  77E5                     	adcf.w	a1
+   171  00079  75A2                     	lde.w	[a1a0] , r2
+   172                                  
+   173  0007B  EB304000                 	ldc		#0040H, flg 	; 割込み許可, Iフラグ=1, IPL=0
+   174  0007F  7D00                     	jmpi.a	r2r0			; タスク起動 
+   175                                  
+   176                                  ;
+   177                                  ;	dispatch呼び出し条件:
+   178                                  ;		・すべてのタスクのコンテキストは保存されている.
+   179                                  ;		・FLGレジスタIビット=0 (CPUロック状態)
+   180                                  ;		・コンテキストはカーネル起動時を除きタスクコンテキスト(intnest=0)
+   181                                  ;		起動時は非タスクコンテキスト(intnest=1)で, その場合にも対応.
+   182                                  ;	dispatcher 呼出時のスタック:
+   183                                  ;		__kernel_dispatch からきた場合: タスクスタック
+   184                                  ;		exit_and_dispatch からきた場合: 
+   185                                  ;			exit_task からきた場合はタスクスタック
+   186                                  ;			カーネル起動時は割込みスタック
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Wed Nov 21 17:34:44 2012  PAGE 004
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   187                                  ;		ret_int からきた場合: 割込みスタック
+   188                                  ;		dispatcher_2 での割込み待ちからきた場合: 割込みスタック
+   189                                  ;
+   190  00081                           __kernel_start_dispatch:
+   191  00081                           __exit_and_dispatch:
+   192  00081  EB65                     	fclr	i						; 割込み禁止
+   193  00083  B70000r               Z  	mov.b	#0, __kernel_intnest	; ネストカウンタクリア
+   194  00086                           dispatcher:
+   195  00086  73F40000r                	mov.w	__kernel_p_schedtsk, a0
+   196                                  .if	LOG_DSP_ENTER == 1
+   197                                  .endif
+   198  0008A  734F0000r                	mov.w	a0, __kernel_p_runtsk	; p_schedtsk を p_runtsk に 
+   199  0008E  6A0C                     	jz		dispatcher_1			; schedtsk がなければ割込み待ち 
+   200  00090  7AC80E                   	ldc		TCB_sp[a0], isp			; タスクスタックポインタを復帰
+   201                                  .if	LOG_DSP_LEAVE == 1
+   202                                  .endif
+   203  00093  738212                   	mov.w	TCB_pc+2[a0], r2		; 実行再開番地へジャンプ
+   204  00096  738010                   	mov.w	TCB_pc[a0], r0
+   205  00099  7D00                     	jmpi.a	r2r0
+   206                                  ;
+   207                                  ;	schdedtskがNULLの場合はアイドルループに入る 
+   208                                  ;
+   209  0009B                           dispatcher_1:
+   210  0009B  A20000r               S  	mov.w	#(__kernel_istkpt & 0FFFFH), a0			; 割込み用のスタックへ切替え 
+   211  0009E  AA0000r               S  	mov.w	#((__kernel_istkpt >> 16) & 0FFFFH), a1	; 上位4バイト
+   212  000A1  75A0                     	lde.w	[a1a0], r0
+   213  000A3  7AC0                     	ldc		r0,isp					; 割り込みスタックポインタセット
+   214  000A5  A70000r                  	inc.b	__kernel_intnest		; 非タスクコンテキスト
+   215  000A8                           dispatcher_2:
+   216  000A8  EB64                     	fset	i						; 割込み待ち 
+   217                                  	.IF USE_KD3083 != 1				; KD3083を使用するときはwait命令を使わない 
+   218  000AA  7DF3                     	wait
+   219                                  	.ENDIF
+   220  000AC  04                       	nop
+   221  000AD  04                       	nop
+   222  000AE  04                       	nop
+   223  000AF  04                       	nop
+   224                                  ;
+   225                                  ;	ここで非タスクコンテキスト,割込みスタックに切り換えたのは,
+   226                                  ;	ここで発生する割込み処理にどのスタックを使うかという問題の解決と,
+   227                                  ;	割込みハンドラ内でのディスパッチ防止という2つの意味がある．
+   228                                  ;
+   229  000B0  EB65                     	fclr	i					; 割込み禁止
+   230  000B2  73F00000r                	mov.w	__kernel_reqflg, r0	; reqflg が false なら 
+   231  000B6  6AF1                     	jz		dispatcher_2		; dispatcher_2 へ 
+   232  000B8  D90F0000r             Q  	mov.w	#0, __kernel_reqflg	; reqflgがtrueならfalseにする 
+   233  000BC  AF0000r                  	dec.b	__kernel_intnest	; タスクコンテキストに戻す 
+   234  000BF  FEC6                  B  	jmp.b	dispatcher			; dispatcher へ戻る 
+   235                                  
+   236                                  
+   237                                  ;
+   238                                  ;  割込みハンドラ/CPU例外ハンドラ出口処理 
+   239                                  ;
+   240                                  ;	呼出し条件:
+   241                                  ;	・FLGレジスタのIビット=0, IPL=0, タスクコンテキスト(intnest=0)
+   242                                  ;	・使用スタックはタスクスタック, reqflg = true
+   243                                  ;
+   244  000C1                           ret_int:
+   245  000C1  7DA0                     	ldipl	#0							; タスクのIPL値をセット(IPL=0)
+   246                                  
+   247  000C3  D90F0000r             Q  	mov.w	#0, __kernel_reqflg			; reqflg <--- false
+   248  000C7  73F40000r                	mov.w	__kernel_p_runtsk, a0		; すぐ ret_int_r にジャンプする場合があるのでここでセット
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Wed Nov 21 17:34:44 2012  PAGE 005
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   249  000CB  73F00000r                	mov.w	__kernel_dspflg, r0			; dspflg が false なら 
+   250  000CF  6A1B                     	jz		ret_int_r					; ret_int_r へ 
+   251  000D1  73F50000r                	mov.w	__kernel_p_schedtsk, a1 	; p_schedtskと 
+   252  000D5  C145                     	cmp.w	a0, a1						; runtsk が同じなら 
+   253  000D7  6A13                     	jeq		ret_int_r					; ret_int_r へ 
+   254  000D9  7342                     	mov.w	a0, r2						; runtsk = NULL なら 
+   255  000DB  6AAA                     	jz		dispatcher					; 保存せずdispatherへ 
+   256  000DD  7BC80E                   	stc		isp, TCB_sp[a0]				; タスクスタックを保存 
+   257  000E0  75C8100000r              	mov.w	#(ret_int_r & 0FFFFH), TCB_pc[a0]			; 実行再開番地を保存(下位16ビット)
+   258  000E5  74C81200r                	mov.b	#((ret_int_r >> 16) & 0FFH), TCB_pc+2[a0]	; 実行再開番地を保存(上位4ビット))
+   259  000E9  FE9C                  B  	jmp.b	dispatcher
+   260                                  
+   261  000EB                           __kernel_break_wait:
+   262  000EB                           ret_int_r:
+   263  000EB  728015                   	mov.b	TCB_enatex[a0],r0l		; enatex が false ならリターン 
+   264  000EE  7EB002                   	btst	TCB_enatex_bit,r0
+   265  000F1  6A0A                     	jz		ret_int_r_1
+   266  000F3  73800A                   	mov.w	TCB_texptn[a0],r0		; texptn が 0 ならばリターン 
+   267  000F6  6A05                     	jz		ret_int_r_1
+   268  000F8  FD000000r             A  	jsr.a	__kernel_call_texrtn	; タスク例外処理ルーチンの呼出し 
+   269  000FC                           ret_int_r_1:
+   270  000FC  EDFF                     	popm	r0,r1,r2,r3,a0,a1,sb,fb	; スタックからレジスタを復帰
+   271  000FE  FB                       	reit							; タスクへ戻る 
+   272                                  
+   273                                  
+   274                                  ;
+   275                                  ;	割込み/CPU例外の出入口処理(アセンブリ言語記述部分)
+   276                                  ;
+   277                                  ;	呼出し条件:
+   278                                  ;	・FLGレジスタのIビット=0, IPLは受付けた割込みのIPL.
+   279                                  ;	・スタックは多重割り込みなら割込みスタック, そうでなければ 
+   280                                  ;	  タスクスタック
+   281                                  ;	・r1, r3 には割込み/CPU例外ハンドラのアドレスが格納されている.
+   282                                  ;	・r0 には割込み/CPU例外ハンドラ番号が格納されている.
+   283                                  ;
+   284                                  ;	CPU例外出入り口処理ではCPU例外ハンドラに渡すVP型の変数 p_excinf
+   285                                  ;	としてISPの値を常に渡す処理を行っている．
+   286                                  ;	ポインタ変数はデフォルトでfarポインタなのでVP型は4バイトサイズの 
+   287                                  ;	ポインタとなり, 引数をスタックで渡すことになる.
+   288                                  ;
+   289                                  ;	レジスタがスタック上にどのように保存されているかを以下に示す.
+   290                                  ;	この図では上が低位, 下が高位のアドレスで, スタックは下から 
+   291                                  ;	上方向に向かって積み上げられるものとする.
+   292                                  ;
+   293                                  ;	--------------------------------------
+   294                                  ;	|              R0(2byte)             | <--- p_excinf
+   295                                  ;	|                                    |
+   296                                  ;	--------------------------------------
+   297                                  ;	|              R1(2byte)             |
+   298                                  ;	|                                    |
+   299                                  ;	--------------------------------------
+   300                                  ;	|              R2(2byte)             |
+   301                                  ;	|                                    |
+   302                                  ;	--------------------------------------
+   303                                  ;	|              R3(2byte)             |
+   304                                  ;	|                                    |
+   305                                  ;	--------------------------------------
+   306                                  ;	|              A0(2byte)             |
+   307                                  ;	|                                    |
+   308                                  ;	--------------------------------------
+   309                                  ;	|              A1(2byte)             |
+   310                                  ;	|                                    |
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Wed Nov 21 17:34:44 2012  PAGE 006
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   311                                  ;	--------------------------------------
+   312                                  ;	|              SB(2byte)             |
+   313                                  ;	|                                    |
+   314                                  ;	--------------------------------------
+   315                                  ;	|              FB(2byte)             |
+   316                                  ;	|                                    |
+   317                                  ;	--------------------------------------
+   318                                  ;	|           PCの下位2バイト          |
+   319                                  ;	|                                    |
+   320                                  ;	--------------------------------------
+   321                                  ;	|          FLGの下位1バイト          |
+   322                                  ;	--------------------------------------
+   323                                  ;	|  FLGの上位4ビット/PCの上位4ビット  |
+   324                                  ;	--------------------------------------
+   325                                  ;	ハンドラからリターンした後は, 多重割込みでなく, かつ reqflg が 
+   326                                  ;	true になった時に，ret_int へ分岐する．
+   327                                  ;
+   328                                  ;	多重割込みかどうかは割込みネストカウンタの値で判定する.
+   329                                  ;	intnest != 0 ならば多重割込みであると判定する.
+   330                                  ;
+   331                                  ;	reqflg はCPUロック状態でチェックする. そうでないと，
+   332                                  ;	reqflg チェック後に起動された割込みハンドラ内で 
+   333                                  ;	ディスパッチが要求された場合に，ディスパッチされない.
+   334                                  ;
+   335  000FF                           _kernel_interrupt:
+   336  000FF  E7000000r             S  	cmp.b		#0, __kernel_intnest	; 多重割り込みかどうか 
+   337  00103  6E0D                     	jnz			int_from_int			; 0でなければ多重割込み 
+   338                                  	; 初段の割込み 
+   339  00105  7BC2                     	stc			isp, r2					; スタックポインタを取り出し 
+   340  00107  A20000r               S  	mov.w		#(__kernel_istkpt & 0FFFFH), a0		; a1a0にspを退避 
+   341  0010A  AA0000r               S  	mov.w		#((__kernel_istkpt >> 16) & 0FFFFH), a1
+   342  0010D  75A4                     	lde.w		[a1a0],a0				; spの中身をa0にセット
+   343  0010F  7AC4                     	ldc			a0,isp					; 割り込みスタックポインタセット
+   344                                  
+   345                                  ;	呼出し前の使用レジスタ
+   346                                  ;		r1, r3 : 割込み/例外ハンドラ 
+   347                                  ;		r2     : タスクスタックポインタ
+   348                                  ;		r0     : 割込み/例外番号 
+   349                                  ;		a0     : 割込みスタック先頭番地
+   350  00111                           int_from_int:							; 多重割込み 
+   351  00111  7542                     	push.w		r2						; タスクスタックを退避 
+   352  00113  A70000r                  	inc.b		__kernel_intnest		; ネスト回数をインクリメント
+   353  00116  EB64                     	fset		i						; 割込み禁止解除 
+   354                                  .if	LOG_INH_ENTER == 1
+   355                                  .endif
+   356  00118  7D11                     	jsri.a		r3r1					; Cルーチン呼び出し 
+   357                                  .if	LOG_INH_LEAVE == 1
+   358                                  .endif
+   359  0011A  EB65                     	fclr		i						; 割込み禁止
+   360                                  
+   361                                  ;	呼出し前の使用レジスタ
+   362                                  ;		スタック: タスクスタックポインタ
+   363  0011C                           after_interrupt:
+   364  0011C  75D2                     	pop.w		r2						; タスクスタックを復帰
+   365  0011E  AF0000r                  	dec.b		__kernel_intnest		; ネスト回数をデクリメント
+   366  00121  6E09                     	jnz			int_return				; 多重割り込みならリターン 
+   367                                  	; 初段の割込み 
+   368  00123  7AC2                     	ldc			r2, isp					; タスクのスタックに戻す 
+   369  00125  73F00000r                	mov.w		__kernel_reqflg, r0		; ディスパッチ要求がないか?
+   370  00129  6E97                     	jnz			ret_int					; あれば ret_int へジャンプ
+   371  0012B                           int_return:
+   372  0012B  EDFF                     	popm		r0,r1,r2,r3,a0,a1,sb,fb	; レジスタ復帰
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Wed Nov 21 17:34:44 2012  PAGE 007
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   373  0012D  FB                       	reit								; 割込み前の処理に戻る 
+   374                                  
+   375                                  ;	呼出し前の使用レジスタ
+   376                                  ;		r0, r2 : 割込み/例外ハンドラ 
+   377                                  ;		r3     : 割込み/例外番号 
+   378  0012E                           _kernel_exception:
+   379  0012E  7BC1                     	stc			isp, r1					; スタックポインタを取り出す 
+   380  00130  E7000000r             S  	cmp.b		#0, __kernel_intnest	; 多重割り込みかどうか 
+   381  00134  6E0B                     	jnz			exc_from_int			; 多重割込みならexc_from_intへ 
+   382                                  	; 初段の割込み 
+   383  00136  A20000r               S  	mov.w		#(__kernel_istkpt & 0FFFFH), a0		; a1a0にspを退避 
+   384  00139  AA0000r               S  	mov.w		#((__kernel_istkpt >> 16) & 0FFFFH), a1
+   385  0013C  75A4                     	lde.w		[a1a0], a0				; spの中身をa0にセット
+   386  0013E  7AC4                     	ldc			a0,isp					; 割り込みスタックポインタセット
+   387                                  ;	呼出し前の使用レジスタ
+   388                                  ;		r1, r3 : 割込み/例外ハンドラ 
+   389                                  ;		r2     : スタックポインタ
+   390                                  ;		r0     : 割込み/例外番号 
+   391  00140                           exc_from_int:							; 多重割込み 
+   392  00140  A70000r                  	inc.b		__kernel_intnest		; ネスト回数をインクリメント
+   393  00143  7541                     	push.w		r1						; スタックポインタを割込みスタックへ保存 
+   394  00145  EB64                     	fset		i						; 割込み禁止解除 
+   395                                  .if	LOG_EXC_LEAVE == 1
+   396                                  .endif
+   397                                  .if	LOG_EXC_ENTER == 1
+   398                                  .endif
+   399  00147  7D10                     	jsri.a		r2r0					; Cルーチン呼び出し 
+   400                                  .if	LOG_EXC_LEAVE == 1
+   401                                  .endif
+   402  00149  EB65                     	fclr		i						; 割込み禁止
+   403                                  ;	add.w		#04H,sp					; 引数使用分戻す 
+   404  0014B  FED0                  B  	jmp.b		after_interrupt			; 後処理へ 
+   405                                  
+   406                                  
+   407  0014D                           __kernel_call_exit_kernel:
+   408  0014D  A20000r               S  	mov.w	#(__kernel_istkpt & 0FFFFH), a0			; 下位16ビット
+   409  00150  AA0000r               S  	mov.w	#((__kernel_istkpt >> 16) & 0FFFFH), a1	; 上位4ビット
+   410  00153  75A0                     	lde.w	[a1a0], r0				; アドレスの中身をR0レジスタに格納
+   411  00155  7AC0                     	ldc		r0,isp					; 割り込みスタックポインタセット
+   412  00157  FD000000r             A  	jsr		__kernel_exit_kernel
+   413  0015B  FEF1                  B  	jmp.b	__kernel_call_exit_kernel
+   414                                  
+   415                                  	; 未使用割込みの処理 
+   416                                  	.glb _unused_interrupt
+   417  0015D                           _unused_interrupt:
+   418  0015D  FB                       	reit
+   419                                  
+   420                                  ;
+   421                                  ;  微少時間待ち 
+   422                                  ;
+   423                                  	.glb	SIL_DLY_TIM1
+   424                                  	.glb	SIL_DLY_TIM2
+   425                                  	.glb	_sil_dly_nse
+   426  0015E                           _sil_dly_nse:
+   427  0015E  75B003                   	mov.w	3H:8[sp] , r0
+   428  00161  75B205                   	mov.w	5H:8[sp] , r2
+   429  00164  77500000r                	sub.w	#(SIL_DLY_TIM1 & 0FFFFH), r0	; 下位16ビットの計算
+   430  00168  690B                     	jgtu	_sil_dly_nse_1
+   431  0016A  6A10                     	jz		_sil_dly_nse_2
+   432                                  
+   433                                  ; 下位16ビットが負		→(上位-1)が負ならリターン 
+   434  0016C  77520000r                	sub.w	#(((SIL_DLY_TIM1 >> 16) - 1) & 0FFFFH), r2
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Wed Nov 21 17:34:44 2012  PAGE 008
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   435  00170  6C30                     	jltu	sil_dly_nse_ret
+   436  00172  FE0E                  B  	jmp		sil_dly_nse_loop
+   437                                  ; 下位16ビットが0より大	→上位が負ならリターン 
+   438  00174                           _sil_dly_nse_1:
+   439  00174  77520000r                	sub.w	#((SIL_DLY_TIM1 >> 16) & 0FFFFH), r2
+   440  00178  6C28                     	jltu	sil_dly_nse_ret
+   441  0017A  65                    S  	jmp		sil_dly_nse_loop
+   442                                  ; 下位16ビットが0		→上位が0以下ならリターン 
+   443  0017B                           _sil_dly_nse_2:
+   444  0017B  77520000r                	sub.w	#((SIL_DLY_TIM1 >> 16) & 0FFFFH), r2
+   445  0017F  6D21                     	jleu	sil_dly_nse_ret
+   446                                  
+   447                                  ; dlytim - SIL_DLY_TIM1 > 0より大きい場合 
+   448  00181                           sil_dly_nse_loop:
+   449  00181  77500000r                	sub.w	#(SIL_DLY_TIM2 & 0FFFFH), r0	; 下位16ビットの計算
+   450  00185  690B                     	jgtu	sil_dly_nse_loop_1
+   451  00187  6A11                     	jz		sil_dly_nse_loop_2
+   452                                  
+   453                                  ; 下位16ビットが負		→(上位-1)が負ならリターン 
+   454  00189  77520000r                	sub.w	#(((SIL_DLY_TIM2 >> 16) - 1) & 0FFFFH), r2
+   455  0018D  6C13                     	jltu	sil_dly_nse_ret
+   456  0018F  FEF1                  B  	jmp		sil_dly_nse_loop
+   457                                  ; 下位16ビットが0より大	→上位が負ならリターン 
+   458  00191                           sil_dly_nse_loop_1:
+   459  00191  77520000r                	sub.w	#((SIL_DLY_TIM2 >> 16) & 0FFFFH), r2
+   460  00195  6C0B                     	jltu	sil_dly_nse_ret
+   461  00197  FEE9                  B  	jmp		sil_dly_nse_loop
+   462                                  ; 下位16ビットが0		→上位が0以下ならリターン 
+   463  00199                           sil_dly_nse_loop_2:
+   464  00199  77520000r                	sub.w	#((SIL_DLY_TIM2 >> 16) & 0FFFFH), r2
+   465  0019D  6D03                     	jleu	sil_dly_nse_ret
+   466  0019F  FEE1                  B  	jmp		sil_dly_nse_loop
+   467                                  
+   468  001A1                           sil_dly_nse_ret:
+   469  001A1  F3                       	rts
+   470                                  
+   471                                  	.end
+
+Information List
+
+TOTAL ERROR(S)    00000
+TOTAL WARNING(S)  00000
+TOTAL LINE(S)     00471   LINES
+
+Section List
+
+Attr        Size          Name
+CODE     0000418(001A2H)  program

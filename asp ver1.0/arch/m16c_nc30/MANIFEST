@@ -1,0 +1,37 @@
+PACKAGE asp_arch_m16c_nc30
+VERSION 1.4.1
+
+MANIFEST
+genoffset.bat
+m16c29.h
+m16c29.tf
+m16c29_config.c
+m16c29_config.h
+m16c62p.h
+m16c62p.tf
+m16c62p_config.c
+m16c62p_config.h
+m16coffset.exe
+makeoffset.c
+prc.tf
+prc_cfg1_out.h
+prc_config.c
+prc_config.h
+prc_def.csv
+prc_insn.h
+prc_kernel.h
+prc_rename.def
+prc_rename.h
+prc_sil.h
+prc_stddef.h
+prc_support.a30
+prc_syssvc.h
+prc_test.h
+prc_unrename.h
+prc_user.txt
+start.a30
+
+INCLUDE ../../target/rsk_m16c_62p_hew/MANIFEST
+INCLUDE ../../target/hsb16c29_tm/MANIFEST
+INCLUDE ../nc30/MANIFEST
+INCLUDE ../../pdic/m16c/MANIFEST

@@ -1,0 +1,133 @@
+;
+;  M16Cアーキテクチャ依存出力ファイル
+;
+;  割込みベクタ及び割込みハンドラ定義
+;
+
+
+	.glb _kernel_interrupt			
+	.section program, code, align	
+
+	.glb	_UART_send_handler	
+	.glb	__kernel_UART_send_handler_17_entry	
+__kernel_UART_send_handler_17_entry:				
+	pushm	r0,r1,r2,r3,a0,a1,sb,fb		; レジスタをタスクスタックへ退避 
+	mov.w	#(_UART_send_handler & 0FFFFH) , r1		; ハンドラの下位アドレス 
+	mov.w	#((_UART_send_handler >> 16) & 0FFFFH) , r3		; ハンドラの上位アドレス 
+	mov.w	#17 , r0 ; 割込み/CPU例外ハンドラ番号 
+	jmp	_kernel_interrupt			; 共通ルーチンへ 
+
+
+	.glb	_UART_receive_handler	
+	.glb	__kernel_UART_receive_handler_18_entry	
+__kernel_UART_receive_handler_18_entry:				
+	pushm	r0,r1,r2,r3,a0,a1,sb,fb		; レジスタをタスクスタックへ退避 
+	mov.w	#(_UART_receive_handler & 0FFFFH) , r1		; ハンドラの下位アドレス 
+	mov.w	#((_UART_receive_handler >> 16) & 0FFFFH) , r3		; ハンドラの上位アドレス 
+	mov.w	#18 , r0 ; 割込み/CPU例外ハンドラ番号 
+	jmp	_kernel_interrupt			; 共通ルーチンへ 
+
+
+	.glb	_target_timer_handler	
+	.glb	__kernel_target_timer_handler_21_entry	
+__kernel_target_timer_handler_21_entry:				
+	pushm	r0,r1,r2,r3,a0,a1,sb,fb		; レジスタをタスクスタックへ退避 
+	mov.w	#(_target_timer_handler & 0FFFFH) , r1		; ハンドラの下位アドレス 
+	mov.w	#((_target_timer_handler >> 16) & 0FFFFH) , r3		; ハンドラの上位アドレス 
+	mov.w	#21 , r0 ; 割込み/CPU例外ハンドラ番号 
+	jmp	_kernel_interrupt			; 共通ルーチンへ 
+
+
+	.glb	_kernel_exception
+;
+;  可変ベクタテーブル
+;
+
+	.glb 	 _start
+	.glb 	 _unused_interrupt 
+	.section vvector
+
+vvector_table:
+	.lword	_unused_interrupt 	 	 ; 00 
+	.lword	_unused_interrupt 	 	 ; 01 
+	.lword	_unused_interrupt 	 	 ; 02 
+	.lword	_unused_interrupt 	 	 ; 03 
+	.lword	_unused_interrupt 	 	 ; 04 
+	.lword	_unused_interrupt 	 	 ; 05 
+	.lword	_unused_interrupt 	 	 ; 06 
+	.lword	_unused_interrupt 	 	 ; 07 
+	.lword	_unused_interrupt 	 	 ; 08 
+	.lword	_unused_interrupt 	 	 ; 09 
+	.lword	_unused_interrupt 	 	 ; 10 
+	.lword	_unused_interrupt 	 	 ; 11 
+	.lword	_unused_interrupt 	 	 ; 12 
+	.lword	_unused_interrupt 	 	 ; 13 
+	.lword	_unused_interrupt 	 	 ; 14 
+	.lword	_unused_interrupt 	 	 ; 15 
+	.lword	_unused_interrupt 	 	 ; 16 
+	.lword	__kernel_UART_send_handler_17_entry 	 	 ; 17 
+	.lword	__kernel_UART_receive_handler_18_entry 	 	 ; 18 
+	.lword	_unused_interrupt 	 	 ; 19 
+	.lword	_unused_interrupt 	 	 ; 20 
+	.lword	__kernel_target_timer_handler_21_entry 	 	 ; 21 
+	.lword	_unused_interrupt 	 	 ; 22 
+	.lword	_unused_interrupt 	 	 ; 23 
+	.lword	_unused_interrupt 	 	 ; 24 
+	.lword	_unused_interrupt 	 	 ; 25 
+	.lword	_unused_interrupt 	 	 ; 26 
+	.lword	_unused_interrupt 	 	 ; 27 
+	.lword	_unused_interrupt 	 	 ; 28 
+	.lword	_unused_interrupt 	 	 ; 29 
+	.lword	_unused_interrupt 	 	 ; 30 
+	.lword	_unused_interrupt 	 	 ; 31 
+	.lword	_unused_interrupt 	 	 ; 32 
+	.lword	_unused_interrupt 	 	 ; 33 
+	.lword	_unused_interrupt 	 	 ; 34 
+	.lword	_unused_interrupt 	 	 ; 35 
+	.lword	_unused_interrupt 	 	 ; 36 
+	.lword	_unused_interrupt 	 	 ; 37 
+	.lword	_unused_interrupt 	 	 ; 38 
+	.lword	_unused_interrupt 	 	 ; 39 
+	.lword	_unused_interrupt 	 	 ; 40 
+	.lword	_unused_interrupt 	 	 ; 41 
+	.lword	_unused_interrupt 	 	 ; 42 
+	.lword	_unused_interrupt 	 	 ; 43 
+	.lword	_unused_interrupt 	 	 ; 44 
+	.lword	_unused_interrupt 	 	 ; 45 
+	.lword	_unused_interrupt 	 	 ; 46 
+	.lword	_unused_interrupt 	 	 ; 47 
+	.lword	_unused_interrupt 	 	 ; 48 
+	.lword	_unused_interrupt 	 	 ; 49 
+	.lword	_unused_interrupt 	 	 ; 50 
+	.lword	_unused_interrupt 	 	 ; 51 
+	.lword	_unused_interrupt 	 	 ; 52 
+	.lword	_unused_interrupt 	 	 ; 53 
+	.lword	_unused_interrupt 	 	 ; 54 
+	.lword	_unused_interrupt 	 	 ; 55 
+	.lword	_unused_interrupt 	 	 ; 56 
+	.lword	_unused_interrupt 	 	 ; 57 
+	.lword	_unused_interrupt 	 	 ; 58 
+	.lword	_unused_interrupt 	 	 ; 59 
+	.lword	_unused_interrupt 	 	 ; 60 
+	.lword	_unused_interrupt 	 	 ; 61 
+	.lword	_unused_interrupt 	 	 ; 62 
+	.lword	_unused_interrupt 	 	 ; 63 
+
+;
+;  固定ベクタテーブル
+;
+
+	 .section fvector
+
+fvector_table:
+	 .lword	 _unused_interrupt 	 	;  0  
+	 .lword	 _unused_interrupt 	 	;  1  
+	 .lword	 _unused_interrupt 	 	;  2  
+	 .lword	 _unused_interrupt 	 	;  3  
+	 .lword	 _unused_interrupt 	 	;  4  
+	 .lword	 _unused_interrupt 	 	;  5  
+	 .lword	 _unused_interrupt 	 	;  6  
+	 .lword	 _unused_interrupt 	 	;  7  
+	 .lword		_start ; 8
+ 
+	.end

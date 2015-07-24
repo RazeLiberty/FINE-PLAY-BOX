@@ -1,0 +1,357 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"2.8" 
+[PROJECT_DETAILS]
+"kernel" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\kernel.hwp" "M16C" "Renesas M16C Standard" "Library" "M16C/60" "Other" 
+[INFORMATION]
+"プロジェクト情報がありません" 
+[TOOL_CHAIN]
+"Renesas M16C Standard Toolchain" "5.45.01" 
+[CONFIGURATIONS]
+"Debug" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Debug" 
+"Release" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\Release" 
+[BUILD_PHASES]
+"Renesas M16C Assembler" 1 
+"Renesas M16C C Compiler" 1 
+"Renesas M16C Configurator" 1 
+"Renesas M16C ConfiguratorR8C" 1 
+"Renesas M16C Librarian" 1 
+"Renesas M16C Linker" 1 
+"Renesas M16C Stype Converter" 1 
+[TOOL_ENVIRONMENT]
+[EXTENSIONS]
+"Absolute file" "X30" 
+"Absolute list file" "ALS" 
+"Assembler error tag file" "ATG" 
+"Assembly include file" "INC" 
+"Assembly list file" "LST" 
+"Assembly source file" "A30" 
+"Branch Information file" "JIN" 
+"C header file" "H" 
+"C source file" "C" 
+"Configuration file" "CFG" 
+"Cross reference file" "XRF" 
+"Hex file" "HEX" 
+"ID file" "ID" 
+"Library file" "LIB" 
+"Library list file" "LLS" 
+"Linkage error tag file" "LTG" 
+"Linkage map file" "MAP" 
+"Preprocessed C source file" "I" 
+"Relocatable file" "R30" 
+"S-Record file" "MOT" 
+"Sni file" "SNI" 
+"Systemcall file" "MRC" 
+[FILE_GROUPS]
+"Absolute file" "BIN" "NONE" "" 
+"Absolute list file" "TEXT" "EDITOR" "" 
+"Assembler error tag file" "TEXT" "EDITOR" "" 
+"Assembly include file" "TEXT" "EDITOR" "" 
+"Assembly list file" "TEXT" "EDITOR" "" 
+"Assembly source file" "TEXT" "EDITOR" "" 
+"Branch Information file" "TEXT" "EDITOR" "" 
+"C header file" "TEXT" "EDITOR" "" 
+"C source file" "TEXT" "EDITOR" "" 
+"Configuration file" "TEXT" "EDITOR" "" 
+"Cross reference file" "TEXT" "EDITOR" "" 
+"Hex file" "TEXT" "EDITOR" "" 
+"ID file" "TEXT" "EDITOR" "" 
+"Library file" "BIN" "NONE" "" 
+"Library list file" "TEXT" "EDITOR" "" 
+"Linkage error tag file" "TEXT" "EDITOR" "" 
+"Linkage map file" "TEXT" "EDITOR" "" 
+"Preprocessed C source file" "TEXT" "EDITOR" "" 
+"Relocatable file" "BIN" "NONE" "" 
+"S-Record file" "TEXT" "EDITOR" "" 
+"Sni file" "TEXT" "EDITOR" "" 
+"Systemcall file" "TEXT" "EDITOR" "" 
+[ASSOCIATED_APPLICATIONS]
+[TOOLCHAIN_PHASE]
+"Renesas M16C Assembler" 
+"Renesas M16C C Compiler" 
+"Renesas M16C Configurator" 
+"Renesas M16C ConfiguratorR8C" 
+"Renesas M16C Librarian" 
+"Renesas M16C Linker" 
+"Renesas M16C Stype Converter" 
+[UTILITY_PHASE]
+[CUSTOM_PHASES]
+[CUSTOM_PHASE_INPUT_GROUP]
+[CUSTOM_PHASE_OUTPUT_SYNTAX]
+[BUILD_ORDER]
+"Renesas M16C C Compiler" 1 
+"Renesas M16C Assembler" 1 
+"Renesas M16C Librarian" 1 
+"Renesas M16C Linker" 0 
+"Renesas M16C Stype Converter" 0 
+"Renesas M16C Configurator" 0 
+"Renesas M16C ConfiguratorR8C" 0 
+[BUILD_PHASE_DETAILS]
+"Renesas M16C Assembler" "Assembly source file" 1 
+"Renesas M16C C Compiler" "C source file" 1 
+"Renesas M16C Configurator" "Configuration file" 0 
+"Renesas M16C ConfiguratorR8C" "Configuration file" 0 
+"Renesas M16C Librarian" "Relocatable file" 0 
+"Renesas M16C Linker" "Relocatable file" 0 
+"Renesas M16C Stype Converter" "Absolute file" 0 
+[BUILD_FILE_ORDER_Assembly source file]
+"Renesas M16C Assembler" 1 
+[BUILD_FILE_ORDER_C source file]
+"Renesas M16C C Compiler" 1 
+[SCRAP]
+"Project Generator Setup File" "" 
+[MAPPINGS]
+"Absolute file" "Renesas M16C Stype Converter" "Renesas M16C Linker" 
+"Assembly source file" "Renesas M16C Assembler" "Renesas M16C C Compiler" 
+"Relocatable file" "Renesas M16C Librarian" "Renesas M16C Assembler" 
+"Relocatable file" "Renesas M16C Librarian" "Renesas M16C C Compiler" 
+"Relocatable file" "Renesas M16C Linker" "Renesas M16C Assembler" 
+"Relocatable file" "Renesas M16C Linker" "Renesas M16C C Compiler" 
+[PROJECT_FILES]
+"C:\WorkSpace\asp\arch\m16c_nc30\m16c62p.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\m16c62p_config.c" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\m16c62p_config.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_cfg1_out.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_config.c" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_config.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_insn.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_kernel.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_rename.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_sil.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_stddef.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_support.a30" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_syssvc.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_test.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_unrename.h" "User" "m16c_nc30" 2 
+"C:\WorkSpace\asp\arch\nc30\tool_stddef.h" "User" "nc30" 2 
+"C:\WorkSpace\asp\kernel\alarm.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\alarm.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\allfunc.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\check.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\cyclic.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\cyclic.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\dataqueue.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\dataqueue.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\eventflag.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\eventflag.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\exception.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\exception.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\interrupt.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\interrupt.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\kernel_impl.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\kernel_int.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\kernel_rename.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\kernel_unrename.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\mailbox.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\mailbox.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\mempfix.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\mempfix.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\pridataq.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\pridataq.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\semaphore.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\semaphore.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\startup.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\sys_manage.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\task.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\task.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\task_except.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\task_manage.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\task_refer.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\task_sync.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\time_event.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\time_event.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\time_manage.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\wait.c" "User" "kernel" 2 
+"C:\WorkSpace\asp\kernel\wait.h" "User" "kernel" 2 
+"C:\WorkSpace\asp\pdic\m16c\m16c_ta.c" "User" "pdic" 2 
+"C:\WorkSpace\asp\pdic\m16c\m16c_ta.h" "User" "pdic" 2 
+"C:\WorkSpace\asp\pdic\m16c\m16c_uart.c" "User" "pdic" 2 
+"C:\WorkSpace\asp\pdic\m16c\m16c_uart.h" "User" "pdic" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\RSK-M16C-62P.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_cfg1_out.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_config.c" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_config.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_kernel.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_rename.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_serial.c" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_serial.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_sil.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_stddef.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_support.a30" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_syssvc.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_test.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_timer.c" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_timer.h" "User" "rsk_m16c_62p_nc30" 2 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_unrename.h" "User" "rsk_m16c_62p_nc30" 2 
+[FOLDER]
+"kernel" "kernel" 
+"m16c_nc30" "m16c_nc30" 
+"nc30" "nc30" 
+"pdic" "pdic" 
+"rsk_m16c_62p_nc30" "rsk_m16c_62p_nc30" 
+[GENERAL_DATA_PROJECT]
+"FDT_AutoConnect" "0" 
+"FDT_BaseDevice" "" 
+"FDT_BaudRate" "" 
+"FDT_BlockLockConnect" "1" 
+"FDT_BlockLockDisconnect" "1" 
+"FDT_BootMode" "TRUE" 
+"FDT_CKM" "0" 
+"FDT_CKP" "0" 
+"FDT_ClockMode" "-1" 
+"FDT_ClockSync" "00000000" 
+"FDT_Comments" "" 
+"FDT_ConnectionResetSuppression" "FFFFFFFF" 
+"FDT_Device" "" 
+"FDT_DoReadbackVerification" "No" 
+"FDT_DoSecurityProtection" "Prompt" 
+"FDT_DoSecurityProtectionLevel" "00" 
+"FDT_Frequency" "0.0000" 
+"FDT_Interface" "" 
+"FDT_InternalClock" "FALSE" 
+"FDT_KernelPath" "" 
+"FDT_KernelResident" "FALSE" 
+"FDT_McuId" "0" 
+"FDT_MessageLevel" "1" 
+"FDT_PinOutputs" "00000000" 
+"FDT_PinSettings" "00000000" 
+"FDT_Port" "" 
+"FDT_Protection" "1" 
+"FDT_Protocol" "" 
+"FDT_ReinterrogateGenericDevice" "No" 
+"FDT_ResetOnDisconnect" "No" 
+"FDT_ResetPinOutputs" "00000000" 
+"FDT_ResetPinSettings" "00000000" 
+"FDT_UPMPinSettings" "00000000" 
+"FDT_UseDefaultBaudRate" "FALSE" 
+"FDT_UseInternalKernel" "TRUE" 
+"FDT_UserPinOutputs" "00000000" 
+"FDT_UserPinSettings" "00000000" 
+"USE_CUSTOM_LINKAGE_ORDER" "0" 
+[ON_DEMAND_COMPONENTS_LOADED]
+[SYNC_SESSION_NAMES]
+[SESSIONS]
+"DefaultSession" "C:\WorkSpace\asp\target\M16C62P_HEW\workspace\kernel\DefaultSession.hsf" 0 
+[GENERAL_DATA_SESSION_DefaultSession]
+[OPTIONS_Debug_Renesas M16C Assembler]
+"Assembly source file" "0c948001230adc10" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_support.a30" "0c948001230adc10" 3 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_support.a30" "0c948001230adc10" 2 
+[OPTIONS_Debug_Renesas M16C C Compiler]
+"C source file" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\arch\m16c_nc30\m16c62p_config.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_config.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\alarm.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\cyclic.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\dataqueue.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\eventflag.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\exception.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\interrupt.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\mailbox.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\mempfix.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\pridataq.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\semaphore.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\startup.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\sys_manage.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\task.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\task_except.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\task_manage.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\task_refer.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\task_sync.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\time_event.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\time_manage.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\kernel\wait.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\pdic\m16c\m16c_ta.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\pdic\m16c\m16c_uart.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_config.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_serial.c" "084a136cbf9adc10" 1 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_timer.c" "084a136cbf9adc10" 1 
+[OPTIONS_Debug_Renesas M16C Configurator]
+"Single Shot" "0d078001230adc10" 7 
+[OPTIONS_Debug_Renesas M16C ConfiguratorR8C]
+"Single Shot" "0d078001230adc10" 7 
+[OPTIONS_Debug_Renesas M16C Librarian]
+"Single Shot" "0d078001230adc10" 4 
+[OPTIONS_Debug_Renesas M16C Linker]
+"Single Shot" "0d078001230adc10" 5 
+[OPTIONS_Debug_Renesas M16C Stype Converter]
+"Single Shot" "0d078001230adc10" 6 
+[OPTIONS_Debug]
+"" 0 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 7 
+"[V|VERSION|1] [B|DATALENGTH|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] " 6 
+"[V|VERSION|1] [B|STARTUPLINK|1] [B|DEBUG|1] [B|MAP-S|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).x30^"] [S|INPUTLIBRARY|^"L=nc30lib^"] " 5 
+"[V|VERSION|1] [S|INCLUDE|^"$(CONFIGDIR)\.^"] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] [S|LIST|L|M] " 3 
+"[V|VERSION|1] [S|INCLUDE|^"$(WORKSPDIR)\..\..\..\arch^"|^"$(WORKSPDIR)\..\..\..\kernel^"|^"$(WORKSPDIR)\..\..\..\include^"|^"$(WORKSPDIR)\..\..\..\target\M16C62P_HEW^"|^"$(WORKSPDIR)\..\..\..\pdic^"] [S|OUTPUT|ASMCODE] [B|INSPECTOR|1] [B|DEBUG|1] [S|ASSEMBLY|^"[V|VERSION|1]] [B|INSPECTOR|1]] [S|OUTPUTPATH|^"^"$(CONFIGDIR)\$(FILELEAF).r30^"^"]] [S|LIST|L|M]]^"] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).a30^"] [S|LIST|ASM_LIST] [B|WALL|1]
+" 1 
+"[V|VERSION|1] [S|LIST|LM] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] " 2 
+"[V|VERSION|1] [S|MODE|CREATE|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] " 4 
+[EXCLUDED_FILES_Debug]
+[LINKAGE_ORDER_Debug]
+[GENERAL_DATA_CONFIGURATION_Debug]
+[OPTIONS_Release_Renesas M16C Assembler]
+"Assembly source file" "06f57001230adc10" 2 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_support.a30" "06f57001230adc10" 3 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_support.a30" "06f57001230adc10" 2 
+[OPTIONS_Release_Renesas M16C C Compiler]
+"C source file" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\arch\m16c_nc30\m16c62p_config.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\arch\m16c_nc30\prc_config.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\alarm.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\cyclic.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\dataqueue.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\eventflag.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\exception.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\interrupt.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\mailbox.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\mempfix.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\pridataq.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\semaphore.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\startup.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\sys_manage.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\task.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\task_except.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\task_manage.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\task_refer.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\task_sync.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\time_event.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\time_manage.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\kernel\wait.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\pdic\m16c\m16c_ta.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\pdic\m16c\m16c_uart.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_config.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_serial.c" "0df4f91137fbdc10" 1 
+"C:\WorkSpace\asp\target\M16C62P_HEW\target_timer.c" "0df4f91137fbdc10" 1 
+[OPTIONS_Release_Renesas M16C Configurator]
+"Single Shot" "07687001230adc10" 7 
+[OPTIONS_Release_Renesas M16C ConfiguratorR8C]
+"Single Shot" "07687001230adc10" 7 
+[OPTIONS_Release_Renesas M16C Librarian]
+"Single Shot" "036b24710f9bdc10" 4 
+[OPTIONS_Release_Renesas M16C Linker]
+"Single Shot" "07687001230adc10" 5 
+[OPTIONS_Release_Renesas M16C Stype Converter]
+"Single Shot" "07687001230adc10" 6 
+[OPTIONS_Release]
+"" 0 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 7 
+"[V|VERSION|1] [B|DATALENGTH|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] " 6 
+"[V|VERSION|1] [B|STARTUPLINK|1] [B|DEBUG|1] [B|MAP-S|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).x30^"] [S|INPUTLIBRARY|^"L=nc30lib^"] " 5 
+"[V|VERSION|1] [S|INCLUDE|^"$(CONFIGDIR)\.^"] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] [S|LIST|L|M] " 3 
+"[V|VERSION|1] [S|INCLUDE|^"$(WORKSPDIR)\..\..\..\arch^"|^"$(WORKSPDIR)\..\..\..\kernel^"|^"$(WORKSPDIR)\..\..\..\include^"|^"$(WORKSPDIR)\..\..\..\target\M16C62P_HEW^"|^"$(WORKSPDIR)\..\..\..\pdic^"] [S|OUTPUT|OBJECTCODE] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] [B|WALL|1]
+" 1 
+"[V|VERSION|1] [S|LIST|LM] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] " 2 
+"[V|VERSION|1] [S|MODE|CREATE|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] " 4 
+[EXCLUDED_FILES_Release]
+[LINKAGE_ORDER_Release]
+[GENERAL_DATA_CONFIGURATION_Release]
+[GENERAL_DATA_CONFIGURATION_SESSION_Debug_DefaultSession]
+[SESSION_DATA_CONFIGURATION_SESSION_Debug_DefaultSession]
+"MEMORY_MAPPING_OPTIONS" "" 
+[GENERAL_DATA_CONFIGURATION_SESSION_Release_DefaultSession]
+[SESSION_DATA_CONFIGURATION_SESSION_Release_DefaultSession]
+"MEMORY_MAPPING_OPTIONS" "" 
+[EXT_DEBUGGER_INFO]
+0 "" "" "" "" 
+[END]

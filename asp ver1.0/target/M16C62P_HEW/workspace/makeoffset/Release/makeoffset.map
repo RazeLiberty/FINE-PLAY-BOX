@@ -1,0 +1,83 @@
+##########################################
+# (1) LINK INFORMATION                   #
+##########################################
+c:\program files\renesas\hew\tools\renesas\nc30wa\v545r01\bin\ln30.exe @C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\makeoffset\Release\makeoffset.m16cl
+
+# LINK FILE INFORMATION
+makeoffset (C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\makeoffset\Release\makeoffset.r30)
+	Oct 28 11:11:04 2012
+
+
+##########################################
+# (2) SECTION INFORMATION                #
+##########################################
+# SECTION                        ATR TYPE    START  LENGTH ALIGN MODULENAME
+rom_FE                           REL ROMDATA 000000 0000B4 2     makeoffset
+rom_FO                           REL ROMDATA 0000B4 00005F       makeoffset
+# Total -------------------------------------------------------------------
+                                     DATA           000000(0000000) Byte(s)
+                                     ROMDATA        000113(0000275) Byte(s)
+                                     CODE           000000(0000000) Byte(s)
+
+##########################################
+# (3) GLOBAL LABEL INFORMATION           #
+##########################################
+
+##########################################
+# (4) GLOBAL EQU SYMBOL INFORMATION      #
+##########################################
+
+##########################################
+# (5) GLOBAL EQU BIT-SYMBOL INFORMATION  #
+##########################################
+
+##########################################
+# (6) LOCAL LABEL INFORMATION            #
+##########################################
+@ makeoffset ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\makeoffset\Release\makeoffset.r30 )
+
+##########################################
+# (7) LOCAL EQU SYMBOL INFORMATION       #
+##########################################
+@ makeoffset ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\makeoffset\Release\makeoffset.r30 )
+
+##########################################
+# (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
+##########################################
+@ makeoffset ( C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\makeoffset\Release\makeoffset.r30 )
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+rom_FE
+                                  00000000  000000b3        b4   2
+rom_FO
+                                  000000b4  00000112        5f   1
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=rom_FE
+FILE=C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset
+                                  00000000  000000b3        b4
+  _____BEGIN_OFF_TCB_tstat
+                                  00000000        16   data ,l         0
+  _____BEGIN_OFF_TCB_tinib
+                                  00000000        16   data ,l         0
+  _____BEGIN_OFF_TCB_pc
+                                  00000000        16   data ,l         0
+  _____BEGIN_OFF_TCB_sp
+                                  00000000        16   data ,l         0
+  _____BEGIN_BIT_TCB_enatex
+                                  00000000        16   data ,l         0
+  _____BEGIN_OFF_TCB_texptn
+                                  00000000        16   data ,l         0
+  _____BEGIN_OFF_TINIB_exinf
+                                  00000000        18   data ,l         0
+  _____BEGIN_OFF_TINIB_task
+                                  00000000        18   data ,l         0
+

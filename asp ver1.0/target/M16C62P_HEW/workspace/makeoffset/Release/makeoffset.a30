@@ -1,0 +1,1891 @@
+	._LANG	'C','5.32.04.003','REV.F'
+
+;##    C Compiler		 OUTPUT
+;## ccom30 Version 5.32.04.003
+;## Copyright (C) 2001 (2003 - 2010) Renesas Electronics Corporation.
+;## and Renesas Solutions Corporation. All rights reserved.
+;## Compile Start Time Sun Oct 28 11:11:03 2012
+
+;## COMMAND_LINE: ccom30  C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\makeoffset\Release\makeoffset.i -o C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\makeoffset\Release\makeoffset.a30 -dS -finfo -Wall
+
+
+;## Normal Optimize		OFF
+;## ROM size Optimize		OFF
+;## Speed Optimize		OFF
+;## Default ROM is		far
+;## Default RAM is		near
+
+	.GLB	__SB__
+	.SB	__SB__
+	.FB	0
+	._aopt	OFF
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset.c", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+
+	._inspect	'M', "c:/program files/renesas/hew/tools/renesas/nc30wa/v545r01/inc30/stddef.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../arch/nc30/tool_stddef.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../target/M16C62P_HEW/target_stddef.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+
+;## #	FUNCTION TOPPERS_assert_abort
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../include/t_stddef.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../include/kernel.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'F', 'p', "act_tsk", "$act_tsk", 'G', 201, 0, 00h, 0
+	._inspect	'F', 'p', "iact_tsk", "$iact_tsk", 'G', 202, 0, 00h, 0
+	._inspect	'F', 'p', "can_act", "$can_act", 'G', 203, 0, 00h, 0
+	._inspect	'F', 'p', "ext_tsk", "_ext_tsk", 'G', 204, 0, 00h, 0
+	._inspect	'F', 'p', "ter_tsk", "$ter_tsk", 'G', 205, 0, 00h, 0
+	._inspect	'F', 'p', "chg_pri", "$chg_pri", 'G', 206, 0, 00h, 0
+	._inspect	'F', 'p', "get_pri", "$get_pri", 'G', 207, 0, 00h, 0
+	._inspect	'F', 'p', "get_inf", "$get_inf", 'G', 208, 0, 00h, 0
+	._inspect	'F', 'p', "ref_tsk", "$ref_tsk", 'G', 209, 0, 00h, 0
+	._inspect	'F', 'p', "slp_tsk", "_slp_tsk", 'G', 214, 0, 00h, 0
+	._inspect	'F', 'p', "tslp_tsk", "$tslp_tsk", 'G', 215, 0, 00h, 0
+	._inspect	'F', 'p', "wup_tsk", "$wup_tsk", 'G', 216, 0, 00h, 0
+	._inspect	'F', 'p', "iwup_tsk", "$iwup_tsk", 'G', 217, 0, 00h, 0
+	._inspect	'F', 'p', "can_wup", "$can_wup", 'G', 218, 0, 00h, 0
+	._inspect	'F', 'p', "rel_wai", "$rel_wai", 'G', 219, 0, 00h, 0
+	._inspect	'F', 'p', "irel_wai", "$irel_wai", 'G', 220, 0, 00h, 0
+	._inspect	'F', 'p', "sus_tsk", "$sus_tsk", 'G', 221, 0, 00h, 0
+	._inspect	'F', 'p', "rsm_tsk", "$rsm_tsk", 'G', 222, 0, 00h, 0
+	._inspect	'F', 'p', "dly_tsk", "$dly_tsk", 'G', 223, 0, 00h, 0
+	._inspect	'F', 'p', "ras_tex", "$ras_tex", 'G', 228, 0, 00h, 0
+	._inspect	'F', 'p', "iras_tex", "$iras_tex", 'G', 229, 0, 00h, 0
+	._inspect	'F', 'p', "dis_tex", "_dis_tex", 'G', 230, 0, 00h, 0
+	._inspect	'F', 'p', "ena_tex", "_ena_tex", 'G', 231, 0, 00h, 0
+	._inspect	'F', 'p', "sns_tex", "_sns_tex", 'G', 232, 0, 00h, 0
+	._inspect	'F', 'p', "ref_tex", "$ref_tex", 'G', 233, 0, 00h, 0
+	._inspect	'F', 'p', "sig_sem", "$sig_sem", 'G', 238, 0, 00h, 0
+	._inspect	'F', 'p', "isig_sem", "$isig_sem", 'G', 239, 0, 00h, 0
+	._inspect	'F', 'p', "wai_sem", "$wai_sem", 'G', 240, 0, 00h, 0
+	._inspect	'F', 'p', "pol_sem", "$pol_sem", 'G', 241, 0, 00h, 0
+	._inspect	'F', 'p', "twai_sem", "$twai_sem", 'G', 242, 0, 00h, 0
+	._inspect	'F', 'p', "ini_sem", "$ini_sem", 'G', 243, 0, 00h, 0
+	._inspect	'F', 'p', "ref_sem", "$ref_sem", 'G', 244, 0, 00h, 0
+	._inspect	'F', 'p', "set_flg", "$set_flg", 'G', 246, 0, 00h, 0
+	._inspect	'F', 'p', "iset_flg", "$iset_flg", 'G', 247, 0, 00h, 0
+	._inspect	'F', 'p', "clr_flg", "$clr_flg", 'G', 248, 0, 00h, 0
+	._inspect	'F', 'p', "wai_flg", "$wai_flg", 'G', 250, 0, 00h, 0
+	._inspect	'F', 'p', "pol_flg", "$pol_flg", 'G', 252, 0, 00h, 0
+	._inspect	'F', 'p', "twai_flg", "$twai_flg", 'G', 254, 0, 00h, 0
+	._inspect	'F', 'p', "ini_flg", "$ini_flg", 'G', 255, 0, 00h, 0
+	._inspect	'F', 'p', "ref_flg", "$ref_flg", 'G', 256, 0, 00h, 0
+	._inspect	'F', 'p', "snd_dtq", "$snd_dtq", 'G', 258, 0, 00h, 0
+	._inspect	'F', 'p', "psnd_dtq", "$psnd_dtq", 'G', 259, 0, 00h, 0
+	._inspect	'F', 'p', "ipsnd_dtq", "$ipsnd_dtq", 'G', 260, 0, 00h, 0
+	._inspect	'F', 'p', "tsnd_dtq", "$tsnd_dtq", 'G', 261, 0, 00h, 0
+	._inspect	'F', 'p', "fsnd_dtq", "$fsnd_dtq", 'G', 262, 0, 00h, 0
+	._inspect	'F', 'p', "ifsnd_dtq", "$ifsnd_dtq", 'G', 263, 0, 00h, 0
+	._inspect	'F', 'p', "rcv_dtq", "$rcv_dtq", 'G', 264, 0, 00h, 0
+	._inspect	'F', 'p', "prcv_dtq", "$prcv_dtq", 'G', 265, 0, 00h, 0
+	._inspect	'F', 'p', "trcv_dtq", "$trcv_dtq", 'G', 266, 0, 00h, 0
+	._inspect	'F', 'p', "ini_dtq", "$ini_dtq", 'G', 267, 0, 00h, 0
+	._inspect	'F', 'p', "ref_dtq", "$ref_dtq", 'G', 268, 0, 00h, 0
+	._inspect	'F', 'p', "snd_pdq", "$snd_pdq", 'G', 270, 0, 00h, 0
+	._inspect	'F', 'p', "psnd_pdq", "$psnd_pdq", 'G', 271, 0, 00h, 0
+	._inspect	'F', 'p', "ipsnd_pdq", "$ipsnd_pdq", 'G', 272, 0, 00h, 0
+	._inspect	'F', 'p', "tsnd_pdq", "$tsnd_pdq", 'G', 274, 0, 00h, 0
+	._inspect	'F', 'p', "rcv_pdq", "$rcv_pdq", 'G', 275, 0, 00h, 0
+	._inspect	'F', 'p', "prcv_pdq", "$prcv_pdq", 'G', 276, 0, 00h, 0
+	._inspect	'F', 'p', "trcv_pdq", "$trcv_pdq", 'G', 278, 0, 00h, 0
+	._inspect	'F', 'p', "ini_pdq", "$ini_pdq", 'G', 279, 0, 00h, 0
+	._inspect	'F', 'p', "ref_pdq", "$ref_pdq", 'G', 280, 0, 00h, 0
+	._inspect	'F', 'p', "snd_mbx", "$snd_mbx", 'G', 282, 0, 00h, 0
+	._inspect	'F', 'p', "rcv_mbx", "$rcv_mbx", 'G', 283, 0, 00h, 0
+	._inspect	'F', 'p', "prcv_mbx", "$prcv_mbx", 'G', 284, 0, 00h, 0
+	._inspect	'F', 'p', "trcv_mbx", "$trcv_mbx", 'G', 285, 0, 00h, 0
+	._inspect	'F', 'p', "ini_mbx", "$ini_mbx", 'G', 286, 0, 00h, 0
+	._inspect	'F', 'p', "ref_mbx", "$ref_mbx", 'G', 287, 0, 00h, 0
+	._inspect	'F', 'p', "get_mpf", "$get_mpf", 'G', 292, 0, 00h, 0
+	._inspect	'F', 'p', "pget_mpf", "$pget_mpf", 'G', 293, 0, 00h, 0
+	._inspect	'F', 'p', "tget_mpf", "$tget_mpf", 'G', 294, 0, 00h, 0
+	._inspect	'F', 'p', "rel_mpf", "$rel_mpf", 'G', 295, 0, 00h, 0
+	._inspect	'F', 'p', "ini_mpf", "$ini_mpf", 'G', 296, 0, 00h, 0
+	._inspect	'F', 'p', "ref_mpf", "$ref_mpf", 'G', 297, 0, 00h, 0
+	._inspect	'F', 'p', "get_tim", "$get_tim", 'G', 302, 0, 00h, 0
+	._inspect	'F', 'p', "get_utm", "$get_utm", 'G', 303, 0, 00h, 0
+	._inspect	'F', 'p', "sta_cyc", "$sta_cyc", 'G', 305, 0, 00h, 0
+	._inspect	'F', 'p', "stp_cyc", "$stp_cyc", 'G', 306, 0, 00h, 0
+	._inspect	'F', 'p', "ref_cyc", "$ref_cyc", 'G', 307, 0, 00h, 0
+	._inspect	'F', 'p', "sta_alm", "$sta_alm", 'G', 309, 0, 00h, 0
+	._inspect	'F', 'p', "ista_alm", "$ista_alm", 'G', 310, 0, 00h, 0
+	._inspect	'F', 'p', "stp_alm", "$stp_alm", 'G', 311, 0, 00h, 0
+	._inspect	'F', 'p', "istp_alm", "$istp_alm", 'G', 312, 0, 00h, 0
+	._inspect	'F', 'p', "ref_alm", "$ref_alm", 'G', 313, 0, 00h, 0
+	._inspect	'F', 'p', "rot_rdq", "$rot_rdq", 'G', 318, 0, 00h, 0
+	._inspect	'F', 'p', "irot_rdq", "$irot_rdq", 'G', 319, 0, 00h, 0
+	._inspect	'F', 'p', "get_tid", "$get_tid", 'G', 320, 0, 00h, 0
+	._inspect	'F', 'p', "iget_tid", "$iget_tid", 'G', 321, 0, 00h, 0
+	._inspect	'F', 'p', "loc_cpu", "_loc_cpu", 'G', 322, 0, 00h, 0
+	._inspect	'F', 'p', "iloc_cpu", "_iloc_cpu", 'G', 323, 0, 00h, 0
+	._inspect	'F', 'p', "unl_cpu", "_unl_cpu", 'G', 324, 0, 00h, 0
+	._inspect	'F', 'p', "iunl_cpu", "_iunl_cpu", 'G', 325, 0, 00h, 0
+	._inspect	'F', 'p', "dis_dsp", "_dis_dsp", 'G', 326, 0, 00h, 0
+	._inspect	'F', 'p', "ena_dsp", "_ena_dsp", 'G', 327, 0, 00h, 0
+	._inspect	'F', 'p', "sns_ctx", "_sns_ctx", 'G', 328, 0, 00h, 0
+	._inspect	'F', 'p', "sns_loc", "_sns_loc", 'G', 329, 0, 00h, 0
+	._inspect	'F', 'p', "sns_dsp", "_sns_dsp", 'G', 330, 0, 00h, 0
+	._inspect	'F', 'p', "sns_dpn", "_sns_dpn", 'G', 331, 0, 00h, 0
+	._inspect	'F', 'p', "sns_ker", "_sns_ker", 'G', 332, 0, 00h, 0
+	._inspect	'F', 'p', "ext_ker", "_ext_ker", 'G', 333, 0, 00h, 0
+	._inspect	'F', 'p', "dis_int", "$dis_int", 'G', 338, 0, 00h, 0
+	._inspect	'F', 'p', "ena_int", "$ena_int", 'G', 339, 0, 00h, 0
+	._inspect	'F', 'p', "chg_ipm", "$chg_ipm", 'G', 340, 0, 00h, 0
+	._inspect	'F', 'p', "get_ipm", "$get_ipm", 'G', 341, 0, 00h, 0
+	._inspect	'F', 'p', "xsns_dpn", "$xsns_dpn", 'G', 346, 0, 00h, 0
+	._inspect	'F', 'p', "xsns_xpn", "$xsns_xpn", 'G', 347, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../include/t_syslog.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'F', 'p', "syslog_wri_log", "$syslog_wri_log", 'G', 140, 0, 00h, 0
+
+;## #	FUNCTION _syslog_0
+
+;## #	FUNCTION _syslog_1
+
+;## #	FUNCTION _syslog_2
+
+;## #	FUNCTION _syslog_3
+
+;## #	FUNCTION _syslog_4
+
+;## #	FUNCTION _syslog_5
+
+;## #	FUNCTION _syslog_6
+	._inspect	'F', 'p', "syslog", "_syslog", 'G', 233, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../arch/m16c_nc30/m16c62p_config.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'F', 'p', "m16c_config_int", "$m16c_config_int", 'G', 60, 0, 00h, 0
+	._inspect	'V', 'e', "_kernel_intc_reg", 'G', 65, 0, 0, 0, 00h
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../target/M16C62P_HEW/target_config.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'F', 'p', "_kernel_target_initialize", "__kernel_target_initialize", 'G', 87, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_target_exit", "__kernel_target_exit", 'G', 94, 0, 00h, 0
+	._inspect	'F', 'p', "target_fput_log", "$target_fput_log", 'G', 99, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../arch/m16c_nc30/prc_insn.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'F', 'p', "current_flgreg", "_current_flgreg", 'I', 51, 0, 010000h, 0
+	._inspect	'F', 'p', "current_ipl", "_current_ipl", 'I', 52, 0, 010000h, 0
+
+;## #	FUNCTION current_flgreg
+
+;## #	FUNCTION current_ipl
+
+;## #	FUNCTION set_ipl
+
+;## #	FUNCTION disint
+
+;## #	FUNCTION enaint
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../kernel/interrupt.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'V', 'e', "_kernel_tnum_inhno", 'G', 73, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_inhinib_table", 'G', 78, 0, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_tnum_intno", 'G', 83, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_intinib_table", 'G', 88, 0, 0, 0, 00h
+	._inspect	'F', 'p', "_kernel_initialize_interrupt", "__kernel_initialize_interrupt", 'G', 95, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../arch/m16c_nc30/prc_config.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'V', 'e', "_kernel_intnest", 'G', 78, 2, 0, 0, 00h
+
+;## #	FUNCTION sense_context
+
+;## #	FUNCTION x_lock_cpu
+
+;## #	FUNCTION x_unlock_cpu
+
+;## #	FUNCTION x_sense_lock
+
+;## #	FUNCTION x_set_ipm
+
+;## #	FUNCTION x_get_ipm
+	._inspect	'V', 'e', "_kernel_intc_reg", 'G', 279, 0, 0, 0, 00h
+	._inspect	'V', 'e', "intpri_table", 'G', 285, 0, 0, 0, 00h
+
+;## #	FUNCTION x_disable_int
+
+;## #	FUNCTION x_enable_int
+
+;## #	FUNCTION x_clear_int
+
+;## #	FUNCTION x_probe_int
+	._inspect	'F', 'p', "x_config_int", "$x_config_int", 'G', 372, 0, 00h, 0
+
+;## #	FUNCTION i_begin_int
+
+;## #	FUNCTION i_end_int
+	._inspect	'F', 'p', "_kernel_dispatch", "__kernel_dispatch", 'G', 403, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_start_dispatch", "__kernel_start_dispatch", 'G', 412, 0, 00h, 0
+	._inspect	'F', 'p', "_exit_and_dispatch", "__exit_and_dispatch", 'G', 424, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_call_exit_kernel", "__kernel_call_exit_kernel", 'G', 433, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_start_r", "__kernel_start_r", 'G', 444, 0, 00h, 0
+	._inspect	'V', 'e', "_kernel_tsk_sp", 'G', 445, 2, 0, 0, 00h
+
+;## #	FUNCTION x_define_inh
+
+;## #	FUNCTION x_define_exc
+
+;## #	FUNCTION exc_sense_context
+
+;## #	FUNCTION exc_get_ipl
+
+;## #	FUNCTION exc_sense_i
+
+;## #	FUNCTION exc_sense_intmask
+
+;## #	FUNCTION exc_sense_unlock
+	._inspect	'F', 'p', "_kernel_prc_initialize", "__kernel_prc_initialize", 'G', 594, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_prc_terminate", "__kernel_prc_terminate", 'G', 599, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../kernel/kernel_impl.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'F', 'p', "_kernel_initialize_object", "__kernel_initialize_object", 'G', 143, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_call_inirtn", "__kernel_call_inirtn", 'G', 148, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_call_terrtn", "__kernel_call_terrtn", 'G', 153, 0, 00h, 0
+	._inspect	'V', 'e', "_kernel_istksz", 'G', 158, 4, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_istk", 'G', 159, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_kerflg", 'G', 167, 2, 0, 0, 00h
+	._inspect	'F', 'p', "sta_ker", "_sta_ker", 'G', 172, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_exit_kernel", "__kernel_exit_kernel", 'G', 177, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../include/queue.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+
+;## #	FUNCTION queue_initialize
+
+;## #	FUNCTION queue_insert_prev
+
+;## #	FUNCTION queue_insert_next
+
+;## #	FUNCTION queue_delete
+
+;## #	FUNCTION queue_delete_next
+
+;## #	FUNCTION queue_empty
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../kernel/time_event.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'V', 'e', "_kernel_tmevt_heap", 'G', 83, 0, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_current_time", 'G', 91, 4, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_next_time", 'G', 96, 4, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_pend_update", 'G', 127, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_last_index", 'G', 135, 2, 0, 0, 00h
+	._inspect	'F', 'p', "_kernel_initialize_tmevt", "__kernel_initialize_tmevt", 'G', 140, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_tmevt_up", "$_kernel_tmevt_up", 'G', 145, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_tmevt_down", "$_kernel_tmevt_down", 'G', 146, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_tmevtb_insert", "$_kernel_tmevtb_insert", 'G', 151, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_tmevtb_delete", "$_kernel_tmevtb_delete", 'G', 152, 0, 00h, 0
+
+;## #	FUNCTION tmevtb_enqueue
+
+;## #	FUNCTION tmevtb_enqueue_evttim
+
+;## #	FUNCTION tmevtb_dequeue
+	._inspect	'F', 'p', "_kernel_tmevt_lefttim", "$_kernel_tmevt_lefttim", 'G', 198, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_signal_time", "__kernel_signal_time", 'G', 203, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/target/M16C62P_HEW/workspace/../../../kernel/task.h", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'V', 'e', "_kernel_p_runtsk", 'G', 260, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_p_schedtsk", 'G', 271, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_reqflg", 'G', 279, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_disdsp", 'G', 286, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_dspflg", 'G', 294, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_ready_queue", 'G', 307, 64, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_ready_primap", 'G', 321, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_tmax_tskid", 'G', 326, 2, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_tinib_table", 'G', 331, 0, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_torder_table", 'G', 336, 0, 0, 0, 00h
+	._inspect	'V', 'e', "_kernel_tcb_table", 'G', 341, 0, 0, 0, 00h
+	._inspect	'F', 'p', "_kernel_initialize_task", "__kernel_initialize_task", 'G', 363, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_search_schedtsk", "__kernel_search_schedtsk", 'G', 371, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_make_runnable", "$_kernel_make_runnable", 'G', 381, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_make_non_runnable", "$_kernel_make_non_runnable", 'G', 391, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_make_dormant", "$_kernel_make_dormant", 'G', 400, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_make_active", "$_kernel_make_active", 'G', 409, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_change_priority", "$_kernel_change_priority", 'G', 418, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_rotate_ready_queue", "$_kernel_rotate_ready_queue", 'G', 427, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_call_texrtn", "__kernel_call_texrtn", 'G', 446, 0, 00h, 0
+	._inspect	'F', 'p', "_kernel_calltex", "__kernel_calltex", 'G', 462, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset.c", "C:/Users/HIROTAoutbrain/Desktop/TN-asp/asp/arch/m16c_nc30/makeoffset"
+	._inspect	'V', 'd', "____BEGIN_OFF_TCB_tstat", "_____BEGIN_OFF_TCB_tstat", 'S', 146, 22, 0, 0, 00h
+	._inspect	'V', 'd', "____BEGIN_OFF_TCB_tinib", "_____BEGIN_OFF_TCB_tinib", 'S', 151, 22, 0, 0, 00h
+	._inspect	'V', 'd', "____BEGIN_OFF_TCB_pc", "_____BEGIN_OFF_TCB_pc", 'S', 156, 22, 0, 0, 00h
+	._inspect	'V', 'd', "____BEGIN_OFF_TCB_sp", "_____BEGIN_OFF_TCB_sp", 'S', 160, 22, 0, 0, 00h
+	._inspect	'V', 'd', "____BEGIN_BIT_TCB_enatex", "_____BEGIN_BIT_TCB_enatex", 'S', 165, 22, 0, 0, 00h
+	._inspect	'V', 'd', "____BEGIN_OFF_TCB_texptn", "_____BEGIN_OFF_TCB_texptn", 'S', 170, 22, 0, 0, 00h
+	._inspect	'V', 'd', "____BEGIN_OFF_TINIB_exinf", "_____BEGIN_OFF_TINIB_exinf", 'S', 174, 24, 0, 0, 00h
+	._inspect	'V', 'd', "____BEGIN_OFF_TINIB_task", "_____BEGIN_OFF_TINIB_task", 'S', 178, 24, 0, 0, 00h
+	.glb	$act_tsk
+	.glb	$iact_tsk
+	.glb	$can_act
+	.glb	_ext_tsk
+	.glb	$ter_tsk
+	.glb	$chg_pri
+	.glb	$get_pri
+	.glb	$get_inf
+	.glb	$ref_tsk
+	.glb	_slp_tsk
+	.glb	$tslp_tsk
+	.glb	$wup_tsk
+	.glb	$iwup_tsk
+	.glb	$can_wup
+	.glb	$rel_wai
+	.glb	$irel_wai
+	.glb	$sus_tsk
+	.glb	$rsm_tsk
+	.glb	$dly_tsk
+	.glb	$ras_tex
+	.glb	$iras_tex
+	.glb	_dis_tex
+	.glb	_ena_tex
+	.glb	_sns_tex
+	.glb	$ref_tex
+	.glb	$sig_sem
+	.glb	$isig_sem
+	.glb	$wai_sem
+	.glb	$pol_sem
+	.glb	$twai_sem
+	.glb	$ini_sem
+	.glb	$ref_sem
+	.glb	$set_flg
+	.glb	$iset_flg
+	.glb	$clr_flg
+	.glb	$wai_flg
+	.glb	$pol_flg
+	.glb	$twai_flg
+	.glb	$ini_flg
+	.glb	$ref_flg
+	.glb	$snd_dtq
+	.glb	$psnd_dtq
+	.glb	$ipsnd_dtq
+	.glb	$tsnd_dtq
+	.glb	$fsnd_dtq
+	.glb	$ifsnd_dtq
+	.glb	$rcv_dtq
+	.glb	$prcv_dtq
+	.glb	$trcv_dtq
+	.glb	$ini_dtq
+	.glb	$ref_dtq
+	.glb	$snd_pdq
+	.glb	$psnd_pdq
+	.glb	$ipsnd_pdq
+	.glb	$tsnd_pdq
+	.glb	$rcv_pdq
+	.glb	$prcv_pdq
+	.glb	$trcv_pdq
+	.glb	$ini_pdq
+	.glb	$ref_pdq
+	.glb	$snd_mbx
+	.glb	$rcv_mbx
+	.glb	$prcv_mbx
+	.glb	$trcv_mbx
+	.glb	$ini_mbx
+	.glb	$ref_mbx
+	.glb	$get_mpf
+	.glb	$pget_mpf
+	.glb	$tget_mpf
+	.glb	$rel_mpf
+	.glb	$ini_mpf
+	.glb	$ref_mpf
+	.glb	$get_tim
+	.glb	$get_utm
+	.glb	$sta_cyc
+	.glb	$stp_cyc
+	.glb	$ref_cyc
+	.glb	$sta_alm
+	.glb	$ista_alm
+	.glb	$stp_alm
+	.glb	$istp_alm
+	.glb	$ref_alm
+	.glb	$rot_rdq
+	.glb	$irot_rdq
+	.glb	$get_tid
+	.glb	$iget_tid
+	.glb	_loc_cpu
+	.glb	_iloc_cpu
+	.glb	_unl_cpu
+	.glb	_iunl_cpu
+	.glb	_dis_dsp
+	.glb	_ena_dsp
+	.glb	_sns_ctx
+	.glb	_sns_loc
+	.glb	_sns_dsp
+	.glb	_sns_dpn
+	.glb	_sns_ker
+	.glb	_ext_ker
+	.glb	$dis_int
+	.glb	$ena_int
+	.glb	$chg_ipm
+	.glb	$get_ipm
+	.glb	$xsns_dpn
+	.glb	$xsns_xpn
+	.glb	$syslog_wri_log
+	.glb	_syslog
+	.glb	$m16c_config_int
+	.glb	__kernel_intc_reg
+	.glb	__kernel_target_initialize
+	.glb	__kernel_target_exit
+	.glb	$target_fput_log
+	.glb	__kernel_tnum_inhno
+	.glb	__kernel_inhinib_table
+	.glb	__kernel_tnum_intno
+	.glb	__kernel_intinib_table
+	.glb	__kernel_initialize_interrupt
+	.glb	__kernel_intnest
+	.glb	_intpri_table
+	.glb	$x_config_int
+	.glb	__kernel_dispatch
+	.glb	__kernel_start_dispatch
+	.glb	__exit_and_dispatch
+	.glb	__kernel_call_exit_kernel
+	.glb	__kernel_start_r
+	.glb	__kernel_tsk_sp
+	.glb	__kernel_prc_initialize
+	.glb	__kernel_prc_terminate
+	.glb	__kernel_initialize_object
+	.glb	__kernel_call_inirtn
+	.glb	__kernel_call_terrtn
+	.glb	__kernel_istksz
+	.glb	__kernel_istk
+	.glb	__kernel_kerflg
+	.glb	_sta_ker
+	.glb	__kernel_exit_kernel
+	.glb	__kernel_tmevt_heap
+	.glb	__kernel_current_time
+	.glb	__kernel_next_time
+	.glb	__kernel_pend_update
+	.glb	__kernel_last_index
+	.glb	__kernel_initialize_tmevt
+	.glb	$_kernel_tmevt_up
+	.glb	$_kernel_tmevt_down
+	.glb	$_kernel_tmevtb_insert
+	.glb	$_kernel_tmevtb_delete
+	.glb	$_kernel_tmevt_lefttim
+	.glb	__kernel_signal_time
+	.glb	__kernel_p_runtsk
+	.glb	__kernel_p_schedtsk
+	.glb	__kernel_reqflg
+	.glb	__kernel_disdsp
+	.glb	__kernel_dspflg
+	.glb	__kernel_ready_queue
+	.glb	__kernel_ready_primap
+	.glb	__kernel_tmax_tskid
+	.glb	__kernel_tinib_table
+	.glb	__kernel_torder_table
+	.glb	__kernel_tcb_table
+	.glb	__kernel_initialize_task
+	.glb	__kernel_search_schedtsk
+	.glb	$_kernel_make_runnable
+	.glb	$_kernel_make_non_runnable
+	.glb	$_kernel_make_dormant
+	.glb	$_kernel_make_active
+	.glb	$_kernel_change_priority
+	.glb	$_kernel_rotate_ready_queue
+	.glb	__kernel_call_texrtn
+	.glb	__kernel_calltex
+
+	.SECTION	rom_FE,ROMDATA,align
+	._inspect	'U', 4, "rom_FE", "rom_FE", 0
+_____BEGIN_OFF_TCB_tstat:
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.byte	01H
+	.byte	00H
+_____BEGIN_OFF_TCB_tinib:
+	.word	0000H
+	.word	0000H
+	.word	0001H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.byte	00H
+	.byte	00H
+_____BEGIN_OFF_TCB_pc:
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0001H
+	.word	0000H
+	.byte	00H
+	.byte	00H
+_____BEGIN_OFF_TCB_sp:
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0001H
+	.word	0000H
+	.word	0000H
+	.byte	00H
+	.byte	00H
+_____BEGIN_BIT_TCB_enatex:
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.byte	00H
+	.byte	04H
+_____BEGIN_OFF_TCB_texptn:
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0001H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.byte	00H
+	.byte	00H
+_____BEGIN_OFF_TINIB_exinf:
+	.word	0000H
+	.word	0001H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+_____BEGIN_OFF_TINIB_task:
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0001H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+	.word	0000H
+
+	.SECTION	rom_FO,ROMDATA
+	._inspect	'U', 4, "rom_FO", "rom_FO", 0
+___T4:
+	.byte	74H	;  't'
+	.byte	69H	;  'i'
+	.byte	6dH	;  'm'
+	.byte	65H	;  'e'
+	.byte	5fH	;  '_'
+	.byte	65H	;  'e'
+	.byte	76H	;  'v'
+	.byte	65H	;  'e'
+	.byte	6eH	;  'n'
+	.byte	74H	;  't'
+	.byte	2eH	;  '.'
+	.byte	68H	;  'h'
+	.byte	00H
+___T3:
+	.byte	74H	;  't'
+	.byte	69H	;  'i'
+	.byte	6dH	;  'm'
+	.byte	65H	;  'e'
+	.byte	20H	;  ' '
+	.byte	3cH	;  '<'
+	.byte	3dH	;  '='
+	.byte	20H	;  ' '
+	.byte	54H	;  'T'
+	.byte	4dH	;  'M'
+	.byte	41H	;  'A'
+	.byte	58H	;  'X'
+	.byte	5fH	;  '_'
+	.byte	52H	;  'R'
+	.byte	45H	;  'E'
+	.byte	4cH	;  'L'
+	.byte	54H	;  'T'
+	.byte	49H	;  'I'
+	.byte	4dH	;  'M'
+	.byte	00H
+___T2:
+	.byte	70H	;  'p'
+	.byte	5fH	;  '_'
+	.byte	71H	;  'q'
+	.byte	75H	;  'u'
+	.byte	65H	;  'e'
+	.byte	75H	;  'u'
+	.byte	65H	;  'e'
+	.byte	2dH	;  '-'
+	.byte	3eH	;  '>'
+	.byte	70H	;  'p'
+	.byte	5fH	;  '_'
+	.byte	70H	;  'p'
+	.byte	72H	;  'r'
+	.byte	65H	;  'e'
+	.byte	76H	;  'v'
+	.byte	20H	;  ' '
+	.byte	3dH	;  '='
+	.byte	3dH	;  '='
+	.byte	20H	;  ' '
+	.byte	70H	;  'p'
+	.byte	5fH	;  '_'
+	.byte	71H	;  'q'
+	.byte	75H	;  'u'
+	.byte	65H	;  'e'
+	.byte	75H	;  'u'
+	.byte	65H	;  'e'
+	.byte	00H
+___T1:
+	.byte	71H	;  'q'
+	.byte	75H	;  'u'
+	.byte	65H	;  'e'
+	.byte	75H	;  'u'
+	.byte	65H	;  'e'
+	.byte	2eH	;  '.'
+	.byte	68H	;  'h'
+	.byte	00H
+___T0:
+	.byte	70H	;  'p'
+	.byte	5fH	;  '_'
+	.byte	71H	;  'q'
+	.byte	75H	;  'u'
+	.byte	65H	;  'e'
+	.byte	75H	;  'u'
+	.byte	65H	;  'e'
+	.byte	2dH	;  '-'
+	.byte	3eH	;  '>'
+	.byte	70H	;  'p'
+	.byte	5fH	;  '_'
+	.byte	6eH	;  'n'
+	.byte	65H	;  'e'
+	.byte	78H	;  'x'
+	.byte	74H	;  't'
+	.byte	20H	;  ' '
+	.byte	21H	;  '!'
+	.byte	3dH	;  '='
+	.byte	20H	;  ' '
+	.byte	70H	;  'p'
+	.byte	5fH	;  '_'
+	.byte	71H	;  'q'
+	.byte	75H	;  'u'
+	.byte	65H	;  'e'
+	.byte	75H	;  'u'
+	.byte	65H	;  'e'
+	.byte	00H
+;#################################
+;###  STATIC DATA INFORMATION  ###
+;#################################
+	._type	256,'T','ptrdiff_t',20
+	._type	257,'T','wchar_t',5
+	._type	258,'T','size_t',7
+	._type	259,'T','int8_t',19
+	._type	260,'T','uint8_t',3
+	._type	261,'T','int16_t',23
+	._type	262,'T','uint16_t',5
+	._type	263,'T','int32_t',20
+	._type	264,'T','uint32_t',7
+	._type	265,'T','int64_t',8
+	._type	266,'T','uint64_t',9
+	._type	267,'T','intptr_t',20
+	._type	268,'T','uintptr_t',7
+	._type	269,'T','float32_t',10
+	._type	270,'T','double64_t',11
+	._type	271,'v'
+	._type	272,'S','TOPPERS_dummy_t',2
+	._type	272,'m','TOPPERS_dummy_field',16,0
+	._type	273,'x',271,1
+	._type	273,'m','',0,272
+	._type	274,'P',273
+	._type	275,'T','TOPPERS_fp_t',274
+	._type	276,'T','bool_t',16
+	._type	277,'T','char_t',3
+	._type	278,'T','int_t',16
+	._type	279,'T','uint_t',18
+	._type	280,'T','long_t',20
+	._type	281,'T','ulong_t',7
+	._type	282,'T','FN',278
+	._type	283,'T','ER',278
+	._type	284,'T','ID',278
+	._type	285,'T','ATR',279
+	._type	286,'T','STAT',279
+	._type	287,'T','MODE',279
+	._type	288,'T','PRI',278
+	._type	289,'T','SIZE',268
+	._type	290,'T','TMO',278
+	._type	291,'T','RELTIM',279
+	._type	292,'T','SYSTIM',281
+	._type	293,'T','SYSUTM',281
+	._type	294,'T','FP',275
+	._type	295,'T','ER_BOOL',278
+	._type	296,'T','ER_ID',278
+	._type	297,'T','ER_UINT',278
+	._type	298,'T','ACPTN',264
+	._type	299,'S','acvct',16
+	._type	299,'m','acptn1',298,0
+	._type	299,'m','acptn2',298,4
+	._type	299,'m','acptn3',298,8
+	._type	299,'m','acptn4',298,12
+	._type	300,'T','ACVCT',299
+	._type	301,'T','TEXPTN',279
+	._type	302,'T','FLGPTN',279
+	._type	303,'T','INTNO',279
+	._type	304,'T','INHNO',279
+	._type	305,'T','EXCNO',279
+	._type	306,'v'
+	._type	307,'x',306,1
+	._type	307,'m','exinf',0,267
+	._type	308,'P',307
+	._type	309,'T','TASK',308
+	._type	310,'v'
+	._type	311,'x',310,2
+	._type	311,'m','texptn',0,301
+	._type	311,'m','exinf',0,267
+	._type	312,'P',311
+	._type	313,'T','TEXRTN',312
+	._type	314,'v'
+	._type	315,'x',314,1
+	._type	315,'m','exinf',0,267
+	._type	316,'P',315
+	._type	317,'T','CYCHDR',316
+	._type	318,'v'
+	._type	319,'x',318,1
+	._type	319,'m','exinf',0,267
+	._type	320,'P',319
+	._type	321,'T','ALMHDR',320
+	._type	322,'v'
+	._type	323,'x',322,1
+	._type	323,'m','exinf',0,267
+	._type	324,'P',323
+	._type	325,'T','ISR',324
+	._type	326,'v'
+	._type	327,'v'
+	._type	328,'x',326,1
+	._type	328,'m','',0,327
+	._type	329,'P',328
+	._type	330,'T','INTHDR',329
+	._type	331,'v'
+	._type	332,'v'
+	._type	333,'O',332
+	._type	334,'x',331,1
+	._type	334,'m','p_excinf',0,333
+	._type	335,'P',334
+	._type	336,'T','EXCHDR',335
+	._type	337,'v'
+	._type	338,'x',337,1
+	._type	338,'m','exinf',0,267
+	._type	339,'P',338
+	._type	340,'T','INIRTN',339
+	._type	341,'v'
+	._type	342,'x',341,1
+	._type	342,'m','exinf',0,267
+	._type	343,'P',342
+	._type	344,'T','TERRTN',343
+	._type	345,'T','STK_T',267
+	._type	346,'T','MPF_T',267
+	._type	348,'O',347
+	._type	347,'S','t_msg',2
+	._type	347,'m','pk_next',348,0
+	._type	349,'T','T_MSG',347
+	._type	350,'S','t_msg_pri',4
+	._type	350,'m','msgque',349,0
+	._type	350,'m','msgpri',288,2
+	._type	351,'T','T_MSG_PRI',350
+	._type	352,'S','t_rtsk',16
+	._type	352,'m','tskstat',286,0
+	._type	352,'m','tskpri',288,2
+	._type	352,'m','tskbpri',288,4
+	._type	352,'m','tskwait',286,6
+	._type	352,'m','wobjid',284,8
+	._type	352,'m','lefttmo',290,10
+	._type	352,'m','actcnt',279,12
+	._type	352,'m','wupcnt',279,14
+	._type	353,'T','T_RTSK',352
+	._type	354,'S','t_rtex',4
+	._type	354,'m','texstat',286,0
+	._type	354,'m','pndptn',301,2
+	._type	355,'T','T_RTEX',354
+	._type	356,'S','t_rsem',4
+	._type	356,'m','wtskid',284,0
+	._type	356,'m','semcnt',279,2
+	._type	357,'T','T_RSEM',356
+	._type	358,'S','t_rflg',4
+	._type	358,'m','wtskid',284,0
+	._type	358,'m','flgptn',302,2
+	._type	359,'T','T_RFLG',358
+	._type	360,'S','t_rdtq',6
+	._type	360,'m','stskid',284,0
+	._type	360,'m','rtskid',284,2
+	._type	360,'m','sdtqcnt',279,4
+	._type	361,'T','T_RDTQ',360
+	._type	362,'S','t_rpdq',6
+	._type	362,'m','stskid',284,0
+	._type	362,'m','rtskid',284,2
+	._type	362,'m','spdqcnt',279,4
+	._type	363,'T','T_RPDQ',362
+	._type	365,'O',349
+	._type	364,'S','t_rmbx',4
+	._type	364,'m','wtskid',284,0
+	._type	364,'m','pk_msg',365,2
+	._type	366,'T','T_RMBX',364
+	._type	367,'S','t_rmpf',4
+	._type	367,'m','wtskid',284,0
+	._type	367,'m','fblkcnt',279,2
+	._type	368,'T','T_RMPF',367
+	._type	369,'S','t_rcyc',4
+	._type	369,'m','cycstat',286,0
+	._type	369,'m','lefttim',291,2
+	._type	370,'T','T_RCYC',369
+	._type	371,'S','t_ralm',4
+	._type	371,'m','almstat',286,0
+	._type	371,'m','lefttim',291,2
+	._type	372,'T','T_RALM',371
+	._type	373,'x',283,1
+	._type	373,'m','tskid',0,284
+	._var	'act_tsk','F',373
+	._type	374,'x',283,1
+	._type	374,'m','tskid',0,284
+	._var	'iact_tsk','F',374
+	._type	375,'x',297,1
+	._type	375,'m','tskid',0,284
+	._var	'can_act','F',375
+	._type	376,'v'
+	._type	377,'x',283,1
+	._type	377,'m','',0,376
+	._var	'ext_tsk','F',377
+	._type	378,'x',283,1
+	._type	378,'m','tskid',0,284
+	._var	'ter_tsk','F',378
+	._type	379,'x',283,2
+	._type	379,'m','tskid',0,284
+	._type	379,'m','tskpri',0,288
+	._var	'chg_pri','F',379
+	._type	380,'O',288
+	._type	381,'x',283,2
+	._type	381,'m','tskid',0,284
+	._type	381,'m','p_tskpri',0,380
+	._var	'get_pri','F',381
+	._type	382,'O',267
+	._type	383,'x',283,1
+	._type	383,'m','p_exinf',0,382
+	._var	'get_inf','F',383
+	._type	384,'O',353
+	._type	385,'x',283,2
+	._type	385,'m','tskid',0,284
+	._type	385,'m','pk_rtsk',0,384
+	._var	'ref_tsk','F',385
+	._type	386,'v'
+	._type	387,'x',283,1
+	._type	387,'m','',0,386
+	._var	'slp_tsk','F',387
+	._type	388,'x',283,1
+	._type	388,'m','tmout',0,290
+	._var	'tslp_tsk','F',388
+	._type	389,'x',283,1
+	._type	389,'m','tskid',0,284
+	._var	'wup_tsk','F',389
+	._type	390,'x',283,1
+	._type	390,'m','tskid',0,284
+	._var	'iwup_tsk','F',390
+	._type	391,'x',297,1
+	._type	391,'m','tskid',0,284
+	._var	'can_wup','F',391
+	._type	392,'x',283,1
+	._type	392,'m','tskid',0,284
+	._var	'rel_wai','F',392
+	._type	393,'x',283,1
+	._type	393,'m','tskid',0,284
+	._var	'irel_wai','F',393
+	._type	394,'x',283,1
+	._type	394,'m','tskid',0,284
+	._var	'sus_tsk','F',394
+	._type	395,'x',283,1
+	._type	395,'m','tskid',0,284
+	._var	'rsm_tsk','F',395
+	._type	396,'x',283,1
+	._type	396,'m','dlytim',0,291
+	._var	'dly_tsk','F',396
+	._type	397,'x',283,2
+	._type	397,'m','tskid',0,284
+	._type	397,'m','rasptn',0,301
+	._var	'ras_tex','F',397
+	._type	398,'x',283,2
+	._type	398,'m','tskid',0,284
+	._type	398,'m','rasptn',0,301
+	._var	'iras_tex','F',398
+	._type	399,'v'
+	._type	400,'x',283,1
+	._type	400,'m','',0,399
+	._var	'dis_tex','F',400
+	._type	401,'v'
+	._type	402,'x',283,1
+	._type	402,'m','',0,401
+	._var	'ena_tex','F',402
+	._type	403,'v'
+	._type	404,'x',276,1
+	._type	404,'m','',0,403
+	._var	'sns_tex','F',404
+	._type	405,'O',355
+	._type	406,'x',283,2
+	._type	406,'m','tskid',0,284
+	._type	406,'m','pk_rtex',0,405
+	._var	'ref_tex','F',406
+	._type	407,'x',283,1
+	._type	407,'m','semid',0,284
+	._var	'sig_sem','F',407
+	._type	408,'x',283,1
+	._type	408,'m','semid',0,284
+	._var	'isig_sem','F',408
+	._type	409,'x',283,1
+	._type	409,'m','semid',0,284
+	._var	'wai_sem','F',409
+	._type	410,'x',283,1
+	._type	410,'m','semid',0,284
+	._var	'pol_sem','F',410
+	._type	411,'x',283,2
+	._type	411,'m','semid',0,284
+	._type	411,'m','tmout',0,290
+	._var	'twai_sem','F',411
+	._type	412,'x',283,1
+	._type	412,'m','semid',0,284
+	._var	'ini_sem','F',412
+	._type	413,'O',357
+	._type	414,'x',283,2
+	._type	414,'m','semid',0,284
+	._type	414,'m','pk_rsem',0,413
+	._var	'ref_sem','F',414
+	._type	415,'x',283,2
+	._type	415,'m','flgid',0,284
+	._type	415,'m','setptn',0,302
+	._var	'set_flg','F',415
+	._type	416,'x',283,2
+	._type	416,'m','flgid',0,284
+	._type	416,'m','setptn',0,302
+	._var	'iset_flg','F',416
+	._type	417,'x',283,2
+	._type	417,'m','flgid',0,284
+	._type	417,'m','clrptn',0,302
+	._var	'clr_flg','F',417
+	._type	418,'O',302
+	._type	419,'x',283,4
+	._type	419,'m','flgid',0,284
+	._type	419,'m','waiptn',0,302
+	._type	419,'m','wfmode',0,287
+	._type	419,'m','p_flgptn',0,418
+	._var	'wai_flg','F',419
+	._type	420,'O',302
+	._type	421,'x',283,4
+	._type	421,'m','flgid',0,284
+	._type	421,'m','waiptn',0,302
+	._type	421,'m','wfmode',0,287
+	._type	421,'m','p_flgptn',0,420
+	._var	'pol_flg','F',421
+	._type	422,'O',302
+	._type	423,'x',283,5
+	._type	423,'m','flgid',0,284
+	._type	423,'m','waiptn',0,302
+	._type	423,'m','wfmode',0,287
+	._type	423,'m','p_flgptn',0,422
+	._type	423,'m','tmout',0,290
+	._var	'twai_flg','F',423
+	._type	424,'x',283,1
+	._type	424,'m','flgid',0,284
+	._var	'ini_flg','F',424
+	._type	425,'O',359
+	._type	426,'x',283,2
+	._type	426,'m','flgid',0,284
+	._type	426,'m','pk_rflg',0,425
+	._var	'ref_flg','F',426
+	._type	427,'x',283,2
+	._type	427,'m','dtqid',0,284
+	._type	427,'m','data',0,267
+	._var	'snd_dtq','F',427
+	._type	428,'x',283,2
+	._type	428,'m','dtqid',0,284
+	._type	428,'m','data',0,267
+	._var	'psnd_dtq','F',428
+	._type	429,'x',283,2
+	._type	429,'m','dtqid',0,284
+	._type	429,'m','data',0,267
+	._var	'ipsnd_dtq','F',429
+	._type	430,'x',283,3
+	._type	430,'m','dtqid',0,284
+	._type	430,'m','data',0,267
+	._type	430,'m','tmout',0,290
+	._var	'tsnd_dtq','F',430
+	._type	431,'x',283,2
+	._type	431,'m','dtqid',0,284
+	._type	431,'m','data',0,267
+	._var	'fsnd_dtq','F',431
+	._type	432,'x',283,2
+	._type	432,'m','dtqid',0,284
+	._type	432,'m','data',0,267
+	._var	'ifsnd_dtq','F',432
+	._type	433,'O',267
+	._type	434,'x',283,2
+	._type	434,'m','dtqid',0,284
+	._type	434,'m','p_data',0,433
+	._var	'rcv_dtq','F',434
+	._type	435,'O',267
+	._type	436,'x',283,2
+	._type	436,'m','dtqid',0,284
+	._type	436,'m','p_data',0,435
+	._var	'prcv_dtq','F',436
+	._type	437,'O',267
+	._type	438,'x',283,3
+	._type	438,'m','dtqid',0,284
+	._type	438,'m','p_data',0,437
+	._type	438,'m','tmout',0,290
+	._var	'trcv_dtq','F',438
+	._type	439,'x',283,1
+	._type	439,'m','dtqid',0,284
+	._var	'ini_dtq','F',439
+	._type	440,'O',361
+	._type	441,'x',283,2
+	._type	441,'m','dtqid',0,284
+	._type	441,'m','pk_rdtq',0,440
+	._var	'ref_dtq','F',441
+	._type	442,'x',283,3
+	._type	442,'m','pdqid',0,284
+	._type	442,'m','data',0,267
+	._type	442,'m','datapri',0,288
+	._var	'snd_pdq','F',442
+	._type	443,'x',283,3
+	._type	443,'m','pdqid',0,284
+	._type	443,'m','data',0,267
+	._type	443,'m','datapri',0,288
+	._var	'psnd_pdq','F',443
+	._type	444,'x',283,3
+	._type	444,'m','pdqid',0,284
+	._type	444,'m','data',0,267
+	._type	444,'m','datapri',0,288
+	._var	'ipsnd_pdq','F',444
+	._type	445,'x',283,4
+	._type	445,'m','pdqid',0,284
+	._type	445,'m','data',0,267
+	._type	445,'m','datapri',0,288
+	._type	445,'m','tmout',0,290
+	._var	'tsnd_pdq','F',445
+	._type	446,'O',267
+	._type	447,'O',288
+	._type	448,'x',283,3
+	._type	448,'m','pdqid',0,284
+	._type	448,'m','p_data',0,446
+	._type	448,'m','p_datapri',0,447
+	._var	'rcv_pdq','F',448
+	._type	449,'O',267
+	._type	450,'O',288
+	._type	451,'x',283,3
+	._type	451,'m','pdqid',0,284
+	._type	451,'m','p_data',0,449
+	._type	451,'m','p_datapri',0,450
+	._var	'prcv_pdq','F',451
+	._type	452,'O',267
+	._type	453,'O',288
+	._type	454,'x',283,4
+	._type	454,'m','pdqid',0,284
+	._type	454,'m','p_data',0,452
+	._type	454,'m','p_datapri',0,453
+	._type	454,'m','tmout',0,290
+	._var	'trcv_pdq','F',454
+	._type	455,'x',283,1
+	._type	455,'m','pdqid',0,284
+	._var	'ini_pdq','F',455
+	._type	456,'O',363
+	._type	457,'x',283,2
+	._type	457,'m','pdqid',0,284
+	._type	457,'m','pk_rpdq',0,456
+	._var	'ref_pdq','F',457
+	._type	458,'O',349
+	._type	459,'x',283,2
+	._type	459,'m','mbxid',0,284
+	._type	459,'m','pk_msg',0,458
+	._var	'snd_mbx','F',459
+	._type	460,'O',349
+	._type	461,'O',460
+	._type	462,'x',283,2
+	._type	462,'m','mbxid',0,284
+	._type	462,'m','ppk_msg',0,461
+	._var	'rcv_mbx','F',462
+	._type	463,'O',349
+	._type	464,'O',463
+	._type	465,'x',283,2
+	._type	465,'m','mbxid',0,284
+	._type	465,'m','ppk_msg',0,464
+	._var	'prcv_mbx','F',465
+	._type	466,'O',349
+	._type	467,'O',466
+	._type	468,'x',283,3
+	._type	468,'m','mbxid',0,284
+	._type	468,'m','ppk_msg',0,467
+	._type	468,'m','tmout',0,290
+	._var	'trcv_mbx','F',468
+	._type	469,'x',283,1
+	._type	469,'m','mbxid',0,284
+	._var	'ini_mbx','F',469
+	._type	470,'O',366
+	._type	471,'x',283,2
+	._type	471,'m','mbxid',0,284
+	._type	471,'m','pk_rmbx',0,470
+	._var	'ref_mbx','F',471
+	._type	472,'v'
+	._type	473,'O',472
+	._type	474,'O',473
+	._type	475,'x',283,2
+	._type	475,'m','mpfid',0,284
+	._type	475,'m','p_blk',0,474
+	._var	'get_mpf','F',475
+	._type	476,'v'
+	._type	477,'O',476
+	._type	478,'O',477
+	._type	479,'x',283,2
+	._type	479,'m','mpfid',0,284
+	._type	479,'m','p_blk',0,478
+	._var	'pget_mpf','F',479
+	._type	480,'v'
+	._type	481,'O',480
+	._type	482,'O',481
+	._type	483,'x',283,3
+	._type	483,'m','mpfid',0,284
+	._type	483,'m','p_blk',0,482
+	._type	483,'m','tmout',0,290
+	._var	'tget_mpf','F',483
+	._type	484,'v'
+	._type	485,'O',484
+	._type	486,'x',283,2
+	._type	486,'m','mpfid',0,284
+	._type	486,'m','blk',0,485
+	._var	'rel_mpf','F',486
+	._type	487,'x',283,1
+	._type	487,'m','mpfid',0,284
+	._var	'ini_mpf','F',487
+	._type	488,'O',368
+	._type	489,'x',283,2
+	._type	489,'m','mpfid',0,284
+	._type	489,'m','pk_rmpf',0,488
+	._var	'ref_mpf','F',489
+	._type	490,'O',292
+	._type	491,'x',283,1
+	._type	491,'m','p_systim',0,490
+	._var	'get_tim','F',491
+	._type	492,'O',293
+	._type	493,'x',283,1
+	._type	493,'m','p_sysutm',0,492
+	._var	'get_utm','F',493
+	._type	494,'x',283,1
+	._type	494,'m','cycid',0,284
+	._var	'sta_cyc','F',494
+	._type	495,'x',283,1
+	._type	495,'m','cycid',0,284
+	._var	'stp_cyc','F',495
+	._type	496,'O',370
+	._type	497,'x',283,2
+	._type	497,'m','cycid',0,284
+	._type	497,'m','pk_rcyc',0,496
+	._var	'ref_cyc','F',497
+	._type	498,'x',283,2
+	._type	498,'m','almid',0,284
+	._type	498,'m','almtim',0,291
+	._var	'sta_alm','F',498
+	._type	499,'x',283,2
+	._type	499,'m','almid',0,284
+	._type	499,'m','almtim',0,291
+	._var	'ista_alm','F',499
+	._type	500,'x',283,1
+	._type	500,'m','almid',0,284
+	._var	'stp_alm','F',500
+	._type	501,'x',283,1
+	._type	501,'m','almid',0,284
+	._var	'istp_alm','F',501
+	._type	502,'O',372
+	._type	503,'x',283,2
+	._type	503,'m','almid',0,284
+	._type	503,'m','pk_ralm',0,502
+	._var	'ref_alm','F',503
+	._type	504,'x',283,1
+	._type	504,'m','tskpri',0,288
+	._var	'rot_rdq','F',504
+	._type	505,'x',283,1
+	._type	505,'m','tskpri',0,288
+	._var	'irot_rdq','F',505
+	._type	506,'O',284
+	._type	507,'x',283,1
+	._type	507,'m','p_tskid',0,506
+	._var	'get_tid','F',507
+	._type	508,'O',284
+	._type	509,'x',283,1
+	._type	509,'m','p_tskid',0,508
+	._var	'iget_tid','F',509
+	._type	510,'v'
+	._type	511,'x',283,1
+	._type	511,'m','',0,510
+	._var	'loc_cpu','F',511
+	._type	512,'v'
+	._type	513,'x',283,1
+	._type	513,'m','',0,512
+	._var	'iloc_cpu','F',513
+	._type	514,'v'
+	._type	515,'x',283,1
+	._type	515,'m','',0,514
+	._var	'unl_cpu','F',515
+	._type	516,'v'
+	._type	517,'x',283,1
+	._type	517,'m','',0,516
+	._var	'iunl_cpu','F',517
+	._type	518,'v'
+	._type	519,'x',283,1
+	._type	519,'m','',0,518
+	._var	'dis_dsp','F',519
+	._type	520,'v'
+	._type	521,'x',283,1
+	._type	521,'m','',0,520
+	._var	'ena_dsp','F',521
+	._type	522,'v'
+	._type	523,'x',276,1
+	._type	523,'m','',0,522
+	._var	'sns_ctx','F',523
+	._type	524,'v'
+	._type	525,'x',276,1
+	._type	525,'m','',0,524
+	._var	'sns_loc','F',525
+	._type	526,'v'
+	._type	527,'x',276,1
+	._type	527,'m','',0,526
+	._var	'sns_dsp','F',527
+	._type	528,'v'
+	._type	529,'x',276,1
+	._type	529,'m','',0,528
+	._var	'sns_dpn','F',529
+	._type	530,'v'
+	._type	531,'x',276,1
+	._type	531,'m','',0,530
+	._var	'sns_ker','F',531
+	._type	532,'v'
+	._type	533,'x',283,1
+	._type	533,'m','',0,532
+	._var	'ext_ker','F',533
+	._type	534,'x',283,1
+	._type	534,'m','intno',0,303
+	._var	'dis_int','F',534
+	._type	535,'x',283,1
+	._type	535,'m','intno',0,303
+	._var	'ena_int','F',535
+	._type	536,'x',283,1
+	._type	536,'m','intpri',0,288
+	._var	'chg_ipm','F',536
+	._type	537,'O',288
+	._type	538,'x',283,1
+	._type	538,'m','p_intpri',0,537
+	._var	'get_ipm','F',538
+	._type	539,'v'
+	._type	540,'O',539
+	._type	541,'x',276,1
+	._type	541,'m','p_excinf',0,540
+	._var	'xsns_dpn','F',541
+	._type	542,'v'
+	._type	543,'O',542
+	._type	544,'x',276,1
+	._type	544,'m','p_excinf',0,543
+	._var	'xsns_xpn','F',544
+	._type	546,'Z',6,267
+	._type	545,'S','',30
+	._type	545,'m','logtype',279,0
+	._type	545,'m','logtim',292,2
+	._type	545,'m','loginfo',546,6
+	._type	547,'T','SYSLOG',545
+	._type	548,'S','t_syslog_rlog',8
+	._type	548,'m','count',279,0
+	._type	548,'m','lost',279,2
+	._type	548,'m','logmask',279,4
+	._type	548,'m','lowmask',279,6
+	._type	549,'T','T_SYSLOG_RLOG',548
+	._type	550,'P',547
+	._type	551,'x',283,2
+	._type	551,'m','prio',0,279
+	._type	551,'m','p_syslog',0,550
+	._var	'syslog_wri_log','F',551
+	._type	552,'v'
+	._type	553,'P',3
+	._type	554,'x',552,3
+	._type	554,'m','prio',0,279
+	._type	554,'m','format',0,553
+	._type	554,'m','',0,32
+	._var	'syslog','F',554
+	._type	555,'v'
+	._type	556,'x',555,1
+	._type	556,'m','intno',0,303
+	._var	'm16c_config_int','F',556
+	._type	557,'O',260
+	._type	558,'Z',-1,557
+	._var	'_kernel_intc_reg','E',558
+	._type	559,'v'
+	._type	560,'v'
+	._type	561,'x',559,1
+	._type	561,'m','',0,560
+	._var	'_kernel_target_initialize','F',561
+	._type	562,'v'
+	._type	563,'v'
+	._type	564,'x',562,1
+	._type	564,'m','',0,563
+	._var	'_kernel_target_exit','F',564
+	._type	565,'v'
+	._type	566,'x',565,1
+	._type	566,'m','c',0,277
+	._var	'target_fput_log','F',566
+	._type	567,'S','interrupt_handler_initialization_block',8
+	._type	567,'m','inhno',304,0
+	._type	567,'m','inhatr',285,2
+	._type	567,'m','int_entry',294,4
+	._type	568,'T','INHINIB',567
+	._type	569,'S','interrupt_request_initialization_block',6
+	._type	569,'m','intno',303,0
+	._type	569,'m','intatr',285,2
+	._type	569,'m','intpri',288,4
+	._type	570,'T','INTINIB',569
+	._var	'_kernel_tnum_inhno','E',279
+	._type	571,'Z',-1,568
+	._var	'_kernel_inhinib_table','E',571
+	._var	'_kernel_tnum_intno','E',279
+	._type	572,'Z',-1,570
+	._var	'_kernel_intinib_table','E',572
+	._type	573,'v'
+	._type	574,'v'
+	._type	575,'x',573,1
+	._type	575,'m','',0,574
+	._var	'_kernel_initialize_interrupt','F',575
+	._type	577,'v'
+	._type	578,'O',577
+	._type	576,'S','task_context_block',6
+	._type	576,'m','sp',578,0
+	._type	576,'m','pc',264,2
+	._type	579,'T','CTXB',576
+	._var	'_kernel_intnest','E',262
+	._type	580,'Z',-1,288
+	._var	'intpri_table','E',580
+	._type	581,'v'
+	._type	582,'x',581,3
+	._type	582,'m','intno',0,303
+	._type	582,'m','intatr',0,285
+	._type	582,'m','intpri',0,288
+	._var	'x_config_int','F',582
+	._type	583,'v'
+	._type	584,'v'
+	._type	585,'x',583,1
+	._type	585,'m','',0,584
+	._var	'_kernel_dispatch','F',585
+	._type	586,'v'
+	._type	587,'v'
+	._type	588,'x',586,1
+	._type	588,'m','',0,587
+	._var	'_kernel_start_dispatch','F',588
+	._type	589,'v'
+	._type	590,'v'
+	._type	591,'x',589,1
+	._type	591,'m','',0,590
+	._var	'_exit_and_dispatch','F',591
+	._type	592,'v'
+	._type	593,'v'
+	._type	594,'x',592,1
+	._type	594,'m','',0,593
+	._var	'_kernel_call_exit_kernel','F',594
+	._type	595,'v'
+	._type	596,'v'
+	._type	597,'x',595,1
+	._type	597,'m','',0,596
+	._var	'_kernel_start_r','F',597
+	._type	598,'O',260
+	._var	'_kernel_tsk_sp','E',598
+	._type	599,'v'
+	._type	600,'v'
+	._type	601,'x',599,1
+	._type	601,'m','',0,600
+	._var	'_kernel_prc_initialize','F',601
+	._type	602,'v'
+	._type	603,'v'
+	._type	604,'x',602,1
+	._type	604,'m','',0,603
+	._var	'_kernel_prc_terminate','F',604
+	._type	605,'v'
+	._type	606,'v'
+	._type	607,'x',605,1
+	._type	607,'m','',0,606
+	._var	'_kernel_initialize_object','F',607
+	._type	608,'v'
+	._type	609,'v'
+	._type	610,'x',608,1
+	._type	610,'m','',0,609
+	._var	'_kernel_call_inirtn','F',610
+	._type	611,'v'
+	._type	612,'v'
+	._type	613,'x',611,1
+	._type	613,'m','',0,612
+	._var	'_kernel_call_terrtn','F',613
+	._var	'_kernel_istksz','E',289
+	._type	614,'O',345
+	._var	'_kernel_istk','E',614
+	._var	'_kernel_kerflg','E',276
+	._type	615,'v'
+	._type	616,'v'
+	._type	617,'x',615,1
+	._type	617,'m','',0,616
+	._var	'sta_ker','F',617
+	._type	618,'v'
+	._type	619,'v'
+	._type	620,'x',618,1
+	._type	620,'m','',0,619
+	._var	'_kernel_exit_kernel','F',620
+	._type	622,'O',621
+	._type	623,'O',621
+	._type	621,'S','queue',4
+	._type	621,'m','p_next',622,0
+	._type	621,'m','p_prev',623,2
+	._type	624,'T','QUEUE',621
+	._type	625,'T','EVTTIM',281
+	._type	626,'v'
+	._type	627,'v'
+	._type	628,'O',627
+	._type	629,'x',626,1
+	._type	629,'m','',0,628
+	._type	630,'P',629
+	._type	631,'T','CBACK',630
+	._type	633,'v'
+	._type	634,'O',633
+	._type	632,'S','time_event_block',8
+	._type	632,'m','index',279,0
+	._type	632,'m','callback',631,2
+	._type	632,'m','arg',634,6
+	._type	635,'T','TMEVTB',632
+	._type	637,'O',635
+	._type	636,'S','time_event_node',6
+	._type	636,'m','time',625,0
+	._type	636,'m','p_tmevtb',637,4
+	._type	638,'T','TMEVTN',636
+	._type	639,'Z',-1,638
+	._var	'_kernel_tmevt_heap','E',639
+	._var	'_kernel_current_time','E',625
+	._var	'_kernel_next_time','E',625
+	._var	'_kernel_pend_update','E',276
+	._var	'_kernel_last_index','E',279
+	._type	640,'v'
+	._type	641,'v'
+	._type	642,'x',640,1
+	._type	642,'m','',0,641
+	._var	'_kernel_initialize_tmevt','F',642
+	._type	643,'x',279,2
+	._type	643,'m','index',0,279
+	._type	643,'m','time',0,625
+	._var	'_kernel_tmevt_up','F',643
+	._type	644,'x',279,2
+	._type	644,'m','index',0,279
+	._type	644,'m','time',0,625
+	._var	'_kernel_tmevt_down','F',644
+	._type	645,'v'
+	._type	646,'O',635
+	._type	647,'x',645,2
+	._type	647,'m','p_tmevtb',0,646
+	._type	647,'m','time',0,625
+	._var	'_kernel_tmevtb_insert','F',647
+	._type	648,'v'
+	._type	649,'O',635
+	._type	650,'x',648,1
+	._type	650,'m','p_tmevtb',0,649
+	._var	'_kernel_tmevtb_delete','F',650
+	._type	651,'O',635
+	._type	652,'x',291,1
+	._type	652,'m','p_tmevtb',0,651
+	._var	'_kernel_tmevt_lefttim','F',652
+	._type	653,'v'
+	._type	654,'v'
+	._type	655,'x',653,1
+	._type	655,'m','',0,654
+	._var	'_kernel_signal_time','F',655
+	._type	657,'O',635
+	._type	656,'U','waiting_information',2
+	._type	656,'m','wercd',283,0
+	._type	656,'m','p_tmevtb',657,0
+	._type	658,'T','WINFO',656
+	._type	660,'v'
+	._type	661,'O',660
+	._type	659,'S','task_initialization_block',24
+	._type	659,'m','tskatr',285,0
+	._type	659,'m','exinf',267,2
+	._type	659,'m','task',309,6
+	._type	659,'m','ipriority',279,10
+	._type	659,'m','stksz',289,12
+	._type	659,'m','stk',661,16
+	._type	659,'m','texatr',285,18
+	._type	659,'m','texrtn',313,20
+	._type	662,'T','TINIB',659
+	._type	664,'P',662
+	._type	665,'g','priority',0,8,18
+	._type	666,'g','actque',0,1,3
+	._type	667,'g','wupque',0,1,3
+	._type	668,'g','enatex',0,1,3
+	._type	669,'O',658
+	._type	663,'S','task_control_block',22
+	._type	663,'m','task_queue',624,0
+	._type	663,'m','p_tinib',664,4
+	._type	663,'m','tstat',260,20
+	._type	663,'m','priority',665,64
+	._type	663,'m','actque',666,168
+	._type	663,'m','wupque',667,169
+	._type	663,'m','enatex',668,170
+	._type	663,'m','texptn',301,10
+	._type	663,'m','p_winfo',669,12
+	._type	663,'m','tskctxb',579,14
+	._type	670,'T','TCB',663
+	._type	671,'O',670
+	._var	'_kernel_p_runtsk','E',671
+	._type	672,'O',670
+	._var	'_kernel_p_schedtsk','E',672
+	._var	'_kernel_reqflg','E',276
+	._var	'_kernel_disdsp','E',276
+	._var	'_kernel_dspflg','E',276
+	._type	673,'Z',16,624
+	._var	'_kernel_ready_queue','E',673
+	._var	'_kernel_ready_primap','E',262
+	._var	'_kernel_tmax_tskid','E',284
+	._type	674,'Z',-1,662
+	._var	'_kernel_tinib_table','E',674
+	._type	675,'Z',-1,284
+	._var	'_kernel_torder_table','E',675
+	._type	676,'Z',-1,670
+	._var	'_kernel_tcb_table','E',676
+	._type	677,'v'
+	._type	678,'v'
+	._type	679,'x',677,1
+	._type	679,'m','',0,678
+	._var	'_kernel_initialize_task','F',679
+	._type	680,'O',670
+	._type	681,'v'
+	._type	682,'x',680,1
+	._type	682,'m','',0,681
+	._var	'_kernel_search_schedtsk','F',682
+	._type	683,'O',670
+	._type	684,'x',276,1
+	._type	684,'m','p_tcb',0,683
+	._var	'_kernel_make_runnable','F',684
+	._type	685,'O',670
+	._type	686,'x',276,1
+	._type	686,'m','p_tcb',0,685
+	._var	'_kernel_make_non_runnable','F',686
+	._type	687,'v'
+	._type	688,'O',670
+	._type	689,'x',687,1
+	._type	689,'m','p_tcb',0,688
+	._var	'_kernel_make_dormant','F',689
+	._type	690,'O',670
+	._type	691,'x',276,1
+	._type	691,'m','p_tcb',0,690
+	._var	'_kernel_make_active','F',691
+	._type	692,'O',670
+	._type	693,'x',276,2
+	._type	693,'m','p_tcb',0,692
+	._type	693,'m','newpri',0,279
+	._var	'_kernel_change_priority','F',693
+	._type	694,'x',276,1
+	._type	694,'m','pri',0,279
+	._var	'_kernel_rotate_ready_queue','F',694
+	._type	695,'v'
+	._type	696,'v'
+	._type	697,'x',695,1
+	._type	697,'m','',0,696
+	._var	'_kernel_call_texrtn','F',697
+	._type	698,'v'
+	._type	699,'v'
+	._type	700,'x',698,1
+	._type	700,'m','',0,699
+	._var	'_kernel_calltex','F',700
+	._var	'____BEGIN_OFF_TCB_tstat','S',670,_____BEGIN_OFF_TCB_tstat
+	._var	'____BEGIN_OFF_TCB_tinib','S',670,_____BEGIN_OFF_TCB_tinib
+	._var	'____BEGIN_OFF_TCB_pc','S',670,_____BEGIN_OFF_TCB_pc
+	._var	'____BEGIN_OFF_TCB_sp','S',670,_____BEGIN_OFF_TCB_sp
+	._var	'____BEGIN_BIT_TCB_enatex','S',670,_____BEGIN_BIT_TCB_enatex
+	._var	'____BEGIN_OFF_TCB_texptn','S',670,_____BEGIN_OFF_TCB_texptn
+	._var	'____BEGIN_OFF_TINIB_exinf','S',662,_____BEGIN_OFF_TINIB_exinf
+	._var	'____BEGIN_OFF_TINIB_task','S',662,_____BEGIN_OFF_TINIB_task
+;#################################
+;#################################
+;#################################
+	._inspect	'V', 't', "ptrdiff_t", 'O', 20
+	._inspect	'V', 't', "wchar_t", 'O', 5
+	._inspect	'V', 't', "size_t", 'O', 7
+	._inspect	'V', 't', "int8_t", 'O', 19
+	._inspect	'V', 't', "uint8_t", 'O', 3
+	._inspect	'V', 't', "int16_t", 'O', 23
+	._inspect	'V', 't', "uint16_t", 'O', 5
+	._inspect	'V', 't', "int32_t", 'O', 20
+	._inspect	'V', 't', "uint32_t", 'O', 7
+	._inspect	'V', 't', "int64_t", 'O', 8
+	._inspect	'V', 't', "uint64_t", 'O', 9
+	._inspect	'V', 't', "intptr_t", 'O', 20
+	._inspect	'V', 't', "uintptr_t", 'O', 7
+	._inspect	'V', 't', "float32_t", 'O', 10
+	._inspect	'V', 't', "double64_t", 'O', 11
+	._inspect	'V', 't', "TOPPERS_fp_t", 'O', 274
+	._inspect	'V', 't', "bool_t", 'O', 16
+	._inspect	'V', 't', "char_t", 'O', 3
+	._inspect	'V', 't', "int_t", 'O', 16
+	._inspect	'V', 't', "uint_t", 'O', 18
+	._inspect	'V', 't', "long_t", 'O', 20
+	._inspect	'V', 't', "ulong_t", 'O', 7
+	._inspect	'V', 't', "FN", 'O', 278
+	._inspect	'V', 't', "ER", 'O', 278
+	._inspect	'V', 't', "ID", 'O', 278
+	._inspect	'V', 't', "ATR", 'O', 279
+	._inspect	'V', 't', "STAT", 'O', 279
+	._inspect	'V', 't', "MODE", 'O', 279
+	._inspect	'V', 't', "PRI", 'O', 278
+	._inspect	'V', 't', "SIZE", 'O', 268
+	._inspect	'V', 't', "TMO", 'O', 278
+	._inspect	'V', 't', "RELTIM", 'O', 279
+	._inspect	'V', 't', "SYSTIM", 'O', 281
+	._inspect	'V', 't', "SYSUTM", 'O', 281
+	._inspect	'V', 't', "FP", 'O', 275
+	._inspect	'V', 't', "ER_BOOL", 'O', 278
+	._inspect	'V', 't', "ER_ID", 'O', 278
+	._inspect	'V', 't', "ER_UINT", 'O', 278
+	._inspect	'V', 't', "ACPTN", 'O', 264
+	._inspect	'V', 't', "ACVCT", 'O', 299
+	._inspect	'V', 't', "TEXPTN", 'O', 279
+	._inspect	'V', 't', "FLGPTN", 'O', 279
+	._inspect	'V', 't', "INTNO", 'O', 279
+	._inspect	'V', 't', "INHNO", 'O', 279
+	._inspect	'V', 't', "EXCNO", 'O', 279
+	._inspect	'V', 't', "TASK", 'O', 308
+	._inspect	'V', 't', "TEXRTN", 'O', 312
+	._inspect	'V', 't', "CYCHDR", 'O', 316
+	._inspect	'V', 't', "ALMHDR", 'O', 320
+	._inspect	'V', 't', "ISR", 'O', 324
+	._inspect	'V', 't', "INTHDR", 'O', 329
+	._inspect	'V', 't', "EXCHDR", 'O', 335
+	._inspect	'V', 't', "INIRTN", 'O', 339
+	._inspect	'V', 't', "TERRTN", 'O', 343
+	._inspect	'V', 't', "STK_T", 'O', 267
+	._inspect	'V', 't', "MPF_T", 'O', 267
+	._inspect	'V', 't', "T_MSG", 'O', 347
+	._inspect	'V', 't', "T_MSG_PRI", 'O', 350
+	._inspect	'V', 't', "T_RTSK", 'O', 352
+	._inspect	'V', 't', "T_RTEX", 'O', 354
+	._inspect	'V', 't', "T_RSEM", 'O', 356
+	._inspect	'V', 't', "T_RFLG", 'O', 358
+	._inspect	'V', 't', "T_RDTQ", 'O', 360
+	._inspect	'V', 't', "T_RPDQ", 'O', 362
+	._inspect	'V', 't', "T_RMBX", 'O', 364
+	._inspect	'V', 't', "T_RMPF", 'O', 367
+	._inspect	'V', 't', "T_RCYC", 'O', 369
+	._inspect	'V', 't', "T_RALM", 'O', 371
+	._inspect	'F', 't', "act_tsk", 'G', 373
+	._inspect	'F', 't', "iact_tsk", 'G', 374
+	._inspect	'F', 't', "can_act", 'G', 375
+	._inspect	'F', 't', "ext_tsk", 'G', 377
+	._inspect	'F', 't', "ter_tsk", 'G', 378
+	._inspect	'F', 't', "chg_pri", 'G', 379
+	._inspect	'F', 't', "get_pri", 'G', 381
+	._inspect	'F', 't', "get_inf", 'G', 383
+	._inspect	'F', 't', "ref_tsk", 'G', 385
+	._inspect	'F', 't', "slp_tsk", 'G', 387
+	._inspect	'F', 't', "tslp_tsk", 'G', 388
+	._inspect	'F', 't', "wup_tsk", 'G', 389
+	._inspect	'F', 't', "iwup_tsk", 'G', 390
+	._inspect	'F', 't', "can_wup", 'G', 391
+	._inspect	'F', 't', "rel_wai", 'G', 392
+	._inspect	'F', 't', "irel_wai", 'G', 393
+	._inspect	'F', 't', "sus_tsk", 'G', 394
+	._inspect	'F', 't', "rsm_tsk", 'G', 395
+	._inspect	'F', 't', "dly_tsk", 'G', 396
+	._inspect	'F', 't', "ras_tex", 'G', 397
+	._inspect	'F', 't', "iras_tex", 'G', 398
+	._inspect	'F', 't', "dis_tex", 'G', 400
+	._inspect	'F', 't', "ena_tex", 'G', 402
+	._inspect	'F', 't', "sns_tex", 'G', 404
+	._inspect	'F', 't', "ref_tex", 'G', 406
+	._inspect	'F', 't', "sig_sem", 'G', 407
+	._inspect	'F', 't', "isig_sem", 'G', 408
+	._inspect	'F', 't', "wai_sem", 'G', 409
+	._inspect	'F', 't', "pol_sem", 'G', 410
+	._inspect	'F', 't', "twai_sem", 'G', 411
+	._inspect	'F', 't', "ini_sem", 'G', 412
+	._inspect	'F', 't', "ref_sem", 'G', 414
+	._inspect	'F', 't', "set_flg", 'G', 415
+	._inspect	'F', 't', "iset_flg", 'G', 416
+	._inspect	'F', 't', "clr_flg", 'G', 417
+	._inspect	'F', 't', "wai_flg", 'G', 419
+	._inspect	'F', 't', "pol_flg", 'G', 421
+	._inspect	'F', 't', "twai_flg", 'G', 423
+	._inspect	'F', 't', "ini_flg", 'G', 424
+	._inspect	'F', 't', "ref_flg", 'G', 426
+	._inspect	'F', 't', "snd_dtq", 'G', 427
+	._inspect	'F', 't', "psnd_dtq", 'G', 428
+	._inspect	'F', 't', "ipsnd_dtq", 'G', 429
+	._inspect	'F', 't', "tsnd_dtq", 'G', 430
+	._inspect	'F', 't', "fsnd_dtq", 'G', 431
+	._inspect	'F', 't', "ifsnd_dtq", 'G', 432
+	._inspect	'F', 't', "rcv_dtq", 'G', 434
+	._inspect	'F', 't', "prcv_dtq", 'G', 436
+	._inspect	'F', 't', "trcv_dtq", 'G', 438
+	._inspect	'F', 't', "ini_dtq", 'G', 439
+	._inspect	'F', 't', "ref_dtq", 'G', 441
+	._inspect	'F', 't', "snd_pdq", 'G', 442
+	._inspect	'F', 't', "psnd_pdq", 'G', 443
+	._inspect	'F', 't', "ipsnd_pdq", 'G', 444
+	._inspect	'F', 't', "tsnd_pdq", 'G', 445
+	._inspect	'F', 't', "rcv_pdq", 'G', 448
+	._inspect	'F', 't', "prcv_pdq", 'G', 451
+	._inspect	'F', 't', "trcv_pdq", 'G', 454
+	._inspect	'F', 't', "ini_pdq", 'G', 455
+	._inspect	'F', 't', "ref_pdq", 'G', 457
+	._inspect	'F', 't', "snd_mbx", 'G', 459
+	._inspect	'F', 't', "rcv_mbx", 'G', 462
+	._inspect	'F', 't', "prcv_mbx", 'G', 465
+	._inspect	'F', 't', "trcv_mbx", 'G', 468
+	._inspect	'F', 't', "ini_mbx", 'G', 469
+	._inspect	'F', 't', "ref_mbx", 'G', 471
+	._inspect	'F', 't', "get_mpf", 'G', 475
+	._inspect	'F', 't', "pget_mpf", 'G', 479
+	._inspect	'F', 't', "tget_mpf", 'G', 483
+	._inspect	'F', 't', "rel_mpf", 'G', 486
+	._inspect	'F', 't', "ini_mpf", 'G', 487
+	._inspect	'F', 't', "ref_mpf", 'G', 489
+	._inspect	'F', 't', "get_tim", 'G', 491
+	._inspect	'F', 't', "get_utm", 'G', 493
+	._inspect	'F', 't', "sta_cyc", 'G', 494
+	._inspect	'F', 't', "stp_cyc", 'G', 495
+	._inspect	'F', 't', "ref_cyc", 'G', 497
+	._inspect	'F', 't', "sta_alm", 'G', 498
+	._inspect	'F', 't', "ista_alm", 'G', 499
+	._inspect	'F', 't', "stp_alm", 'G', 500
+	._inspect	'F', 't', "istp_alm", 'G', 501
+	._inspect	'F', 't', "ref_alm", 'G', 503
+	._inspect	'F', 't', "rot_rdq", 'G', 504
+	._inspect	'F', 't', "irot_rdq", 'G', 505
+	._inspect	'F', 't', "get_tid", 'G', 507
+	._inspect	'F', 't', "iget_tid", 'G', 509
+	._inspect	'F', 't', "loc_cpu", 'G', 511
+	._inspect	'F', 't', "iloc_cpu", 'G', 513
+	._inspect	'F', 't', "unl_cpu", 'G', 515
+	._inspect	'F', 't', "iunl_cpu", 'G', 517
+	._inspect	'F', 't', "dis_dsp", 'G', 519
+	._inspect	'F', 't', "ena_dsp", 'G', 521
+	._inspect	'F', 't', "sns_ctx", 'G', 523
+	._inspect	'F', 't', "sns_loc", 'G', 525
+	._inspect	'F', 't', "sns_dsp", 'G', 527
+	._inspect	'F', 't', "sns_dpn", 'G', 529
+	._inspect	'F', 't', "sns_ker", 'G', 531
+	._inspect	'F', 't', "ext_ker", 'G', 533
+	._inspect	'F', 't', "dis_int", 'G', 534
+	._inspect	'F', 't', "ena_int", 'G', 535
+	._inspect	'F', 't', "chg_ipm", 'G', 536
+	._inspect	'F', 't', "get_ipm", 'G', 538
+	._inspect	'F', 't', "xsns_dpn", 'G', 541
+	._inspect	'F', 't', "xsns_xpn", 'G', 544
+	._inspect	'V', 't', "SYSLOG", 'O', 545
+	._inspect	'V', 't', "T_SYSLOG_RLOG", 'O', 548
+	._inspect	'F', 't', "syslog_wri_log", 'G', 551
+	._inspect	'F', 't', "syslog", 'G', 554
+	._inspect	'F', 't', "m16c_config_int", 'G', 556
+	._inspect	'V', 't', "_kernel_intc_reg", 'G', 558
+	._inspect	'F', 't', "_kernel_target_initialize", 'G', 561
+	._inspect	'F', 't', "_kernel_target_exit", 'G', 564
+	._inspect	'F', 't', "target_fput_log", 'G', 566
+	._inspect	'V', 't', "INHINIB", 'O', 567
+	._inspect	'V', 't', "INTINIB", 'O', 569
+	._inspect	'V', 't', "_kernel_tnum_inhno", 'G', 279
+	._inspect	'V', 't', "_kernel_inhinib_table", 'G', 571
+	._inspect	'V', 't', "_kernel_tnum_intno", 'G', 279
+	._inspect	'V', 't', "_kernel_intinib_table", 'G', 572
+	._inspect	'F', 't', "_kernel_initialize_interrupt", 'G', 575
+	._inspect	'V', 't', "CTXB", 'O', 576
+	._inspect	'V', 't', "_kernel_intnest", 'G', 262
+	._inspect	'V', 't', "intpri_table", 'G', 580
+	._inspect	'F', 't', "x_config_int", 'G', 582
+	._inspect	'F', 't', "_kernel_dispatch", 'G', 585
+	._inspect	'F', 't', "_kernel_start_dispatch", 'G', 588
+	._inspect	'F', 't', "_exit_and_dispatch", 'G', 591
+	._inspect	'F', 't', "_kernel_call_exit_kernel", 'G', 594
+	._inspect	'F', 't', "_kernel_start_r", 'G', 597
+	._inspect	'V', 't', "_kernel_tsk_sp", 'G', 598
+	._inspect	'F', 't', "_kernel_prc_initialize", 'G', 601
+	._inspect	'F', 't', "_kernel_prc_terminate", 'G', 604
+	._inspect	'F', 't', "_kernel_initialize_object", 'G', 607
+	._inspect	'F', 't', "_kernel_call_inirtn", 'G', 610
+	._inspect	'F', 't', "_kernel_call_terrtn", 'G', 613
+	._inspect	'V', 't', "_kernel_istksz", 'G', 289
+	._inspect	'V', 't', "_kernel_istk", 'G', 614
+	._inspect	'V', 't', "_kernel_kerflg", 'G', 276
+	._inspect	'F', 't', "sta_ker", 'G', 617
+	._inspect	'F', 't', "_kernel_exit_kernel", 'G', 620
+	._inspect	'V', 't', "QUEUE", 'O', 621
+	._inspect	'V', 't', "EVTTIM", 'O', 281
+	._inspect	'V', 't', "CBACK", 'O', 630
+	._inspect	'V', 't', "TMEVTB", 'O', 632
+	._inspect	'V', 't', "TMEVTN", 'O', 636
+	._inspect	'V', 't', "_kernel_tmevt_heap", 'G', 639
+	._inspect	'V', 't', "_kernel_current_time", 'G', 625
+	._inspect	'V', 't', "_kernel_next_time", 'G', 625
+	._inspect	'V', 't', "_kernel_pend_update", 'G', 276
+	._inspect	'V', 't', "_kernel_last_index", 'G', 279
+	._inspect	'F', 't', "_kernel_initialize_tmevt", 'G', 642
+	._inspect	'F', 't', "_kernel_tmevt_up", 'G', 643
+	._inspect	'F', 't', "_kernel_tmevt_down", 'G', 644
+	._inspect	'F', 't', "_kernel_tmevtb_insert", 'G', 647
+	._inspect	'F', 't', "_kernel_tmevtb_delete", 'G', 650
+	._inspect	'F', 't', "_kernel_tmevt_lefttim", 'G', 652
+	._inspect	'F', 't', "_kernel_signal_time", 'G', 655
+	._inspect	'V', 't', "WINFO", 'O', 656
+	._inspect	'V', 't', "TINIB", 'O', 659
+	._inspect	'V', 't', "TCB", 'O', 663
+	._inspect	'V', 't', "_kernel_p_runtsk", 'G', 671
+	._inspect	'V', 't', "_kernel_p_schedtsk", 'G', 672
+	._inspect	'V', 't', "_kernel_reqflg", 'G', 276
+	._inspect	'V', 't', "_kernel_disdsp", 'G', 276
+	._inspect	'V', 't', "_kernel_dspflg", 'G', 276
+	._inspect	'V', 't', "_kernel_ready_queue", 'G', 673
+	._inspect	'V', 't', "_kernel_ready_primap", 'G', 262
+	._inspect	'V', 't', "_kernel_tmax_tskid", 'G', 284
+	._inspect	'V', 't', "_kernel_tinib_table", 'G', 674
+	._inspect	'V', 't', "_kernel_torder_table", 'G', 675
+	._inspect	'V', 't', "_kernel_tcb_table", 'G', 676
+	._inspect	'F', 't', "_kernel_initialize_task", 'G', 679
+	._inspect	'F', 't', "_kernel_search_schedtsk", 'G', 682
+	._inspect	'F', 't', "_kernel_make_runnable", 'G', 684
+	._inspect	'F', 't', "_kernel_make_non_runnable", 'G', 686
+	._inspect	'F', 't', "_kernel_make_dormant", 'G', 689
+	._inspect	'F', 't', "_kernel_make_active", 'G', 691
+	._inspect	'F', 't', "_kernel_change_priority", 'G', 693
+	._inspect	'F', 't', "_kernel_rotate_ready_queue", 'G', 694
+	._inspect	'F', 't', "_kernel_call_texrtn", 'G', 697
+	._inspect	'F', 't', "_kernel_calltex", 'G', 700
+	._inspect	'V', 't', "____BEGIN_OFF_TCB_tstat", 'S', 670
+	._inspect	'V', 't', "____BEGIN_OFF_TCB_tinib", 'S', 670
+	._inspect	'V', 't', "____BEGIN_OFF_TCB_pc", 'S', 670
+	._inspect	'V', 't', "____BEGIN_OFF_TCB_sp", 'S', 670
+	._inspect	'V', 't', "____BEGIN_BIT_TCB_enatex", 'S', 670
+	._inspect	'V', 't', "____BEGIN_OFF_TCB_texptn", 'S', 670
+	._inspect	'V', 't', "____BEGIN_OFF_TINIB_exinf", 'S', 662
+	._inspect	'V', 't', "____BEGIN_OFF_TINIB_task", 'S', 662
+
+	.END
+
+;## Compile End Time Sun Oct 28 11:11:03 2012
+
+

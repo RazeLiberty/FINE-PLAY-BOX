@@ -1,0 +1,18 @@
+-L "nc30lib"
+-LD "C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\kernel\Release"
+-L "kernel.lib"
+-G
+-MS
+-O "C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\sample1.x30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\start.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\banner.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\kernel_cfg.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\kernel_cfg_asm.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\log_output.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\logtask.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\sample1.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\serial.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\strerror.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\syslog.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\t_perror.r30"
+"C:\Users\HIROTAoutbrain\Desktop\TN-asp\asp\target\M16C62P_HEW\workspace\sample1\Release\vasyslog.r30"

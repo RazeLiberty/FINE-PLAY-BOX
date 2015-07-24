@@ -1,0 +1,1 @@
+%1\cfg\cfg.exe --pass=1 --kernel=asp --api-table %1\kernel\kernel_api.csv --cfg1-def-table %1\kernel\kernel_def.csv --cfg1-def-table %1\arch\m16c_nc30\prc_def.csv -I%1 -I%1\arch -I%1\include -I%1\target\M16C62P_HEW %1\Apli\job.cfg

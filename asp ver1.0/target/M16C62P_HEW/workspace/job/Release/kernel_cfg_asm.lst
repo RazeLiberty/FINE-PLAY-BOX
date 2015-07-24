@@ -1,0 +1,158 @@
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Mon Mar 03 17:03:10 2014  PAGE 001
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+     1                                  ;
+     2                                  ;  M16Cアーキテクチャ依存出力ファイル 
+     3                                  ;
+     4                                  ;  割込みベクタ及び割込みハンドラ定義
+     5                                  ;
+     6                                  
+     7                                  
+     8                                  	.glb _kernel_interrupt			
+     9                                  	.section program, code, align	
+    10                                  
+    11                                  	.glb	_UART_send_handler	
+    12                                  	.glb	__kernel_UART_send_handler_17_entry	
+    13  00000                           __kernel_UART_send_handler_17_entry:				
+    14  00000  ECFF                     	pushm	r0,r1,r2,r3,a0,a1,sb,fb		; レジスタをタスクスタックへ退避 
+    15  00002  75C10000r                	mov.w	#(_UART_send_handler & 0FFFFH) , r1		; ハンドラの下位アドレス 
+    16  00006  75C30000r                	mov.w	#((_UART_send_handler >> 16) & 0FFFFH) , r3		; ハンドラの上位アドレス 
+    17  0000A  75C01100                 	mov.w	#17 , r0 ; 割込み/CPU例外ハンドラ番号 
+    18  0000E  FC000000r             A  	jmp	_kernel_interrupt			; 共通ルーチンへ 
+    19                                  
+    20                                  
+    21                                  	.glb	_UART_receive_handler	
+    22                                  	.glb	__kernel_UART_receive_handler_18_entry	
+    23  00012                           __kernel_UART_receive_handler_18_entry:				
+    24  00012  ECFF                     	pushm	r0,r1,r2,r3,a0,a1,sb,fb		; レジスタをタスクスタックへ退避 
+    25  00014  75C10000r                	mov.w	#(_UART_receive_handler & 0FFFFH) , r1		; ハンドラの下位アドレス 
+    26  00018  75C30000r                	mov.w	#((_UART_receive_handler >> 16) & 0FFFFH) , r3		; ハンドラの上位アドレス 
+    27  0001C  75C01200                 	mov.w	#18 , r0 ; 割込み/CPU例外ハンドラ番号 
+    28  00020  FC000000r             A  	jmp	_kernel_interrupt			; 共通ルーチンへ 
+    29                                  
+    30                                  
+    31                                  	.glb	_target_timer_handler	
+    32                                  	.glb	__kernel_target_timer_handler_21_entry	
+    33  00024                           __kernel_target_timer_handler_21_entry:				
+    34  00024  ECFF                     	pushm	r0,r1,r2,r3,a0,a1,sb,fb		; レジスタをタスクスタックへ退避 
+    35  00026  75C10000r                	mov.w	#(_target_timer_handler & 0FFFFH) , r1		; ハンドラの下位アドレス 
+    36  0002A  75C30000r                	mov.w	#((_target_timer_handler >> 16) & 0FFFFH) , r3		; ハンドラの上位アドレス 
+    37  0002E  75C01500                 	mov.w	#21 , r0 ; 割込み/CPU例外ハンドラ番号 
+    38  00032  FC000000r             A  	jmp	_kernel_interrupt			; 共通ルーチンへ 
+    39                                  
+    40                                  
+    41                                  	.glb	_kernel_exception
+    42                                  ;
+    43                                  ;  可変ベクタテーブル 
+    44                                  ;
+    45                                  
+    46                                  	.glb 	 _start
+    47                                  	.glb 	 _unused_interrupt 
+    48                                  	.section vvector
+    49                                  
+    50  00000                           vvector_table:
+    51  00000  00000000r                	.lword	_unused_interrupt 	 	 ; 00 
+    52  00004  00000000r                	.lword	_unused_interrupt 	 	 ; 01 
+    53  00008  00000000r                	.lword	_unused_interrupt 	 	 ; 02 
+    54  0000C  00000000r                	.lword	_unused_interrupt 	 	 ; 03 
+    55  00010  00000000r                	.lword	_unused_interrupt 	 	 ; 04 
+    56  00014  00000000r                	.lword	_unused_interrupt 	 	 ; 05 
+    57  00018  00000000r                	.lword	_unused_interrupt 	 	 ; 06 
+    58  0001C  00000000r                	.lword	_unused_interrupt 	 	 ; 07 
+    59  00020  00000000r                	.lword	_unused_interrupt 	 	 ; 08 
+    60  00024  00000000r                	.lword	_unused_interrupt 	 	 ; 09 
+    61  00028  00000000r                	.lword	_unused_interrupt 	 	 ; 10 
+    62  0002C  00000000r                	.lword	_unused_interrupt 	 	 ; 11 
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Mon Mar 03 17:03:10 2014  PAGE 002
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+    63  00030  00000000r                	.lword	_unused_interrupt 	 	 ; 12 
+    64  00034  00000000r                	.lword	_unused_interrupt 	 	 ; 13 
+    65  00038  00000000r                	.lword	_unused_interrupt 	 	 ; 14 
+    66  0003C  00000000r                	.lword	_unused_interrupt 	 	 ; 15 
+    67  00040  00000000r                	.lword	_unused_interrupt 	 	 ; 16 
+    68  00044  00000000r                	.lword	__kernel_UART_send_handler_17_entry 	 	 ; 17 
+    69  00048  00000000r                	.lword	__kernel_UART_receive_handler_18_entry 	 	 ; 18 
+    70  0004C  00000000r                	.lword	_unused_interrupt 	 	 ; 19 
+    71  00050  00000000r                	.lword	_unused_interrupt 	 	 ; 20 
+    72  00054  00000000r                	.lword	__kernel_target_timer_handler_21_entry 	 	 ; 21 
+    73  00058  00000000r                	.lword	_unused_interrupt 	 	 ; 22 
+    74  0005C  00000000r                	.lword	_unused_interrupt 	 	 ; 23 
+    75  00060  00000000r                	.lword	_unused_interrupt 	 	 ; 24 
+    76  00064  00000000r                	.lword	_unused_interrupt 	 	 ; 25 
+    77  00068  00000000r                	.lword	_unused_interrupt 	 	 ; 26 
+    78  0006C  00000000r                	.lword	_unused_interrupt 	 	 ; 27 
+    79  00070  00000000r                	.lword	_unused_interrupt 	 	 ; 28 
+    80  00074  00000000r                	.lword	_unused_interrupt 	 	 ; 29 
+    81  00078  00000000r                	.lword	_unused_interrupt 	 	 ; 30 
+    82  0007C  00000000r                	.lword	_unused_interrupt 	 	 ; 31 
+    83  00080  00000000r                	.lword	_unused_interrupt 	 	 ; 32 
+    84  00084  00000000r                	.lword	_unused_interrupt 	 	 ; 33 
+    85  00088  00000000r                	.lword	_unused_interrupt 	 	 ; 34 
+    86  0008C  00000000r                	.lword	_unused_interrupt 	 	 ; 35 
+    87  00090  00000000r                	.lword	_unused_interrupt 	 	 ; 36 
+    88  00094  00000000r                	.lword	_unused_interrupt 	 	 ; 37 
+    89  00098  00000000r                	.lword	_unused_interrupt 	 	 ; 38 
+    90  0009C  00000000r                	.lword	_unused_interrupt 	 	 ; 39 
+    91  000A0  00000000r                	.lword	_unused_interrupt 	 	 ; 40 
+    92  000A4  00000000r                	.lword	_unused_interrupt 	 	 ; 41 
+    93  000A8  00000000r                	.lword	_unused_interrupt 	 	 ; 42 
+    94  000AC  00000000r                	.lword	_unused_interrupt 	 	 ; 43 
+    95  000B0  00000000r                	.lword	_unused_interrupt 	 	 ; 44 
+    96  000B4  00000000r                	.lword	_unused_interrupt 	 	 ; 45 
+    97  000B8  00000000r                	.lword	_unused_interrupt 	 	 ; 46 
+    98  000BC  00000000r                	.lword	_unused_interrupt 	 	 ; 47 
+    99  000C0  00000000r                	.lword	_unused_interrupt 	 	 ; 48 
+   100  000C4  00000000r                	.lword	_unused_interrupt 	 	 ; 49 
+   101  000C8  00000000r                	.lword	_unused_interrupt 	 	 ; 50 
+   102  000CC  00000000r                	.lword	_unused_interrupt 	 	 ; 51 
+   103  000D0  00000000r                	.lword	_unused_interrupt 	 	 ; 52 
+   104  000D4  00000000r                	.lword	_unused_interrupt 	 	 ; 53 
+   105  000D8  00000000r                	.lword	_unused_interrupt 	 	 ; 54 
+   106  000DC  00000000r                	.lword	_unused_interrupt 	 	 ; 55 
+   107  000E0  00000000r                	.lword	_unused_interrupt 	 	 ; 56 
+   108  000E4  00000000r                	.lword	_unused_interrupt 	 	 ; 57 
+   109  000E8  00000000r                	.lword	_unused_interrupt 	 	 ; 58 
+   110  000EC  00000000r                	.lword	_unused_interrupt 	 	 ; 59 
+   111  000F0  00000000r                	.lword	_unused_interrupt 	 	 ; 60 
+   112  000F4  00000000r                	.lword	_unused_interrupt 	 	 ; 61 
+   113  000F8  00000000r                	.lword	_unused_interrupt 	 	 ; 62 
+   114  000FC  00000000r                	.lword	_unused_interrupt 	 	 ; 63 
+   115                                  
+   116                                  ;
+   117                                  ;  固定ベクタテーブル 
+   118                                  ;
+   119                                  
+   120                                  	 .section fvector
+   121                                  
+   122  00000                           fvector_table:
+   123  00000  00000000r                	 .lword	 _unused_interrupt 	 	;  0  
+   124  00004  00000000r                	 .lword	 _unused_interrupt 	 	;  1  
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Mon Mar 03 17:03:10 2014  PAGE 003
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   125  00008  00000000r                	 .lword	 _unused_interrupt 	 	;  2  
+   126  0000C  00000000r                	 .lword	 _unused_interrupt 	 	;  3  
+   127  00010  00000000r                	 .lword	 _unused_interrupt 	 	;  4  
+   128  00014  00000000r                	 .lword	 _unused_interrupt 	 	;  5  
+   129  00018  00000000r                	 .lword	 _unused_interrupt 	 	;  6  
+   130  0001C  00000000r                	 .lword	 _unused_interrupt 	 	;  7  
+   131  00020  00000000r                	 .lword		_start ; 8
+   132                                   
+   133                                  	.end
+
+Information List
+
+TOTAL ERROR(S)    00000
+TOTAL WARNING(S)  00000
+TOTAL LINE(S)     00133   LINES
+
+Section List
+
+Attr        Size          Name
+CODE     0000054(00036H)  program
+CODE     0000256(00100H)  vvector
+CODE     0000036(00024H)  fvector
